@@ -1,0 +1,86 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ReferenceType.FieldsWithGenericTest.testFieldsWithGeneric001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1075
+Start listening on: null
+Listening on: IBM-L3XANCF:1076
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1076,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1075 org.apache.harmony.jpda.tests.jdwp.ReferenceType.FieldsWithGenericDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1076,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1075 org.apache.harmony.jpda.tests.jdwp.ReferenceType.FieldsWithGenericDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1076,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1075, org.apache.harmony.jpda.tests.jdwp.ReferenceType.FieldsWithGenericDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1075
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testFieldsWithGeneric001 for ReferenceType.FieldsWithGeneric command: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ReferenceType/FieldsWithGenericDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.ReferenceType.FieldsWithGenericDebuggee
+=> referenceTypeID for Debuggee class = 1000000213
+=> CHECK: send ReferenceType.FieldsWithGeneric command and check reply...
+STDOUT> [SYNC] Message sent: ready
+STDOUT> --> Debuggee: FieldsWithGenericDebuggee...
+STDOUT> [SYNC] Waiting for message: continue
+=> Returned fields number = 4
+=> CHECK for all expected fields...
+
+=> Field ID = 591062904
+=> Field name = staticLongField
+=> Field signature = "J"
+=> Field generic signature = ""
+=> Field modifiers = 0x8
+
+=> Field ID = 591062968
+=> Field name = classObjectField
+=> Field signature = "Ljava/lang/Class;"
+=> Field generic signature = ""
+=> Field modifiers = 0x0
+
+=> Field ID = 591063032
+=> Field name = objectArrayField
+=> Field signature = "[Ljava/lang/Object;"
+=> Field generic signature = ""
+=> Field modifiers = 0x0
+
+=> Field ID = 591063096
+=> Field name = stringArrayField
+=> Field signature = "[Ljava/lang/String;"
+=> Field generic signature = ""
+=> Field modifiers = 0x0
+=> CHECK PASSED: All expected fields are found out and have expected attributes
+[SYNC] Message sent: continue
+==> testFieldsWithGeneric001 for ReferenceType.FieldsWithGeneric command: FINISH
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Ignoring exception in disposing debuggee VM: org.apache.harmony.jpda.tests.framework.TestErrorException: org.apache.harmony.jpda.tests.framework.jdwp.exceptions.TimeoutException: Connection was closed
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

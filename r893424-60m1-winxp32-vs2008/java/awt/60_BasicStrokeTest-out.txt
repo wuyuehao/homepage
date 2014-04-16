@@ -1,0 +1,2 @@
+Golden files folder D:\workingcopy\hy6\working_classlib\deploy\build\test\awt\resources\..\resources\shapes\java\awt
+

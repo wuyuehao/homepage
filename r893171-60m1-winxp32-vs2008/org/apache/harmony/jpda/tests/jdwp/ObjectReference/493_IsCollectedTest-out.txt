@@ -1,0 +1,127 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ObjectReference.IsCollectedTest.testIsCollected001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3632
+Start listening on: null
+Listening on: IBM-L3XANCF:3633
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3633,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3632 org.apache.harmony.jpda.tests.jdwp.ObjectReference.IsCollectedDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3633,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3632 org.apache.harmony.jpda.tests.jdwp.ObjectReference.IsCollectedDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3633,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3632, org.apache.harmony.jpda.tests.jdwp.ObjectReference.IsCollectedDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3632
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testIsCollected001 for ObjectReference.IsCollected command: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> --> Debuggee: IsCollectedDebuggee: START
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/IsCollectedDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.ObjectReference.IsCollectedDebuggee
+=> referenceTypeID for Debuggee class = 1000000855
+=> Send ReferenceType::Fields command and get field ID(s)
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for any messsage
+=> Returned fields number = 6
+
+=> Field ID: 584634408
+=> Field name: checkedObject_01
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/IsCollectedObject001_01;
+=> Field modifiers: 0x8
+
+=> Field ID: 584634472
+=> Field name: checkedObject_01_Finalized
+=> Field signature: Z
+=> Field modifiers: 0x8
+
+=> Field ID: 584634536
+=> Field name: checkedObject_02
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/IsCollectedObject001_02;
+=> Field modifiers: 0x8
+
+=> Field ID: 584634600
+=> Field name: checkedObject_02_Finalized
+=> Field signature: Z
+=> Field modifiers: 0x8
+
+=> Field ID: 584634664
+=> Field name: checkedObject_03
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/IsCollectedObject001_03;
+=> Field modifiers: 0x8
+
+=> Field ID: 584634728
+=> Field name: checkedObject_03_Finalized
+=> Field signature: Z
+=> Field modifiers: 0x8
+
+=> Expected fields were found and field IDs were got
+=> Send ReferenceType::GetValues command for received fieldIDs and get ObjectIDs to check...
+=> Returned values number = 2
+=> Returned field value tag for checkedObject_01 = 76(OBJECT_TAG)
+=> Returned ObjectID for checkedObject_01 = 1351
+=> Returned field value tag for checkedObject_02 = 76(OBJECT_TAG)
+=> Returned ObjectID for checkedObject_02 = 1406
+
+=> Send ObjectReference::DisableCollection command for checkedObject_01...
+=> Send to Debuggee signal to continue and try to unload checked objects...
+[SYNC] Message sent: continue
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Debuggee: memory depletion - creating 'long[1000000]' arrays (7)...
+STDOUT> --> Debuggee: AFTER System.gc():
+STDOUT> --> Debuggee: checkedObject_01 = null
+STDOUT> --> Debuggee: checkedObject_01_UNLOADed = false
+STDOUT> --> Debuggee: checkedObject_02 = null
+STDOUT> --> Debuggee: checkedObject_02_UNLOADed = false
+STDOUT> --> Debuggee: checkedObject_03 = null
+[SYNC] Received message: checkedObject_01 is NOT UNLOADed; checkedObject_02 is NOT UNLOADed;
+
+=> Received message from Debuggee = "checkedObject_01 is NOT UNLOADed; checkedObject_02 is NOT UNLOADed;"
+
+=> Send ObjectReference.IsCollected command for checkedObject_01 and check reply...
+=> IsCollected for checkedObject_01 = false
+=> PASSED for checkedObject_01
+
+=> Send ObjectReference.IsCollected command for checkedObject_02 and check reply...
+=> IsCollected for checkedObject_02 = false
+=> PASSED for checkedObject_02
+=> Send to Debuggee signal to funish ...
+[SYNC] Message sent: continue
+==> testIsCollected001 for ObjectReference.IsCollected command: FINISH
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> --> Debuggee: checkedObject_03_UNLOADed = true
+STDOUT> --> Debuggee: Send to test message: "checkedObject_01 is NOT UNLOADed; checkedObject_02 is NOT UNLOADed;"
+Waiting for process exit
+STDOUT> [SYNC] Message sent: checkedObject_01 is NOT UNLOADed; checkedObject_02 is NOT UNLOADed;
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Debuggee: IsCollectedDebuggee: FINISH
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

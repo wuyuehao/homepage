@@ -1,0 +1,696 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Unit Test Results: org.apache.harmony.jpda.tests.jdwp.MultiSession.ListenConnectorTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['org.apache.harmony.jpda.tests.jdwp.MultiSession.ListenConnectorTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'D:\\tools\\apache-ant-1.7.1\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'D:\\workingcopy\\hy6\\working_jdktools\\modules\\jpda\\build.xml';
+    
+        cur['ant.file.build-harmony'] = 'D:\\workingcopy\\hy6\\build.xml';
+    
+        cur['ant.file.Common property definitions'] = 'D:\\workingcopy\\hy6\\common_resources\\make\\properties.xml';
+    
+        cur['ant.file.external-deps'] = 'D:\\workingcopy\\hy6\\common_resources\\make\\depends.xml';
+    
+        cur['ant.file.jdktools-test'] = 'D:\\workingcopy\\hy6\\working_jdktools\\make\\build-test.xml';
+    
+        cur['ant.file.JPDA Build'] = 'D:\\workingcopy\\hy6\\working_jdktools\\modules\\jpda\\build.xml';
+    
+        cur['ant.file.Platform property definitions'] = 'D:\\workingcopy\\hy6\\common_resources\\make\\platform.xml';
+    
+        cur['ant.file.svn-deps'] = 'D:\\workingcopy\\hy6\\common_resources\\make\\svn.xml';
+    
+        cur['ant.file.Top-Level property definitions'] = 'D:\\workingcopy\\hy6\\working_jdktools\\make\\properties.xml';
+    
+        cur['ant.home'] = 'D:\\tools\\apache-ant-1.7.1\\bin\\..';
+    
+        cur['ant.java.version'] = '1.5';
+    
+        cur['ant.library.dir'] = 'D:\\tools\\apache-ant-1.7.1\\lib';
+    
+        cur['ant.project.name'] = 'JPDA Build';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.1 compiled on June 27 2008';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['awtdeps.base.x86'] = 'http://people.apache.org/~geirm/harmony/';
+    
+        cur['awtdeps.base.x86_64'] = 'http://people.apache.org/~ayza/harmony/64bit/';
+    
+        cur['awtdeps.dir.x86'] = '${depends.dir}/libs/windows.x86';
+    
+        cur['awtdeps.dir.x86_64'] = '${depends.dir}/libs/windows.x86_64';
+    
+        cur['awtdeps.extract.dir.x86'] = '${depends.dir}/libs/build';
+    
+        cur['awtdeps.extract.dir.x86_64'] = '${depends.dir}/libs/build';
+    
+        cur['awtdeps.md5.x86'] = 'd61a27e4b305d9fcabaaacf34f8f534a';
+    
+        cur['awtdeps.md5.x86_64'] = 'f2bbb1f4f23100393783fd02a77fcc68';
+    
+        cur['awtdeps.tar.x86'] = '${depends.dir}/libs/windows.x86/swing_awt_deps_winxp_2006-09-28.tgz';
+    
+        cur['awtdeps.tar.x86_64'] = '${depends.dir}/libs/windows.x86_64/swing_awt_deps_win64_2007-02-08.tgz';
+    
+        cur['awtdeps.testfile.x86'] = '${depends.dir}/libs/build/winxp_2006-09-28.txt';
+    
+        cur['awtdeps.testfile.x86_64'] = '${depends.dir}/libs/build/win64_2007-02-08.txt';
+    
+        cur['awtdeps.url.x86'] = 'http://people.apache.org/~geirm/harmony/swing_awt_deps_winxp_2006-09-28.tgz';
+    
+        cur['awtdeps.url.x86_64'] = 'http://people.apache.org/~ayza/harmony/64bit/swing_awt_deps_win64_2007-02-08.tgz';
+    
+        cur['base.dep.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends';
+    
+        cur['basedir'] = 'D:\\workingcopy\\hy6\\working_jdktools\\modules\\jpda';
+    
+        cur['bcel.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/bcel-5.2';
+    
+        cur['bcel.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/bcel-5.2/bcel-5.2.jar';
+    
+        cur['bcel.md5'] = '43d54687362fc2991d61201c453a8286';
+    
+        cur['bcel.url'] = 'http://repo1.maven.org/maven2/org/apache/bcel/bcel/5.2/bcel-5.2.jar';
+    
+        cur['bcprov.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/bcprov-jdk15-138';
+    
+        cur['bcprov.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/bcprov-jdk15-138/bcprov.noidea.jar';
+    
+        cur['bcprov.md5'] = '7e2cf5f39012b303b4246e33a66bf078';
+    
+        cur['bcprov.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends/jars/bcprov/bcprov-jdk15-138/bcprov.noidea.jar';
+    
+        cur['bcprov.ver'] = 'bcprov-jdk15-138';
+    
+        cur['build.compilerarg'] = '-nowarn -g';
+    
+        cur['build.module'] = '*';
+    
+        cur['common.basedir'] = 'D:\\workingcopy\\hy6\\common_resources';
+    
+        cur['common.exclude.file'] = 'exclude.common';
+    
+        cur['common.exclude.interm'] = 'exclude.interm';
+    
+        cur['common.resources'] = 'D:\\workingcopy\\hy6\\common_resources';
+    
+        cur['common.resources.loc'] = 'D:\\workingcopy\\hy6\\working_jdktools/../common_resources';
+    
+        cur['converted.tc'] = '${test\\case}.java';
+    
+        cur['cpptasks'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/cpptasks-1.0b4/cpptasks.zip';
+    
+        cur['cpptasks.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/cpptasks-1.0b4/cpptasks.jar';
+    
+        cur['cpptasks.md5'] = '118e601b58a48519208efa9893c7c5c0';
+    
+        cur['cpptasks.unzip.path'] = 'cpptasks-1.0b4/cpptasks.jar';
+    
+        cur['cpptasks.url'] = 'http://internap.dl.sourceforge.net/sourceforge/ant-contrib/cpptasks-1.0b4.zip';
+    
+        cur['D:\workingcopy\hy6\working_classlib\deploy\build\jdktools.jpda.exclude.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build';
+    
+        cur['dejavu-fonts.dir'] = '${depends.dir}/dejavu-fonts';
+    
+        cur['dejavu-fonts.fonts.dir'] = '${depends.dir}/dejavu-fonts/dejavu-ttf-2.18';
+    
+        cur['dejavu-fonts.md5'] = '72e0a87ec1f9c5c26c66eabcf1e2018e';
+    
+        cur['dejavu-fonts.url'] = 'http://dfn.dl.sourceforge.net/sourceforge/dejavu/dejavu-ttf-2.18-1.zip';
+    
+        cur['dejavu-fonts.zip'] = '${depends.dir}/dejavu-fonts/dejavu-ttf-2.18-1.zip';
+    
+        cur['depends.jars'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars';
+    
+        cur['depends.oss'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/oss';
+    
+        cur['depends.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends';
+    
+        cur['derby.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/derby-10.3.1.4';
+    
+        cur['derby.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/derby-10.3.1.4/derby.jar';
+    
+        cur['derby.md5'] = 'f28d6047ab26445de53c4c96126494df';
+    
+        cur['derby.url'] = 'http://repo1.maven.org/maven2/org/apache/derby/derby/10.3.1.4/derby-10.3.1.4.jar';
+    
+        cur['ecj.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/ecj_3.4.2/ecj-3.4.2.jar';
+    
+        cur['ecj.jar.md5'] = '707420d25d4ced313184f32bc1443bd0';
+    
+        cur['ecj.jar.url'] = 'http://download.eclipse.org/eclipse/downloads/drops/R-3.4.2-200902111700/ecj-3.4.2.jar';
+    
+        cur['eclipse.base'] = 'http://download.eclipse.org/eclipse/downloads/drops/R-3.4.2-200902111700';
+    
+        cur['ed.basedir'] = 'D:\\workingcopy\\hy6\\common_resources\\make';
+    
+        cur['exclude.module'] = 'nothing';
+    
+        cur['exe.suffix'] = '.exe';
+    
+        cur['external.classlib.loc'] = 'D:\\workingcopy\\hy6\\working_jdktools/../working_classlib/deploy';
+    
+        cur['external.drlvm.loc'] = 'D:\\workingcopy\\hy6\\working_jdktools/../working_vm/deploy';
+    
+        cur['external.resources'] = 'D:\\workingcopy\\hy6\\common_resources';
+    
+        cur['external.resources.loc'] = 'D:\\workingcopy\\hy6\\working_jdktools/../common_resources';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['ftp.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['ftp.proxyPort'] = '80';
+    
+        cur['hamcrest-library.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/hamcrest-library_1.1/hamcrest-library-1.1.jar';
+    
+        cur['hamcrest-library.jar.md5'] = '271f78edc4333f0f44df617676e0a874';
+    
+        cur['hamcrest-library.jar.url'] = 'http://repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar';
+    
+        cur['harmony.jdktools'] = 'D:\\workingcopy\\hy6\\working_jdktools';
+    
+        cur['harmony.standard.base'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends';
+    
+        cur['http.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['http.proxyPort'] = '80';
+    
+        cur['https.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['https.proxyPort'] = '80';
+    
+        cur['hy.arch'] = 'x86';
+    
+        cur['hy.bits'] = '32';
+    
+        cur['hy.build'] = 'D:\\workingcopy\\hy6\\working_jdktools\\modules\\jpda\\bin\\main';
+    
+        cur['hy.cfg'] = 'debug';
+    
+        cur['hy.deploy'] = 'D:\\workingcopy\\hy6\\working_vm\\deploy';
+    
+        cur['hy.hdk'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy';
+    
+        cur['hy.javac.compiler'] = 'org.eclipse.jdt.core.JDTCompilerAdapter';
+    
+        cur['hy.javac.debug'] = 'on';
+    
+        cur['hy.javac.maxmem'] = '384M';
+    
+        cur['hy.javac.source'] = '1.5';
+    
+        cur['hy.javac.target'] = '1.5';
+    
+        cur['hy.local.zlib'] = 'false';
+    
+        cur['hy.no.thr'] = 'false';
+    
+        cur['hy.os'] = 'windows';
+    
+        cur['hy.os.family'] = 'windows';
+    
+        cur['hy.platform'] = 'windows.x86';
+    
+        cur['hy.platform.path'] = 'windows/x86';
+    
+        cur['hy.platform.suffix'] = '';
+    
+        cur['hy.platform.variant'] = 'windows.x86';
+    
+        cur['hy.skip.zip.api'] = 'true';
+    
+        cur['hy.test.forkmode'] = 'perBatch';
+    
+        cur['hy.test.timeout'] = '900000';
+    
+        cur['hy.test.vm.name'] = 'drl';
+    
+        cur['hy.test.vmargs'] = '';
+    
+        cur['hy.zip.api'] = 'false';
+    
+        cur['icu'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/eclipse-ICU4J/com.ibm.icu.base-3.3.zip';
+    
+        cur['icu.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/eclipse-ICU4J/com.ibm.icu.base_3.6.1.v20070417.jar';
+    
+        cur['icu.md5'] = '5b8a0fc0e48431d376c7efd7be8c0f7b';
+    
+        cur['icu.unzip.path'] = 'eclipse/plugins/com.ibm.icu.base_3.6.1.v20070417.jar';
+    
+        cur['icu.url'] = 'http://archive.eclipse.org/eclipse/downloads/drops/R-3.3-200706251500/com.ibm.icu.base-3.3.zip';
+    
+        cur['icudll'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/libs/windows.x86/icu-3.4/icu-3.4.zip';
+    
+        cur['icudll.md5'] = '4ab256e309d1ceb9779b10cf32c79dab';
+    
+        cur['icudll.md5@freebsd.x86_64.7x@'] = '37dc6060e507a1b421fadf86b7b2cb8a';
+    
+        cur['icudll.md5@freebsd.x86.7x@'] = '911a80c1f1ac778afd63aac13eb27de2';
+    
+        cur['icudll.md5@freebsd.x86@'] = '7e78475ec05805083e58879eda6e5df9';
+    
+        cur['icudll.md5@linux.ia64@'] = '1136e736ce8976da898f2a3d34cb8469';
+    
+        cur['icudll.md5@linux.ppc32@'] = '1a7e73cf283dc362b69350f163a3f256';
+    
+        cur['icudll.md5@linux.ppc64@'] = 'd6d67c23093425b7a1adda1550944745';
+    
+        cur['icudll.md5@linux.x86_64.libstdc++5@'] = 'dd65a5c4d519799607ce9463f7e5cd26';
+    
+        cur['icudll.md5@linux.x86_64@'] = '6467cbcb3c6ff979c7bf9495b62081af';
+    
+        cur['icudll.md5@linux.x86.libstdc++5@'] = '545626f5c5336168005dad74d7f6f30c';
+    
+        cur['icudll.md5@linux.x86@'] = 'efca3002eaa3e4727633eb096ad4561c';
+    
+        cur['icudll.md5@macosx.ppc32@'] = '96607064b85027427f29d39fc9ec5f90';
+    
+        cur['icudll.md5@macosx.x86_64@'] = '795957cff1665bd43cacdc73ba3cd8b4';
+    
+        cur['icudll.md5@macosx.x86@'] = 'b1bc0be59ff3a3cb4c2b81e215459682';
+    
+        cur['icudll.md5@windows.x86_64@'] = '39b2bb43ec0ec6f31567fd020e2c5338';
+    
+        cur['icudll.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends/libs/windows.x86/icu-3.4.zip';
+    
+        cur['icuhdr'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/oss/icu4c/icu4c-3.4-harmony-includes.zip';
+    
+        cur['icuhdr.md5'] = '46dbe39e5f6c4ea206a9daad9e29f8b0';
+    
+        cur['icuhdr.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends/oss/icu4c-3.4-harmony-includes.zip';
+    
+        cur['icuuc.linkname'] = 'icuuc.lib';
+    
+        cur['icuuc.linkname@unix@'] = 'libicuuc.so.34';
+    
+        cur['is.32bit'] = 'true';
+    
+        cur['is.windows'] = 'true';
+    
+        cur['is.windows.x86'] = 'true';
+    
+        cur['is.x86'] = 'true';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'D:\\workingcopy\\hy6\\working_jdktools\\build\\tests\\classes;D:\\tools\\apache-ant-1.7.1\\lib\\junit-4.1.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant-launcher.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant-junit.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.compiler'] = 'client';
+    
+        cur['java.endorsed.dirs'] = 'C:\\Program Files\\Java\\jre1.5.0_13\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\ext';
+    
+        cur['java.fullversion'] = 'pre-alpha : not complete or compatible svn = r893424, (Dec 24 2009), Windows/ia32/msvc 1500, release build http://harmony.apache.org';
+    
+        cur['java.home'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp';
+    
+        cur['java.library.path'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\;.;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\;d:\\VS9\\Common7\\IDE;d:\\VS9\\VC\\BIN;d:\\VS9\\Common7\\Tools;C:\\WINDOWS\\Microsoft.NET\\Framework\\v3.5;C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727;d:\\VS9\\VC\\VCPackages;C:\\Program Files\\\\Microsoft SDKs\\Windows\\v6.0A\\bin;C:\\Program Files\\ThinkPad\\Utilities;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\IBM\\Infoprint Select;c:\\notes;c:\\Program Files\\XLView;C:\\Utilities;C:\\lotus\\component;C:\\Program Files\\IBM\\Personal Communications\\;C:\\Program Files\\IBM\\Trace Facility\\;C:\\lotus\\compnent;C:\\Program Files\\Intel\\Wireless\\Bin\\;C:\\Program Files\\ThinkPad\\ConnectUtilities;C:\\WINDOWS\\Downloaded Program Files;C:\\Program Files\\Subversion\\bin;C:\\Program Files\\QuickTime\\QTSystem\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;D:\\tools\\UnxUtils\\usr\\local\\wbin\\;c:\\Program Files\\Vim\\vim72\\;C:\\Program Files\\IBM\\CMVCDC50;D:\\tools\\apache-ant-1.7.1\\bin\\';
+    
+        cur['java.runtime.name'] = 'Apache Harmony';
+    
+        cur['java.runtime.version'] = '1.6.0';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp';
+    
+        cur['java.vendor'] = 'Apache Software Foundation';
+    
+        cur['java.vendor.url'] = 'http://harmony.apache.org';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.5.0';
+    
+        cur['java.vm.info'] = 'no info';
+    
+        cur['java.vm.name'] = 'DRLVM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Apache Software Foundation';
+    
+        cur['java.vm.version'] = '11.2.0';
+    
+        cur['javax.xml.transform.TransformerFactory'] = 'org.apache.xalan.xsltc.trax.TransformerFactoryImpl';
+    
+        cur['jdktools.base.dir'] = 'D:\\workingcopy\\hy6\\working_jdktools';
+    
+        cur['jdktools.deploy.dir'] = 'D:\\workingcopy\\hy6\\working_jdktools\\deploy\\jdk';
+    
+        cur['jdt.jdi.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/eclipse-JDT-3.4.2/jdi.jar';
+    
+        cur['jdt.jdi.jar.md5'] = '5dcceca8849747dc37c66f9f96c59eee';
+    
+        cur['jdt.jdi.jar.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends/jars/eclipse-JDT-3.4.2/jdi.jar';
+    
+        cur['jdt.jdimodel.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/eclipse-JDT-3.4.2/jdimodel.jar';
+    
+        cur['jdt.jdimodel.jar.md5'] = '499d25ab45c118bda2f6fbe397095eaa';
+    
+        cur['jdt.jdimodel.jar.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends/jars/eclipse-JDT-3.4.2/jdimodel.jar';
+    
+        cur['jdt.url.base'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends/jars/eclipse-JDT-3.4.2';
+    
+        cur['jdt.version'] = '3.4.2';
+    
+        cur['jetty.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/jetty';
+    
+        cur['jetty.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/jetty/jetty-6.0.0.jar';
+    
+        cur['jetty.md5'] = '930507973c9ad19a874af06f10be7223';
+    
+        cur['jetty.url'] = 'http://repo1.maven.org/maven2/jetty/jetty/6.0.0/jetty-6.0.0.jar';
+    
+        cur['jetty-util.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/jetty/jetty-util-6.0.0.jar';
+    
+        cur['jetty-util.md5'] = '7cf65d83814718afdd1d3bd74f8799fc';
+    
+        cur['jetty-util.url'] = 'http://repo1.maven.org/maven2/jetty/jetty-util/6.0.0/jetty-util-6.0.0.jar';
+    
+        cur['jpda.exclude.file'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\jdktools.jpda.exclude';
+    
+        cur['jpda.settings.debuggeeJavaPath'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre/bin/java';
+    
+        cur['jpda.settings.debuggeeVMExtraOptions'] = '';
+    
+        cur['jpeg.home'] = '/usr';
+    
+        cur['jretools.deploy.dir'] = 'D:\\workingcopy\\hy6\\working_jdktools\\deploy\\jdk\\jre';
+    
+        cur['junit.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/junit_4.6/junit-4.6.jar';
+    
+        cur['junit.jar.md5'] = '37dc57962c1275ebc572726a6f5cdd13';
+    
+        cur['junit.jar.url'] = 'http://repo1.maven.org/maven2/junit/junit/4.6/junit-4.6.jar';
+    
+        cur['keep.working'] = 'true';
+    
+        cur['lcms.home'] = '/usr';
+    
+        cur['lib.prefix'] = '';
+    
+        cur['lib.suffix'] = '.lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['linklib.prefix'] = '';
+    
+        cur['linklib.suffix'] = '.lib';
+    
+        cur['make.arg'] = '/nologo';
+    
+        cur['make.command'] = 'nmake.exe';
+    
+        cur['manifest.suffix'] = '.manifest';
+    
+        cur['maven2.base'] = 'http://repo1.maven.org/maven2';
+    
+        cur['msvcp_VS2003.md5.x86'] = '561fa2abb31dfa8fab762145f81667c2';
+    
+        cur['msvcp_VS2003SP1.md5.x86'] = 'a94dc60a90efd7a35c36d971e3ee7470';
+    
+        cur['msvcp.dir.x86'] = '${depends.dir}/libs/windows.x86';
+    
+        cur['msvcp.dir.x86_64'] = '${depends.dir}/libs/windows.x86_64';
+    
+        cur['msvcp.dll.x86'] = '${depends.dir}/libs/windows.x86/msvcp71.dll';
+    
+        cur['msvcp.dll.x86_64'] = '${depends.dir}/libs/windows.x86_64/msvcp80.dll';
+    
+        cur['msvcp.md5.x86_64'] = '5ae0f01f02a03558da0cbd249e4df263';
+    
+        cur['msvcp.url.x86'] = 'file:///${hyenv.SystemRoot}/system32/msvcp71.dll';
+    
+        cur['msvcp.url.x86_64'] = 'file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%208/VC/redist/amd64/Microsoft.VC80.CRT/msvcp80.dll';
+    
+        cur['msvcr_VS2003.md5.x86'] = '86f1895ae8c5e8b17d99ece768a70732';
+    
+        cur['msvcr_VS2003SP1.md5.x86'] = 'ca2f560921b7b8be1cf555a5a18d54c3';
+    
+        cur['msvcr.dir.x86'] = '${depends.dir}/libs/windows.x86';
+    
+        cur['msvcr.dir.x86_64'] = '${depends.dir}/libs/windows.x86_64';
+    
+        cur['msvcr.dll.x86'] = '${depends.dir}/libs/windows.x86/msvcr71.dll';
+    
+        cur['msvcr.dll.x86_64'] = '${depends.dir}/libs/windows.x86_64/msvcr80.dll';
+    
+        cur['msvcr.md5.x86_64'] = '465cebd7da2ceaba5e552fc9118a1415';
+    
+        cur['msvcr.url.x86'] = 'file:///${hyenv.SystemRoot}/system32/msvcr71.dll';
+    
+        cur['msvcr.url.x86_64'] = 'file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%208/VC/redist/amd64/Microsoft.VC80.CRT/msvcr80.dll';
+    
+        cur['mx4j.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/mx4j_3.0.2';
+    
+        cur['mx4j.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/mx4j_3.0.2/mx4j.jar';
+    
+        cur['mx4j.md5'] = '443bd83ee36414de4b8fc5722b038b02';
+    
+        cur['mx4j.remote.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/mx4j_3.0.2/mx4j-remote.jar';
+    
+        cur['mx4j.url'] = 'http://internap.dl.sourceforge.net/sourceforge/mx4j/mx4j-3.0.2.zip';
+    
+        cur['mx4j.zip'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/mx4j_3.0.2/mx4j.zip';
+    
+        cur['object.suffix'] = '.obj';
+    
+        cur['org.apache.harmony.boot.class.path'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x_mgt.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xml.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1/icu4j-4_2_1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1/icu4j-charsets-4_2_1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0/xalan.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/resolver.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/xercesImpl.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/xml-apis.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2/mx4j.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2/mx4j-remote.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-core.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-rmi-spec.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-rmi-impl.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2/bcel-5.2.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xmlsec-1.4.0/commons-logging.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xmlsec-1.4.0/xmlsec-1.4.0.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1/asm-3.1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3/bsf-api.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3/axis2-saaj-api-1.3.jar';
+    
+        cur['org.apache.harmony.vm.vmdir'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['platform.exclude.file'] = 'exclude.windows.x86.drl';
+    
+        cur['platform.exclude.interm'] = 'exclude.windows.x86.drl.interm';
+    
+        cur['png.home'] = '/usr';
+    
+        cur['progdb.suffix'] = '.pdb';
+    
+        cur['prop.imported.basedir'] = 'D:\\workingcopy\\hy6\\working_jdktools\\make';
+    
+        cur['servlet-api.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/jetty/servlet-api-2.5-6.0.0.jar';
+    
+        cur['servlet-api.md5'] = 'c27c02fb0a00cc3a7d05ea993a9bf56e';
+    
+        cur['servlet-api.url'] = 'http://repo1.maven.org/maven2/jetty/servlet-api/2.5-6.0.0/servlet-api-2.5-6.0.0.jar';
+    
+        cur['sf.base'] = 'http://internap.dl.sourceforge.net/sourceforge';
+    
+        cur['shlib.prefix'] = '';
+    
+        cur['shlib.suffix'] = '.dll';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\gc_gen.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\kernel.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\vmmagic-20070207.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\antlr-2.7.5.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-charsets-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0\\xalan.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\resolver.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xercesimpl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xml-apis.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j-remote.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-core.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-spec.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-impl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2\\bcel-5.2.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1\\asm-3.1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3\\bsf-api.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3\\axis2-saaj-api-1.3.jar';
+    
+        cur['sun.boot.library.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 3';
+    
+        cur['svn.info'] = '${harmony.long.version}';
+    
+        cur['svn.revision'] = '${harmony.version}';
+    
+        cur['test.debuggee.jvm'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre/bin/java';
+    
+        cur['test.debugger.jvm'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre/bin/java';
+    
+        cur['test.errors'] = 'true';
+    
+        cur['test.failures'] = 'true';
+    
+        cur['test.jre.home'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre';
+    
+        cur['test.jre.jvm'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre/bin/java';
+    
+        cur['tests.build.output'] = 'D:\\workingcopy\\hy6\\working_jdktools\\build\\tests';
+    
+        cur['tests.output'] = 'D:\\workingcopy\\hy6\\build\\test_report';
+    
+        cur['user.country'] = 'US';
+    
+        cur['user.dir'] = 'D:\\workingcopy\\hy6\\build\\test_report';
+    
+        cur['user.home'] = 'C:\\Documents and Settings\\Administrator';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.name'] = 'tony';
+    
+        cur['user.timezone'] = 'GMT+8:00';
+    
+        cur['user.variant'] = '';
+    
+        cur['vm.boot.class.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\gc_gen.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\kernel.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\vmmagic-20070207.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\antlr-2.7.5.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-charsets-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0\\xalan.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\resolver.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xercesimpl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xml-apis.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j-remote.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-core.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-spec.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-impl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2\\bcel-5.2.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1\\asm-3.1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3\\bsf-api.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3\\axis2-saaj-api-1.3.jar';
+    
+        cur['vm.boot.library.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin';
+    
+        cur['xalan.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/xalan-j_2.7.0';
+    
+        cur['xalan.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/xalan-j_2.7.0/xalan.jar';
+    
+        cur['xalan.md5'] = 'a018d032c21a873225e702b36b171a10';
+    
+        cur['xalan.url'] = 'http://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.jar';
+    
+        cur['xerces.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/xerces_2.9.1';
+    
+        cur['xerces.md5'] = 'a0e07ede1c3bd5231fe15eae24032b2e';
+    
+        cur['xerces.url'] = 'http://www.apache.org/dist/xml/xerces-j/Xerces-J-bin.2.9.1.zip';
+    
+        cur['xerces.zip'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/xerces_2.9.1/xerces.zip';
+    
+        cur['yoko.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/yoko-1.0-SNAPSHOT-20080304';
+    
+        cur['yoko.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/yoko-1.0-SNAPSHOT-20080304/yoko.jar';
+    
+        cur['yoko.md5'] = '884ac35840a92d13efa155812bfe54a9';
+    
+        cur['yoko.url'] = 'http://people.apache.org/maven-snapshot-repository/org/apache/yoko/yoko-spec-corba/1.0-SNAPSHOT/yoko-spec-corba-1.0-20080304.193341-1.jar';
+    
+        cur['yoko-core.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/yoko-1.0-SNAPSHOT-20080304';
+    
+        cur['yoko-core.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/yoko-1.0-SNAPSHOT-20080304/yoko-core.jar';
+    
+        cur['yoko-core.md5'] = '03638ebf8c1da647ad64412a2c5fb2f4';
+    
+        cur['yoko-core.url'] = 'http://people.apache.org/maven-snapshot-repository/org/apache/yoko/yoko-core/1.0-SNAPSHOT/yoko-core-1.0-20080304.193341-1.jar';
+    
+        cur['yoko-rmi-impl.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/yoko-1.0-SNAPSHOT-20080304';
+    
+        cur['yoko-rmi-impl.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/yoko-1.0-SNAPSHOT-20080304/yoko-rmi-impl.jar';
+    
+        cur['yoko-rmi-impl.md5'] = '4a45c7a0308227a46fd3ef675c6fde6c';
+    
+        cur['yoko-rmi-impl.url'] = 'http://people.apache.org/maven-snapshot-repository/org/apache/yoko/yoko-rmi-impl/1.0-SNAPSHOT/yoko-rmi-impl-1.0-20080304.193341-1.jar';
+    
+        cur['yoko-rmi-spec.dir'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/yoko-1.0-SNAPSHOT-20080304';
+    
+        cur['yoko-rmi-spec.jar'] = 'D:\\workingcopy\\hy6\\common_resources\\depends/jars/yoko-1.0-SNAPSHOT-20080304/yoko-rmi-spec.jar';
+    
+        cur['yoko-rmi-spec.md5'] = '8ef16849448ecccabc0f1aac8b840e9c';
+    
+        cur['yoko-rmi-spec.url'] = 'http://people.apache.org/maven-snapshot-repository/org/apache/yoko/yoko-rmi-spec/1.0-SNAPSHOT/yoko-rmi-spec-1.0-20080304.193341-1.jar';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class org.apache.harmony.jpda.tests.jdwp.MultiSession.ListenConnectorTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap="nowrap">Time(s)</th><th nowrap="nowrap">Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="1095_ListenConnectorTest.html">ListenConnectorTest</a></td><td><a title="Display all tests" href="1095_ListenConnectorTest.html">1</a></td><td>0</td><td>0</td><td>1.062</td><td>2009-12-25T03:51:44</td><td>IBM-L3XANCF</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap="nowrap">Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testListenConnector"></a>testListenConnector</td><td>Success</td><td></td><td>1.047</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('org.apache.harmony.jpda.tests.jdwp.MultiSession.ListenConnectorTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<div class="Properties">
+<a href="./1095_ListenConnectorTest-out.txt">
+                        System.out &raquo;
+                    </a>
+</div>
+</body>
+</html>

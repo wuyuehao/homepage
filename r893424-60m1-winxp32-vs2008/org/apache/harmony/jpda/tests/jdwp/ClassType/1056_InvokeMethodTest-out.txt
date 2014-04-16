@@ -1,0 +1,221 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ClassType.InvokeMethodTest.testInvokeMethod001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4578
+Start listening on: null
+Listening on: IBM-L3XANCF:4579
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4579,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4578 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4579,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4578 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4579,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4578, org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4578
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+ VirtualMachine.ClassesBySignature: classes=1 refTypeTag=1 typeID= 1000000889 status=7
+ ReferenceType.Methods: declared=8
+  methodID=591064960 name=<clinit> signature=()V modBits=8
+  methodID=591065116 name=<init> signature=()V modBits=1
+  methodID=591065272 name=testMethod1 signature=(Z)I modBits=1
+  methodID=591065428 name=testMethod2 signature=(Z)I modBits=9
+  methodID=591065584 name=testMethod3 signature=(I[I[[ILjava/lang/String;[Ljava/lang/String;[[Ljava/lang/String;Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/testClass;[Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/testClass;[[Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/testClass;)Ljava/lang/String; modBits=9
+  methodID=591065740 name=execMethod signature=()V modBits=0
+  methodID=591065896 name=run signature=()V modBits=1
+  methodID=591066052 name=main signature=([Ljava/lang/String;)V modBits=9
+ EventRequest.Set: requestID=1
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> InvokeMethodDebuggee
+STDOUT> [SYNC] Waiting for any message
+STDOUT> [SYNC] Received message: continue
+ EVENT_THREAD event: suspendPolicy=2 events=1
+  EVENT_THREAD event 0: eventKind=40 requestID=1 threadID=1164
+ Send ClassType.InvokeMethod without Exception
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+# ERROR: Terminate debuggee process
+Ignoring exception in ProcessWaiter thread interrupted: java.lang.InterruptedException
+Redirector completed: STDERR
+Redirector completed: STDOUT
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ClassType.InvokeMethodTest.testInvokeMethod002
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4618
+Start listening on: null
+Listening on: IBM-L3XANCF:4619
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4619,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4618 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4619,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4618 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4619,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4618, org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4618
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testInvokeMethod002: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+
+==> Getting debuggeeRefTypeID... 
+==> debuggeeSignature = |Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/InvokeMethodDebuggee;|+
+==> debuggeeRefTypeID = 1000000889
+
+==> Getting testMethodID for debuggee method 'testMethod2'... 
+==> testMethodID = 591065428
+
+==> Setting EventRequest... 
+ EventRequest.Set: requestID=1
+[SYNC] Message sent: continue
+
+==> Getting targetThreadID... 
+STDOUT> [SYNC] Message sent: ready
+STDOUT> InvokeMethodDebuggee
+STDOUT> [SYNC] Waiting for any message
+STDOUT> [SYNC] Received message: continue
+ EVENT_THREAD event: suspendPolicy=2 events=1
+  EVENT_THREAD event 0: eventKind=40 requestID=1 threadID=1164
+==> targetThreadID = 1164
+
+==> Clear EventRequest... 
+
+==> Getting invalidClassRefTypeID... 
+==> invalidClassSignature = |Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/testClass2;|+
+==> invalidClassRefTypeID = 1000000371
+
+==> Send ClassType::InvokeMethod for invalidClassRefTypeID, testMethodID...
+==> PASSED: Expected error (INVALID_METHODID) is returned
+
+==> resumeDebuggee...
+Sending VirtualMachine::Resume command...
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> InvokeMethodDebuggee.execMethod()
+STDOUT> [SYNC] Waiting for any message
+STDOUT> [SYNC] Received message: continue
+STDOUT> DUMP{class org.apache.harmony.jpda.tests.jdwp.share.debuggee.testClass3}
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ClassType.InvokeMethodTest.testInvokeMethod003
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4623
+Start listening on: null
+Listening on: IBM-L3XANCF:4624
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4624,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4623 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4624,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4623 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4624,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4623, org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4623
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testInvokeMethod003: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+
+==> Getting debuggeeRefTypeID... 
+==> debuggeeSignature = |Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/InvokeMethodDebuggee;|+
+==> debuggeeRefTypeID = 1000000889
+
+==> Getting nonStaticMethodID for debuggee method 'testMethod1'... 
+STDOUT> [SYNC] Message sent: ready
+STDOUT> InvokeMethodDebuggee
+STDOUT> [SYNC] Waiting for any message
+==> nonStaticMethodID = 591065272
+
+==> Setting EventRequest... 
+ EventRequest.Set: requestID=1
+[SYNC] Message sent: continue
+
+==> Getting targetThreadID... 
+STDOUT> [SYNC] Received message: continue
+ EVENT_THREAD event: suspendPolicy=2 events=1
+  EVENT_THREAD event 0: eventKind=40 requestID=1 threadID=1164
+==> targetThreadID = 1164
+
+==> Clear EventRequest... 
+
+==> Send ClassType::InvokeMethod for debuggeeRefTypeID, nonStaticMethodID...
+==> PASSED: Expected error (INVALID_METHODID) is returned
+
+==> resumeDebuggee...
+Sending VirtualMachine::Resume command...
+STDOUT> InvokeMethodDebuggee.execMethod()
+STDOUT> [SYNC] Waiting for any message
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> DUMP{class org.apache.harmony.jpda.tests.jdwp.share.debuggee.testClass3}
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

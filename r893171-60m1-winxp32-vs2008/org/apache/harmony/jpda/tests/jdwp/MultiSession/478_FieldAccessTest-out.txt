@@ -1,0 +1,80 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.MultiSession.FieldAccessTest.testFieldAccess001
+----------------------------------------
+ATTACH connector kind
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4035
+Attach to: 127.0.0.1:9898
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4035 org.apache.harmony.jpda.tests.jdwp.MultiSession.FieldDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4035 org.apache.harmony.jpda.tests.jdwp.MultiSession.FieldDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4035, org.apache.harmony.jpda.tests.jdwp.MultiSession.FieldDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Attaching for JDWP connection
+STDOUT> Listening for transport dt_socket at address: 9898
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4035
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testFieldAccess001 started
+=> Check capability: canWatchFieldAccess
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+
+=> CLOSE CONNECTION
+STDERR> 14:51:59.734 ERROR: [PacketDispatcher.cpp:137] Run: Exception in reading command: TransportException [510/202] close socket failed (error code: -241)
+Closed transport connection
+=> CONNECTION CLOSE
+
+=> OPEN NEW CONNECTION
+Attaching for JDWP connection
+STDOUT> [SYNC] Message sent: ready
+STDOUT> --> FieldDebuggee started
+STDOUT> [SYNC] Waiting for message: continue
+Opened transport connection
+Adjusted VM-dependent type lengths
+=> CONNECTION OPENED
+=> Resuming debuggee
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> --> Access to field testIntField: value=512
+STDOUT> --> FieldDebuggee finished
+STDOUT> [SYNC] Closed socket
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+=> Wait for event..
+=> Received event set: count=1
+=> Event #0;
+=> SuspendPolicy=0/NONE
+=> EventKind=99/VM_DEATH
+=> RequestID=0
+=> found auto VM_DEATH event!
+==> testFieldAccess001 PASSED!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Ignoring exception in disposing debuggee VM: org.apache.harmony.jpda.tests.framework.TestErrorException: org.apache.harmony.jpda.tests.framework.jdwp.exceptions.TimeoutException: Connection was closed
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

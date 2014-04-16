@@ -1,0 +1,269 @@
+testDirectSocket_SingleVM starting
+Test server started.
+Object: MyRemoteObject[UnicastServerRef[endpoint:[[192.168.0.157:2844]](local), ObjID[65536, UID[4aedec6:125b6cd5e00:-8000]]]] created and exported.
+Dec 22, 2009 10:32:12 PM org.apache.harmony.rmi.server.RMIReference makeStrong
+FINER: main: Strongly referenced RegistryImpl
+Registry created.
+Object bound in the registry.
+Registry located.
+Dec 22, 2009 10:32:13 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [localhost:1099] for UID[4aedec6:125b6cd5e00:-7ffd]
+Lookup object is: Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:2844]](remote), ObjID[65536, UID[4aedec6:125b6cd5e00:-8000]]]]]
+Testing test_String_Void...
+Done.
+
+Testing test_Void_String...
+Returned: MyRemoteObject.test_Void_String
+Done.
+
+Testing test_Int_Void...
+Done.
+
+Testing test_Void_Int...
+Returned: 987654321
+Done.
+
+Testing test_Remote_Void...
+Done.
+
+Testing test_Remote_Void with remote object extending another remote object...
+Done.
+
+Testing test_Void_Remote...
+Dec 22, 2009 10:32:13 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [192.168.0.157:2844] for UID[4aedec6:125b6cd5e00:-7fe8]
+Returned: Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface2, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:2852]](remote), ObjID[65539, UID[4aedec6:125b6cd5e00:-7fe9]]]]]
+Done.
+
+Testing test_Long_Long...
+Returned: 998877665544332211
+Done.
+
+Testing test_String_String...
+Returned: MyRemoteObject.test_String_String
+Done.
+
+Testing test_Remote_Remote...
+Dec 22, 2009 10:32:13 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [192.168.0.157:2844] for UID[4aedec6:125b6cd5e00:-7fde]
+Returned: Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface2, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:2856]](remote), ObjID[65541, UID[4aedec6:125b6cd5e00:-7fdf]]]]]
+Done.
+
+Testing test_RemoteString_Void...
+Done.
+
+Testing test_RemoteRemote_Remote...
+Dec 22, 2009 10:32:13 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [192.168.0.157:2844] for UID[4aedec6:125b6cd5e00:-7fd0]
+Returned: Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface2, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:2863]](remote), ObjID[65545, UID[4aedec6:125b6cd5e00:-7fd1]]]]]
+Done.
+
+Testing test_BooleanStringRemote_Void...
+Done.
+
+Testing test_Proxy_Void...
+Done.
+
+Testing test_Array_Void...
+Done.
+
+Testing test_Void_Array...
+Done.
+
+Testing test_RemoteArray_Void...
+Done.
+
+Testing test_Void_RemoteArray...
+Dec 22, 2009 10:32:13 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [192.168.0.157:2844] for UID[4aedec6:125b6cd5e00:-7fbd]
+Done.
+
+Testing test_Exception...
+org.apache.harmony.rmi.test.MyException: MyRemoteObject.test_Exception
+Done.
+
+Testing test_Error...
+java.rmi.ServerError: Error occurred while remote method invocation; nested exception is:
+	java.lang.Error: MyRemoteObject.test_Error
+Done.
+
+Testing test_RuntimeException...
+java.lang.RuntimeException: MyRemoteObject.text_RuntimeException
+Done.
+
+Testing test_RemoteException...
+java.rmi.ServerException: RemoteException occurred while remote method invocation; nested exception is:
+	java.rmi.RemoteException: MyRemoteObject.text_RemoteException
+Done.
+
+Test server complete.
+Test server closing.
+Unexporting MyRemoteObject[UnicastServerRef[endpoint:[[192.168.0.157:2844]](local), ObjID[65536, UID[4aedec6:125b6cd5e00:-8000]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2848]](local), ObjID[65537, UID[4aedec6:125b6cd5e00:-7ff4]]]] ...
+Done.
+
+Unexporting MyRemoteObject4[UnicastServerRef[endpoint:[[192.168.0.157:2850]](local), ObjID[65538, UID[4aedec6:125b6cd5e00:-7fef]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2854]](local), ObjID[65540, UID[4aedec6:125b6cd5e00:-7fe3]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2857]](local), ObjID[65542, UID[4aedec6:125b6cd5e00:-7fdd]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2859]](local), ObjID[65543, UID[4aedec6:125b6cd5e00:-7fd8]]]] ...
+Done.
+
+Unexporting MyRemoteObject3[UnicastServerRef[endpoint:[[192.168.0.157:2860]](local), ObjID[65544, UID[4aedec6:125b6cd5e00:-7fd7]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2864]](local), ObjID[65546, UID[4aedec6:125b6cd5e00:-7fcf]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2866]](local), ObjID[65547, UID[4aedec6:125b6cd5e00:-7fc4]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2867]](local), ObjID[65548, UID[4aedec6:125b6cd5e00:-7fc3]]]] ...
+Done.
+
+Unexporting RegistryImpl ...
+Done.
+
+Test server exiting.
+testDirectHTTP_SingleVM starting
+Test server started.
+Object: MyRemoteObject[UnicastServerRef[endpoint:[[192.168.0.157:2872]](local), ObjID[65536, UID[4aedec6:125b6cd70dc:-8000]]]] created and exported.
+Dec 22, 2009 10:32:16 PM org.apache.harmony.rmi.server.RMIReference makeStrong
+FINER: main: Strongly referenced RegistryImpl
+Registry created.
+Object bound in the registry.
+Registry located.
+Dec 22, 2009 10:32:17 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [localhost:1099] for UID[4aedec6:125b6cd70dc:-7ffd]
+Lookup object is: Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:2872]](remote), ObjID[65536, UID[4aedec6:125b6cd70dc:-8000]]]]]
+Testing test_String_Void...
+Done.
+
+Testing test_Void_String...
+Returned: MyRemoteObject.test_Void_String
+Done.
+
+Testing test_Int_Void...
+Done.
+
+Testing test_Void_Int...
+Returned: 987654321
+Done.
+
+Testing test_Remote_Void...
+Done.
+
+Testing test_Remote_Void with remote object extending another remote object...
+Done.
+
+Testing test_Void_Remote...
+Dec 22, 2009 10:32:18 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [192.168.0.157:2872] for UID[4aedec6:125b6cd70dc:-7fe8]
+Returned: Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface2, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:2880]](remote), ObjID[65539, UID[4aedec6:125b6cd70dc:-7fe9]]]]]
+Done.
+
+Testing test_Long_Long...
+Returned: 998877665544332211
+Done.
+
+Testing test_String_String...
+Returned: MyRemoteObject.test_String_String
+Done.
+
+Testing test_Remote_Remote...
+Dec 22, 2009 10:32:18 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [192.168.0.157:2872] for UID[4aedec6:125b6cd70dc:-7fde]
+Returned: Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface2, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:2884]](remote), ObjID[65541, UID[4aedec6:125b6cd70dc:-7fdf]]]]]
+Done.
+
+Testing test_RemoteString_Void...
+Done.
+
+Testing test_RemoteRemote_Remote...
+Dec 22, 2009 10:32:18 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [192.168.0.157:2872] for UID[4aedec6:125b6cd70dc:-7fd0]
+Returned: Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface2, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:2892]](remote), ObjID[65545, UID[4aedec6:125b6cd70dc:-7fd1]]]]]
+Done.
+
+Testing test_BooleanStringRemote_Void...
+Done.
+
+Testing test_Proxy_Void...
+Done.
+
+Testing test_Array_Void...
+Done.
+
+Testing test_Void_Array...
+Done.
+
+Testing test_RemoteArray_Void...
+Done.
+
+Testing test_Void_RemoteArray...
+Dec 22, 2009 10:32:18 PM org.apache.harmony.rmi.client.ClientConnection sendDGCAck
+FINER: main: Sent DGC ack to [192.168.0.157:2872] for UID[4aedec6:125b6cd70dc:-7fbd]
+Done.
+
+Testing test_Exception...
+org.apache.harmony.rmi.test.MyException: MyRemoteObject.test_Exception
+Done.
+
+Testing test_Error...
+java.rmi.ServerError: Error occurred while remote method invocation; nested exception is:
+	java.lang.Error: MyRemoteObject.test_Error
+Done.
+
+Testing test_RuntimeException...
+java.lang.RuntimeException: MyRemoteObject.text_RuntimeException
+Done.
+
+Testing test_RemoteException...
+java.rmi.ServerException: RemoteException occurred while remote method invocation; nested exception is:
+	java.rmi.RemoteException: MyRemoteObject.text_RemoteException
+Done.
+
+Test server complete.
+Test server closing.
+Unexporting MyRemoteObject[UnicastServerRef[endpoint:[[192.168.0.157:2872]](local), ObjID[65536, UID[4aedec6:125b6cd70dc:-8000]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2876]](local), ObjID[65537, UID[4aedec6:125b6cd70dc:-7ff4]]]] ...
+Done.
+
+Unexporting MyRemoteObject4[UnicastServerRef[endpoint:[[192.168.0.157:2878]](local), ObjID[65538, UID[4aedec6:125b6cd70dc:-7fef]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2882]](local), ObjID[65540, UID[4aedec6:125b6cd70dc:-7fe3]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2885]](local), ObjID[65542, UID[4aedec6:125b6cd70dc:-7fdd]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2887]](local), ObjID[65543, UID[4aedec6:125b6cd70dc:-7fd8]]]] ...
+Done.
+
+Unexporting MyRemoteObject3[UnicastServerRef[endpoint:[[192.168.0.157:2888]](local), ObjID[65544, UID[4aedec6:125b6cd70dc:-7fd7]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2893]](local), ObjID[65546, UID[4aedec6:125b6cd70dc:-7fcf]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2895]](local), ObjID[65547, UID[4aedec6:125b6cd70dc:-7fc4]]]] ...
+Done.
+
+Unexporting MyRemoteObject1[UnicastServerRef[endpoint:[[192.168.0.157:2896]](local), ObjID[65548, UID[4aedec6:125b6cd70dc:-7fc3]]]] ...
+Done.
+
+Unexporting RegistryImpl ...
+Done.
+
+Test server exiting.
+

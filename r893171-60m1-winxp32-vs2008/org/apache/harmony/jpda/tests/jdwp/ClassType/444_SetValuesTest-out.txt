@@ -1,0 +1,318 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ClassType.SetValuesTest.testSetValues001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3231
+Start listening on: null
+Listening on: IBM-L3XANCF:3232
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3232,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3231 org.apache.harmony.jpda.tests.jdwp.ClassType.ClassTypeDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3232,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3231 org.apache.harmony.jpda.tests.jdwp.ClassType.ClassTypeDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3232,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3231, org.apache.harmony.jpda.tests.jdwp.ClassType.ClassTypeDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3231
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+testSetValues001 started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ClassType/ClassTypeDebuggee;
+=> Returned number of classes: 1
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796392; name='f_def_bool'; signature='Z'; modbits=8
+    value to set = boolean: false
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796392; name='f_def_bool'; signature='Z'; modbits=8
+    value to set = boolean: true
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796456; name='f_pri_bool'; signature='Z'; modbits=10
+    value to set = boolean: false
+STDOUT> [SYNC] Message sent: ready
+STDOUT> ClassTypeDebuggee started
+STDOUT> DUMP{falsefalse}
+STDOUT> [SYNC] Waiting for message: continue
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796456; name='f_pri_bool'; signature='Z'; modbits=10
+    value to set = boolean: true
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796520; name='f_pro_bool'; signature='Z'; modbits=12
+    value to set = boolean: false
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796520; name='f_pro_bool'; signature='Z'; modbits=12
+    value to set = boolean: true
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796584; name='f_pub_bool'; signature='Z'; modbits=9
+    value to set = boolean: false
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796584; name='f_pub_bool'; signature='Z'; modbits=9
+    value to set = boolean: true
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796648; name='ff_def_bool'; signature='Z'; modbits=24
+    value to set = boolean: false
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796648; name='ff_def_bool'; signature='Z'; modbits=24
+    value to set = boolean: true
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796712; name='ff_pri_bool'; signature='Z'; modbits=26
+    value to set = boolean: false
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796712; name='ff_pri_bool'; signature='Z'; modbits=26
+    value to set = boolean: true
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796776; name='ff_pro_bool'; signature='Z'; modbits=28
+    value to set = boolean: false
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796776; name='ff_pro_bool'; signature='Z'; modbits=28
+    value to set = boolean: true
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796840; name='ff_pub_bool'; signature='Z'; modbits=25
+    value to set = boolean: false
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796840; name='ff_pub_bool'; signature='Z'; modbits=25
+    value to set = boolean: true
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796904; name='f_pub_byte'; signature='B'; modbits=9
+    value to set = byte: -128
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796904; name='f_pub_byte'; signature='B'; modbits=9
+    value to set = byte: 127
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796904; name='f_pub_byte'; signature='B'; modbits=9
+    value to set = byte: 0
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796968; name='f_pub_char'; signature='C'; modbits=9
+    value to set = char: ?
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583796968; name='f_pub_char'; signature='C'; modbits=9
+    value to set = char: 
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797032; name='f_pub_float'; signature='F'; modbits=9
+    value to set = float: 1.4E-45
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797032; name='f_pub_float'; signature='F'; modbits=9
+    value to set = float: 3.4028235E38
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797032; name='f_pub_float'; signature='F'; modbits=9
+    value to set = float: NaN
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797032; name='f_pub_float'; signature='F'; modbits=9
+    value to set = float: -Infinity
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797032; name='f_pub_float'; signature='F'; modbits=9
+    value to set = float: Infinity
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797032; name='f_pub_float'; signature='F'; modbits=9
+    value to set = float: 0.0
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797096; name='f_pub_double'; signature='D'; modbits=9
+    value to set = double: 4.9E-324
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797096; name='f_pub_double'; signature='D'; modbits=9
+    value to set = double: 1.7976931348623157E308
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797096; name='f_pub_double'; signature='D'; modbits=9
+    value to set = double: NaN
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797096; name='f_pub_double'; signature='D'; modbits=9
+    value to set = double: -Infinity
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797096; name='f_pub_double'; signature='D'; modbits=9
+    value to set = double: Infinity
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797096; name='f_pub_double'; signature='D'; modbits=9
+    value to set = double: 0.0
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797160; name='f_pub_int'; signature='I'; modbits=9
+    value to set = int: -2147483648
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797160; name='f_pub_int'; signature='I'; modbits=9
+    value to set = int: 2147483647
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797160; name='f_pub_int'; signature='I'; modbits=9
+    value to set = int: 0
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797224; name='f_pub_long'; signature='J'; modbits=9
+    value to set = long: -9223372036854775808
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797224; name='f_pub_long'; signature='J'; modbits=9
+    value to set = long: 9223372036854775807
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797224; name='f_pub_long'; signature='J'; modbits=9
+    value to set = long: 0
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797288; name='f_pub_short'; signature='S'; modbits=9
+    value to set = short: -32768
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797288; name='f_pub_short'; signature='S'; modbits=9
+    value to set = short: 32767
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797288; name='f_pub_short'; signature='S'; modbits=9
+    value to set = short: 0
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797352; name='f_pub_boolean'; signature='Z'; modbits=9
+    value to set = boolean: false
+==> testField: OK
+
+==> testField: 
+    classID = 1000000324
+    fieldInfo = fieldID=583797352; name='f_pub_boolean'; signature='Z'; modbits=9
+    value to set = boolean: true
+==> testField: OK
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> ClassTypeDebuggee done
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+BODY { 
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 10pt;
+	background-color: #fff;
+	color: #000;
+}
+td{
+    vertical-align: top;
+}
+.conf {
+	font-family:  verdana,arial,helvetica,sans-serif;
+	font-size: 12pt;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+A:link {
+	text-decoration: none;
+	color: #0000ff;
+}
+A:visited {
+	text-decoration: none;
+	color: #0000ff;
+}
+A:hover {
+	color: #ff0000;
+}
+.pic {
+opacity: 0.7;
+filter:alpha(opacity=70);
+}
+</style>
+</head>
+<script type="text/javascript">
+
+function setOpacity(obj, value) {
+	obj.style.opacity = value/10;
+	obj.style.filter = 'alpha(opacity=' + value*10 + ')';
+}
+ 
+</script>
+<body>
+    <p align="center">
+        <!-- banner table -->
+        <table border="0" cellpadding="0" cellspacing="0" width="1000">
+            <tr>
+                <td>
+                    <img src="images/banner.png" border="0" />
+                </td>
+            </tr>
+        </table>
+        
+        <!-- content table -->
+        <table border="0" cellpadding="10" cellspacing="0" width="1000">
+            <tr>
+                <!-- question td -->
+                <td width="100%" align="center" valign="top">
+                    <a href="photos.html" target="_blank">
+                    <img src="images/pic-photos.png" class="pic"  border="0" onmouseover="setOpacity(this,10)" onmouseout="setOpacity(this,7)"/>
+                    </a>
+                    <a href="reports.html" target="_blank">
+                    <img src="images/pic-reports.png" class="pic"  border="0" onmouseover="setOpacity(this,10)" onmouseout="setOpacity(this,7)"/>
+                    </a>
+                    <a href="slides.html" target="_blank">
+                    <img src="images/pic-slides.png" class="pic"  border="0" onmouseover="setOpacity(this,10)" onmouseout="setOpacity(this,7)"/>
+                    </a>
+                    <br/><br/>
+                </td>
+            </tr>
+        </table>
+        
+        <!-- foot table -->
+        <table border="0" cellpadding="0" cellspacing="0" width="1000">
+            <tr>
+                <td>
+                    <img src="images/line-bottom.png" border="0" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <img src="images/apache-logo.png" border="0" />
+                </td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

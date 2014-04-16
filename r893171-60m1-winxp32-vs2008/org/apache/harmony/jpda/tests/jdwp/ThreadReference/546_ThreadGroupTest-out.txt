@@ -1,0 +1,69 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.ThreadGroupTest.testThreadGroup001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3907
+Start listening on: null
+Listening on: IBM-L3XANCF:3908
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3908,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3907 org.apache.harmony.jpda.tests.jdwp.ThreadReference.ThreadGroupDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3908,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3907 org.apache.harmony.jpda.tests.jdwp.ThreadReference.ThreadGroupDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3908,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3907, org.apache.harmony.jpda.tests.jdwp.ThreadReference.ThreadGroupDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3907
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+wait for SGNL_READY
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> TestedThread: started
+[SYNC] Received message: ready
+get all threads
+exercise threads = 4
+	threadID=1205; threadName=TestedThread; groupID=1591; groupName=TestedGroup
+STDOUT> [SYNC] Message sent: ready
+STDOUT> TestedThread: wait for SGNL_CONTINUE
+STDOUT> [SYNC] Waiting for message: continue
+	threadID=2188; threadName=ref handler; groupID=1215; groupName=system
+	threadID=3212; threadName=finalizer; groupID=1215; groupName=system
+	threadID=1164; threadName=main; groupID=1281; groupName=main
+STDOUT> [SYNC] Received message: continue
+STDOUT> TestedThread: finished
+[SYNC] Message sent: continue
+waiting for finishing thread
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> thread is finished
+STDOUT> send SGNL_READY
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

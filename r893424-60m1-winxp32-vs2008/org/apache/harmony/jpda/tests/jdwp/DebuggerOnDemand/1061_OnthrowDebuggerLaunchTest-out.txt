@@ -1,0 +1,451 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowDebuggerLaunchTest.testDebuggerLaunch001
+----------------------------------------
+=> Prepare synch connection with debugger
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4677
+----------------------------------------
+==> testDebuggerLaunch started
+=> Debugger command: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=y -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4677 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001
+=> Debuggee command: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar "-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=y -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4677 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001',"  -Djpda.settings.verbose=true -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar "-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=y -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4677 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001',"  -Djpda.settings.verbose=true -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=y -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4677 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001',, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=9797, org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+=> Listen for synch connection from launched debugger
+[SYNC] Accepting socket connection
+STDOUT> DEBUGGEE: started
+STDOUT> DEBUGGEE: bind for synch connection with debugger
+STDOUT> [SYNC] Binding socket on port: 9797
+STDOUT> [SYNC] Bound socket on port: 9797
+STDOUT> DEBUGGEE: throw ExceptionForDebugger
+STDOUT> Listening for transport dt_socket at address: 9898
+STDOUT> .
+STDOUT> =====================================>>>
+STDOUT> Run: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001.testDebugger002
+STDOUT> ----------------------------------------
+STDOUT> Establish synch connection between debugger and test
+STDOUT> [SYNC] Attaching socket to: localhost:4677
+[SYNC] Accepted socket connection
+=> Synch connection with launched debugger established
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> Established synch connection between debugger and test
+STDOUT> Attaching for JDWP connection
+STDOUT> Established connection
+STDOUT> Established JDWP connection with debuggee VM
+STDOUT> Received inital EXCEPTION event
+STDOUT> DEBUGGEE: caught ExceptionForDebugger: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger
+STDOUT> [SYNC] Accepting socket connection
+STDOUT> Resumed debuggee VM
+STDOUT> Adjusted VM-dependent type lengths
+STDOUT> Establish synch connection between debugger and debuggee
+STDOUT> [SYNC] Attaching socket to: localhost:9797
+STDOUT> [SYNC] Accepted socket connection
+STDOUT> DEBUGGEE: established synch connection with debugger
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Attached socket
+STDOUT> Established synch connection between debugger and debuggee
+STDOUT> ----------------------------------------
+STDOUT> ***> OnthrowLaunchDebugger001 started
+STDOUT> [SYNC] Waiting for message: ready
+STDOUT> [SYNC] Received message: ready
+STDOUT> **> Send VirtualMachine::Version command
+STDOUT> **> Check reply on Version command
+[SYNC] Received message: OK
+=> Message received from DEBUGGER: OK
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Message sent: OK
+STDOUT> **> Send SIGNAL_CONTINUE
+STDOUT> [SYNC] Received message: continue
+STDOUT> DEBUGGEE: testMethod invoked
+STDOUT> DEBUGGEE: finished
+STDOUT> [SYNC] Closed socket
+STDOUT> DEBUGGEE: closed synch connection with debugger
+[SYNC] Received message: END
+=> Message received from DEBUGGER: END
+=> Debugger ends work
+==> testDebuggerLaunch ended
+----------------------------------------
+Close synch connection with debugger
+[SYNC] Closed socket
+Waiting for process exit
+STDOUT> [SYNC] Message sent: continue
+STDOUT> [SYNC] Message sent: END
+STDOUT> ***> OnthrowLaunchDebugger001 finished
+STDOUT> ----------------------------------------
+STDOUT> [SYNC] Closed socket
+STDOUT> Closed synch connection between debugger and debuggee
+STDOUT> [SYNC] Closed socket
+STDOUT> Closed synch connection between debugger and test
+STDERR> 03:42:22.078 ERROR: [PacketDispatcher.cpp:137] Run: Exception in reading command: TransportException [510/202] close socket failed (error code: -241)
+STDOUT> Closed JDWP connection with debuggee VM
+STDOUT> <<<=====================================
+STDOUT> 
+STDOUT> 
+STDOUT> Time: 0.188
+STDOUT> 
+STDOUT> OK (1 test)
+STDOUT> 
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Finished debuggee VM process and closed connection
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowDebuggerLaunchTest.testDebuggerLaunch002
+----------------------------------------
+=> Prepare synch connection with debugger
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4682
+----------------------------------------
+==> testDebuggerLaunch002 started
+=> Debugger command: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=y -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4682 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002
+=> Debuggee command: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar "-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=y -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4682 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002',"  -Djpda.settings.verbose=true -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar "-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=y -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4682 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002',"  -Djpda.settings.verbose=true -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=y -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4682 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002',, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=9797, org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+=> Listen for synch connection from launched debugger
+[SYNC] Accepting socket connection
+STDOUT> DEBUGGEE: started
+STDOUT> DEBUGGEE: bind for synch connection with debugger
+STDOUT> [SYNC] Binding socket on port: 9797
+STDOUT> [SYNC] Bound socket on port: 9797
+STDOUT> DEBUGGEE: throw ExceptionForDebugger
+STDOUT> Listening for transport dt_socket at address: 9898
+STDOUT> .
+STDOUT> =====================================>>>
+STDOUT> Run: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002.testDebugger
+STDOUT> ----------------------------------------
+STDOUT> Establish synch connection between debugger and test
+STDOUT> [SYNC] Attaching socket to: localhost:4682
+[SYNC] Accepted socket connection
+=> Synch connection with launched debugger established
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> Established synch connection between debugger and test
+STDOUT> Attaching for JDWP connection
+STDOUT> Established connection
+STDOUT> Established JDWP connection with debuggee VM
+STDOUT> Received inital EXCEPTION event
+STDOUT> DEBUGGEE: caught ExceptionForDebugger: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger
+STDOUT> [SYNC] Accepting socket connection
+STDOUT> Resumed debuggee VM
+STDOUT> Adjusted VM-dependent type lengths
+STDOUT> Establish synch connection between debugger and debuggee
+STDOUT> [SYNC] Attaching socket to: localhost:9797
+STDOUT> [SYNC] Accepted socket connection
+STDOUT> DEBUGGEE: established synch connection with debugger
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Attached socket
+STDOUT> Established synch connection between debugger and debuggee
+STDOUT> ----------------------------------------
+STDOUT> ***> Debugger started
+STDOUT> [SYNC] Waiting for message: ready
+STDOUT> [SYNC] Received message: ready
+STDOUT> => Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/DebuggerOnDemand/OnthowDebuggerLaunchDebuggee;
+STDOUT> => Returned number of classes: 1
+STDOUT> **> Set breakpoint at the beginning of testMethod
+STDOUT> **> RequestID = 1
+STDOUT> **> Release debuggee
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Message sent: continue
+STDOUT> **> Wait for breakpoint in testMethod
+[SYNC] Received message: OK
+=> Message received from DEBUGGER: OK
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Message sent: OK
+STDOUT> **> breakpointThreadID = 1164
+STDOUT> 
+STDOUT> **> Get frames, thread = 1164
+STDOUT>  
+STDOUT> => #0 frameID=1
+STDOUT> => method name=testMethod
+STDOUT>  
+STDOUT> => #1 frameID=2
+STDOUT> => method name=run
+STDOUT>  
+STDOUT> => #2 frameID=3
+STDOUT> => method name=runDebuggee
+STDOUT>  
+STDOUT> => #3 frameID=4
+[SYNC] Received message: OK
+=> Message received from DEBUGGER: OK
+[SYNC] Waiting for any messsage
+STDOUT> => method name=main
+STDOUT>  
+STDOUT> [SYNC] Message sent: OK
+STDOUT> **> Resume debuggee
+STDOUT> DEBUGGEE: testMethod invoked
+STDOUT> DEBUGGEE: finished
+STDOUT> [SYNC] Closed socket
+STDOUT> DEBUGGEE: closed synch connection with debugger
+[SYNC] Received message: END
+=> Message received from DEBUGGER: END
+=> Debugger ends work
+==> testDebuggerLaunch002 ended
+----------------------------------------
+Close synch connection with debugger
+[SYNC] Closed socket
+Waiting for process exit
+STDOUT> [SYNC] Message sent: END
+STDOUT> ***> Debugger finished
+STDOUT> ----------------------------------------
+STDOUT> [SYNC] Closed socket
+STDOUT> Closed synch connection between debugger and debuggee
+STDOUT> [SYNC] Closed socket
+STDOUT> Closed synch connection between debugger and test
+STDOUT> Ignoring exception in disposing debuggee VM: org.apache.harmony.jpda.tests.framework.TestErrorException: org.apache.harmony.jpda.tests.framework.jdwp.exceptions.TimeoutException: Connection was closed
+STDOUT> Closed JDWP connection with debuggee VM
+STDOUT> <<<=====================================
+STDOUT> 
+STDOUT> 
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+STDOUT> Time: 0.203
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished redirectors
+Finished debuggee VM process and closed connection
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowDebuggerLaunchTest.testDebuggerLaunch003
+----------------------------------------
+=> Prepare synch connection with debugger
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4686
+----------------------------------------
+==> testDebuggerLaunch started
+=> Debugger command: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=n -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4686 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001
+=> Debuggee command: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar "-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=n,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=n -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4686 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001',"  -Djpda.settings.verbose=true -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar "-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=n,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=n -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4686 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001',"  -Djpda.settings.verbose=true -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=n,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=n -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4686 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001',, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=9797, org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+=> Listen for synch connection from launched debugger
+[SYNC] Accepting socket connection
+Redirector started: STDOUT
+STDOUT> DEBUGGEE: started
+STDOUT> DEBUGGEE: bind for synch connection with debugger
+STDOUT> [SYNC] Binding socket on port: 9797
+STDOUT> [SYNC] Bound socket on port: 9797
+STDOUT> DEBUGGEE: throw ExceptionForDebugger
+STDOUT> Listening for transport dt_socket at address: 9898
+STDOUT> .
+STDOUT> =====================================>>>
+STDOUT> Run: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger001.testDebugger002
+STDOUT> ----------------------------------------
+STDOUT> Establish synch connection between debugger and test
+STDOUT> [SYNC] Attaching socket to: localhost:4686
+[SYNC] Accepted socket connection
+=> Synch connection with launched debugger established
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> Established synch connection between debugger and test
+STDOUT> Attaching for JDWP connection
+STDOUT> DEBUGGEE: caught ExceptionForDebugger: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger
+STDOUT> [SYNC] Accepting socket connection
+STDOUT> Established connection
+STDOUT> Established JDWP connection with debuggee VM
+STDOUT> Adjusted VM-dependent type lengths
+STDOUT> Establish synch connection between debugger and debuggee
+STDOUT> [SYNC] Attaching socket to: localhost:9797
+STDOUT> [SYNC] Accepted socket connection
+STDOUT> DEBUGGEE: established synch connection with debugger
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Attached socket
+STDOUT> Established synch connection between debugger and debuggee
+STDOUT> ----------------------------------------
+STDOUT> ***> OnthrowLaunchDebugger001 started
+STDOUT> [SYNC] Waiting for message: ready
+STDOUT> [SYNC] Received message: ready
+STDOUT> **> Send VirtualMachine::Version command
+[SYNC] Received message: OK
+=> Message received from DEBUGGER: OK
+[SYNC] Waiting for any messsage
+[SYNC] Received message: END
+=> Message received from DEBUGGER: END
+=> Debugger ends work
+==> testDebuggerLaunch ended
+----------------------------------------
+Close synch connection with debugger
+[SYNC] Closed socket
+Waiting for process exit
+STDOUT> **> Check reply on Version command
+STDOUT> [SYNC] Message sent: OK
+STDOUT> **> Send SIGNAL_CONTINUE
+STDOUT> [SYNC] Received message: continue
+STDOUT> DEBUGGEE: testMethod invoked
+STDOUT> DEBUGGEE: finished
+STDOUT> [SYNC] Closed socket
+STDOUT> DEBUGGEE: closed synch connection with debugger
+STDOUT> [SYNC] Message sent: continue
+STDOUT> [SYNC] Message sent: END
+STDOUT> ***> OnthrowLaunchDebugger001 finished
+STDOUT> ----------------------------------------
+STDOUT> [SYNC] Closed socket
+STDOUT> Closed synch connection between debugger and debuggee
+STDOUT> [SYNC] Closed socket
+STDOUT> Closed synch connection between debugger and test
+STDOUT> Ignoring exception in disposing debuggee VM: org.apache.harmony.jpda.tests.framework.TestErrorException: org.apache.harmony.jpda.tests.framework.jdwp.exceptions.TimeoutException: Connection was closed
+STDOUT> Closed JDWP connection with debuggee VM
+STDOUT> <<<=====================================
+STDOUT> 
+STDOUT> 
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+STDOUT> Time: 0.172
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished redirectors
+Finished debuggee VM process and closed connection
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowDebuggerLaunchTest.testDebuggerLaunch004
+----------------------------------------
+=> Prepare synch connection with debugger
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4690
+----------------------------------------
+==> testDebuggerLaunch started
+=> Debugger command: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=n -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4690 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002
+=> Debuggee command: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar "-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=n,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=n -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4690 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002',"  -Djpda.settings.verbose=true -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar "-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=n,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=n -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4690 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002',"  -Djpda.settings.verbose=true -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=n,onuncaught=n,onthrow=org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger,launch='D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -Djpda.settings.connectorKind=attach -Djpda.settings.debuggeeSuspend=n -Djpda.settings.transportAddress=127.0.0.1:9898 -Djpda.settings.syncDebuggerPort=4690 -Djpda.settings.syncPort=9797 org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002',, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=9797, org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthowDebuggerLaunchDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+=> Listen for synch connection from launched debugger
+[SYNC] Accepting socket connection
+Redirector started: STDOUT
+STDOUT> DEBUGGEE: started
+STDOUT> DEBUGGEE: bind for synch connection with debugger
+STDOUT> [SYNC] Binding socket on port: 9797
+STDOUT> [SYNC] Bound socket on port: 9797
+STDOUT> DEBUGGEE: throw ExceptionForDebugger
+STDOUT> Listening for transport dt_socket at address: 9898
+STDOUT> .
+STDOUT> =====================================>>>
+STDOUT> Run: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.OnthrowLaunchDebugger002.testDebugger
+STDOUT> ----------------------------------------
+STDOUT> Establish synch connection between debugger and test
+STDOUT> [SYNC] Attaching socket to: localhost:4690
+[SYNC] Accepted socket connection
+=> Synch connection with launched debugger established
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> Established synch connection between debugger and test
+STDOUT> Attaching for JDWP connection
+STDOUT> DEBUGGEE: caught ExceptionForDebugger: org.apache.harmony.jpda.tests.jdwp.DebuggerOnDemand.ExceptionForDebugger
+STDOUT> [SYNC] Accepting socket connection
+STDOUT> Established connection
+STDOUT> Established JDWP connection with debuggee VM
+STDOUT> Adjusted VM-dependent type lengths
+STDOUT> Establish synch connection between debugger and debuggee
+STDOUT> [SYNC] Attaching socket to: localhost:9797
+STDOUT> [SYNC] Accepted socket connection
+STDOUT> DEBUGGEE: established synch connection with debugger
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Attached socket
+STDOUT> Established synch connection between debugger and debuggee
+STDOUT> ----------------------------------------
+STDOUT> ***> Debugger started
+STDOUT> [SYNC] Waiting for message: ready
+STDOUT> [SYNC] Received message: ready
+STDOUT> => Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/DebuggerOnDemand/OnthowDebuggerLaunchDebuggee;
+STDOUT> => Returned number of classes: 1
+STDOUT> **> Set breakpoint at the beginning of testMethod
+STDOUT> **> RequestID = 1
+STDOUT> **> Release debuggee
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Message sent: continue
+STDOUT> **> Wait for breakpoint in testMethod
+[SYNC] Received message: OK
+=> Message received from DEBUGGER: OK
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Message sent: OK
+STDOUT> **> breakpointThreadID = 1164
+STDOUT> 
+STDOUT> **> Get frames, thread = 1164
+STDOUT>  
+STDOUT> => #0 frameID=1
+STDOUT> => method name=testMethod
+STDOUT>  
+STDOUT> => #1 frameID=2
+STDOUT> => method name=run
+STDOUT>  
+STDOUT> => #2 frameID=3
+STDOUT> => method name=runDebuggee
+STDOUT>  
+STDOUT> => #3 frameID=4
+[SYNC] Received message: OK
+=> Message received from DEBUGGER: OK
+[SYNC] Waiting for any messsage
+[SYNC] Received message: END
+=> Message received from DEBUGGER: END
+=> Debugger ends work
+==> testDebuggerLaunch ended
+----------------------------------------
+Close synch connection with debugger
+[SYNC] Closed socket
+Waiting for process exit
+STDERR> 03:42:29.531 ERROR: [PacketDispatcher.cpp:137] Run: Exception in reading command: TransportException [510/202] close socket failed (error code: -241)
+STDOUT> => method name=main
+STDOUT>  
+STDOUT> [SYNC] Message sent: OK
+STDOUT> **> Resume debuggee
+STDOUT> DEBUGGEE: testMethod invoked
+STDOUT> DEBUGGEE: finished
+STDOUT> [SYNC] Closed socket
+STDOUT> [SYNC] Message sent: END
+STDOUT> ***> Debugger finished
+STDOUT> ----------------------------------------
+STDOUT> [SYNC] Closed socket
+STDOUT> Closed synch connection between debugger and debuggee
+STDOUT> [SYNC] Closed socket
+STDOUT> Closed synch connection between debugger and test
+STDOUT> Closed JDWP connection with debuggee VM
+STDOUT> <<<=====================================
+STDOUT> 
+STDOUT> 
+STDOUT> DEBUGGEE: closed synch connection with debugger
+STDOUT> Time: 0.188
+STDOUT> 
+STDOUT> OK (1 test)
+STDOUT> 
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Finished debuggee VM process and closed connection
+<<<=====================================
+
+

@@ -1,0 +1,100 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ObjectReference.MonitorInfoTest.testMonitorInfo001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3636
+Start listening on: null
+Listening on: IBM-L3XANCF:3637
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3637,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3636 org.apache.harmony.jpda.tests.jdwp.ObjectReference.MonitorInfoDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3637,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3636 org.apache.harmony.jpda.tests.jdwp.ObjectReference.MonitorInfoDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3637,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3636, org.apache.harmony.jpda.tests.jdwp.ObjectReference.MonitorInfoDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3636
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+=> Check capability: canGetMonitorInfo
+==> testMonitorInfo001 for ObjectReference.MonitorInfo command: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> --> Debuggee: MonitorInfoDebuggee: START
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/MonitorInfoDebuggee;
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for any messsage
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.ObjectReference.MonitorInfoDebuggee
+=> referenceTypeID for Debuggee class = 1000000238
+=> Send ReferenceType::Fields command and get field ID(s)
+=> Returned fields number = 1
+
+=> Field ID: 590947400
+=> Field name: lockObject
+=> Field signature: Ljava/lang/Object;
+=> Field modifiers: 0x8
+
+=> Expected field was found and field ID was got
+=> Send ReferenceType::GetValues command for received fieldID and get ObjectID to check...
+=> Returned values number = 1
+=> Returned field value tag for checked object= 76(OBJECT_TAG)
+=> Returned checked ObjectID = 1190
+=> Send VirtualMachine::Suspend command...
+
+=> CHECK 1: send ObjectReference.MonitorInfo command for checked ObjectID and check reply...
+=> Returned monitorOwnerThreadID = 0
+=> Returned monitorEntryCount = 0
+=> Returned monitorWaiters = 0
+=> CHECK 1: PASSED - expected monitor info is received
+
+=> Send VirtualMachine::Resume command ...
+Sending VirtualMachine::Resume command...
+=> Send to Debuggee signal to continue and to enter in synchronized block ...
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+=> Send VirtualMachine::Suspend command...
+STDOUT> [SYNC] Received message: continue
+
+=> CHECK 2: send ObjectReference.MonitorInfo command for checked ObjectID when it is locked...
+=> Returned monitorOwnerThreadID = 1164
+=> Returned monitorEntryCount = 1
+=> Returned monitorWaiters = 0
+=> CHECK 2: PASSED - expected monitor info is received
+
+=> Send VirtualMachine::Resume command ...
+Sending VirtualMachine::Resume command...
+=> Send to Debuggee signal to funish ...
+[SYNC] Message sent: continue
+==> testMonitorInfo001 for ObjectReference.MonitorInfo command: FINISH
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Debuggee: MonitorInfoDebuggee: FINISH
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

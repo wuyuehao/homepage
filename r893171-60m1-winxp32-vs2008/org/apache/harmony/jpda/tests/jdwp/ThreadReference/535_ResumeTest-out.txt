@@ -1,0 +1,264 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.ResumeTest.testResume001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3852
+Start listening on: null
+Listening on: IBM-L3XANCF:3853
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3853,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3852 org.apache.harmony.jpda.tests.jdwp.ThreadReference.ResumeDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3853,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3852 org.apache.harmony.jpda.tests.jdwp.ThreadReference.ResumeDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3853,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3852, org.apache.harmony.jpda.tests.jdwp.ThreadReference.ResumeDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3852
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testResume001: START...
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> --> ResumeDebuggee: START...
+STDOUT> --> ResumeDebuggee: Create and start tested threads...
+STDOUT> --> ResumeDebuggee: Created threads number = 6
+[SYNC] Received message: 6
+==>  Number of threads in debuggee to test = 7
+[SYNC] Waiting for any messsage
+[SYNC] Received message: main
+STDOUT> --> ResumeDebuggee: All created threads are started!
+STDOUT> [SYNC] Message sent: 6
+STDOUT> [SYNC] Message sent: main
+STDOUT> --> ResumeDebuggee: Wait for signal from test to finish...
+==>  Number of all threads in debuggee = 9
+
+==> Check that ThreadReference.Resume command does not cause any error if thread is not suspended...
+
+==> Check for Thread: threadID = 1607; threadName = ResumeDebuggee_Thread_0
+==> Send ThreadReference.Resume command...
+==> OK - ThreadReference.Resume command without any error!
+
+==> Check for Thread: threadID = 1743; threadName = ResumeDebuggee_Thread_1
+==> Send ThreadReference.Resume command...
+==> OK - ThreadReference.Resume command without any error!
+
+==> Check for Thread: threadID = 1882; threadName = ResumeDebuggee_Thread_2
+==> Send ThreadReference.Resume command...
+==> OK - ThreadReference.Resume command without any error!
+
+==> Check for Thread: threadID = 2021; threadName = ResumeDebuggee_Thread_3
+==> Send ThreadReference.Resume command...
+==> OK - ThreadReference.Resume command without any error!
+
+==> Check for Thread: threadID = 1136; threadName = ResumeDebuggee_Thread_4
+==> Send ThreadReference.Resume command...
+==> OK - ThreadReference.Resume command without any error!
+
+==> Check for Thread: threadID = 1275; threadName = ResumeDebuggee_Thread_5
+==> Send ThreadReference.Resume command...
+==> OK - ThreadReference.Resume command without any error!
+
+==> Check for Thread: threadID = 1164; threadName = main
+==> Send ThreadReference.Resume command...
+==> OK - ThreadReference.Resume command without any error!
+
+==> Check that ThreadReference.Resume command resumes threads after VirtualMachine.Suspend command...
+
+==> Send VirtualMachine.Suspend command...
+==> VirtualMachine.Suspend command is OK!
+
+==> Check for Thread: threadID = 1607; threadName = ResumeDebuggee_Thread_0
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1743; threadName = ResumeDebuggee_Thread_1
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1882; threadName = ResumeDebuggee_Thread_2
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 2021; threadName = ResumeDebuggee_Thread_3
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1136; threadName = ResumeDebuggee_Thread_4
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1275; threadName = ResumeDebuggee_Thread_5
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1164; threadName = main
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 0(NONE)
+
+==> Send VirtualMachine.Resume command...
+==> VirtualMachine.Resume command is OK!
+
+==> Check ThreadReference.Resume command after ThreadReference.Suspend command...
+
+==> Check for Thread: threadID = 1607; threadName = ResumeDebuggee_Thread_0
+==> Send ThreadReference.Suspend commands: number of commandss = 3...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command 1 time - thread must NOT be actually resumed...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume commands: number of commands = 2 - thread must be actually resumed
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1743; threadName = ResumeDebuggee_Thread_1
+==> Send ThreadReference.Suspend commands: number of commandss = 3...
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command 1 time - thread must NOT be actually resumed...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume commands: number of commands = 2 - thread must be actually resumed
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1882; threadName = ResumeDebuggee_Thread_2
+==> Send ThreadReference.Suspend commands: number of commandss = 3...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command 1 time - thread must NOT be actually resumed...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume commands: number of commands = 2 - thread must be actually resumed
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 2021; threadName = ResumeDebuggee_Thread_3
+==> Send ThreadReference.Suspend commands: number of commandss = 3...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command 1 time - thread must NOT be actually resumed...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume commands: number of commands = 2 - thread must be actually resumed
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1136; threadName = ResumeDebuggee_Thread_4
+==> Send ThreadReference.Suspend commands: number of commandss = 3...
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command 1 time - thread must NOT be actually resumed...
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume commands: number of commands = 2 - thread must be actually resumed
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1275; threadName = ResumeDebuggee_Thread_5
+==> Send ThreadReference.Suspend commands: number of commandss = 3...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command 1 time - thread must NOT be actually resumed...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume commands: number of commands = 2 - thread must be actually resumed
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 0(NONE)
+
+==> Check for Thread: threadID = 1164; threadName = main
+==> Send ThreadReference.Suspend commands: number of commandss = 3...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume command 1 time - thread must NOT be actually resumed...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+==> Send ThreadReference.Resume commands: number of commands = 2 - thread must be actually resumed
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 0(NONE)
+
+==> testResume001 - OK!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> --> ResumeDebuggee: Send signal to all threads to finish and wait...
+STDOUT> --> ResumeDebuggee: All threads finished!
+STDOUT> --> ResumeDebuggee: FINISH...
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

@@ -1,0 +1,84 @@
+Registry on CUSTOM port (5555) created.
+Test complete.
+Registry on DEFAULT port (1099) created.
+Test objects exported.
+Testing valid Naming.bind names...
+Done:
+    //localhost:1099/RemoteObject1
+    //localhost:1099/RemoteObject2
+    //localhost:1099/RemoteObject3
+    //localhost:1099/RemoteObject4
+    //localhost:1099/RemoteObject5
+    //localhost:1099/RemoteObject6
+    //localhost:1099/RemoteObject7
+    //localhost:1099/RemoteObject8
+Checking bind complete.
+Testing valid Naming.rebind names...
+Done:
+    //127.0.0.1:1099/RemoteObject1
+    //127.0.0.1:1099/RemoteObject2
+    //127.0.0.1:1099/RemoteObject3
+    //127.0.0.1:1099/RemoteObject4
+    //127.0.0.1:1099/RemoteObject5
+    //127.0.0.1:1099/RemoteObject6
+    //127.0.0.1:1099/RemoteObject7
+    //127.0.0.1:1099/RemoteObject8
+Checking rebind complete.
+Testing valid Naming.lookup names...
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4293]](remote), ObjID[65536, UID[4e45214:125c3e060e6:-7ff3]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4294]](remote), ObjID[65537, UID[4e45214:125c3e060e6:-7ff2]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4295]](remote), ObjID[65538, UID[4e45214:125c3e060e6:-7ff1]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4296]](remote), ObjID[65539, UID[4e45214:125c3e060e6:-7ff0]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4297]](remote), ObjID[65540, UID[4e45214:125c3e060e6:-7fef]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4298]](remote), ObjID[65541, UID[4e45214:125c3e060e6:-7fee]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4299]](remote), ObjID[65542, UID[4e45214:125c3e060e6:-7fed]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4300]](remote), ObjID[65543, UID[4e45214:125c3e060e6:-7fec]]]]]
+Done:
+    //IBM-L3XANCF:1099/RemoteObject1
+    //IBM-L3XANCF:1099/RemoteObject2
+    //IBM-L3XANCF:1099/RemoteObject3
+    //IBM-L3XANCF:1099/RemoteObject4
+    //IBM-L3XANCF:1099/RemoteObject5
+    //IBM-L3XANCF:1099/RemoteObject6
+    //IBM-L3XANCF:1099/RemoteObject7
+    //IBM-L3XANCF:1099/RemoteObject8
+Checking lookup complete.
+Testing valid Naming.unbind names...
+Done:
+Checking unbind complete.
+Registry on CUSTOM port (7777) created.
+Testing valid Naming.bind names...
+Done:
+    //localhost:7777/RemoteObject1
+    //localhost:7777/RemoteObject2
+    //localhost:7777/RemoteObject3
+    //localhost:7777/RemoteObject4
+    //localhost:7777/RemoteObject5
+Checking bind complete.
+Testing valid Naming.rebind names...
+Done:
+    //127.0.0.1:7777/RemoteObject1
+    //127.0.0.1:7777/RemoteObject2
+    //127.0.0.1:7777/RemoteObject3
+    //127.0.0.1:7777/RemoteObject4
+    //127.0.0.1:7777/RemoteObject5
+Checking rebind complete.
+Testing valid Naming.lookup names...
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4293]](remote), ObjID[65536, UID[4e45214:125c3e060e6:-7ff3]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4294]](remote), ObjID[65537, UID[4e45214:125c3e060e6:-7ff2]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4295]](remote), ObjID[65538, UID[4e45214:125c3e060e6:-7ff1]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4296]](remote), ObjID[65539, UID[4e45214:125c3e060e6:-7ff0]]]]]
+Proxy[interf:[org.apache.harmony.rmi.test.MyRemoteInterface1, java.rmi.Remote], RemoteObjectInvocationHandler[UnicastRef[endpoint:[[192.168.0.157:4297]](remote), ObjID[65540, UID[4e45214:125c3e060e6:-7fef]]]]]
+Done:
+    //localhost:7777/RemoteObject1
+    //localhost:7777/RemoteObject2
+    //localhost:7777/RemoteObject3
+    //localhost:7777/RemoteObject4
+    //localhost:7777/RemoteObject5
+Checking lookup complete.
+Testing valid Naming.unbind names...
+Done:
+Checking unbind complete.
+Unexporting objects
+Test complete.
+

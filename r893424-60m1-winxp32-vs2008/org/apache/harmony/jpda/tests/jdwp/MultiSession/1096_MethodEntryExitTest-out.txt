@@ -1,0 +1,98 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.MultiSession.MethodEntryExitTest.testMethodEvent001
+----------------------------------------
+ATTACH connector kind
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1485
+Attach to: 127.0.0.1:9898
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1485 org.apache.harmony.jpda.tests.jdwp.MultiSession.MultiSessionDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1485 org.apache.harmony.jpda.tests.jdwp.MultiSession.MultiSessionDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1485, org.apache.harmony.jpda.tests.jdwp.MultiSession.MultiSessionDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Attaching for JDWP connection
+Redirector started: STDOUT
+STDOUT> Listening for transport dt_socket at address: 9898
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1485
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testMethodEvent001 started..
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> Debuggee is started
+[SYNC] Received message: ready
+=> Set breakpoint at method begin
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+=> Set request for METHOD_ENTRY event
+=> Set request for METHOD_EXIT event
+
+=> CLOSE CONNECTION..
+STDERR> 03:51:47.250 ERROR: [PacketDispatcher.cpp:137] Run: Exception in reading command: TransportException [510/202] close socket failed (error code: -241)
+Closed transport connection
+=> CONNECTION CLOSED
+
+=> OPEN NEW CONNECTION..
+Attaching for JDWP connection
+Opened transport connection
+Adjusted VM-dependent type lengths
+=> CONNECTION OPENED
+STDOUT> [SYNC] Received message: continue
+STDOUT> FROM DEBUGGEE: thread was resumed
+STDOUT> [SYNC] Message sent: ready
+STDOUT> Hello World ---- 
+STDOUT> [SYNC] Message sent: ready
+STDOUT> -> MultiSessionDebuggee: wait for signal to continue...
+STDOUT> [SYNC] Waiting for message: continue
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+=> Wait for event..
+STDOUT> java.net.SocketTimeoutException
+STDOUT> 	at org.apache.harmony.luni.net.PlainSocketImpl.read(PlainSocketImpl.java:560)
+STDOUT> 	at org.apache.harmony.luni.net.SocketInputStream.read(SocketInputStream.java:88)
+STDOUT> 	at java.io.DataInputStream.readToBuff(DataInputStream.java:149)
+STDOUT> 	at java.io.DataInputStream.readUnsignedShort(DataInputStream.java:405)
+STDOUT> 	at java.io.DataInputStream.readUTF(DataInputStream.java:424)
+STDOUT> 	at org.apache.harmony.jpda.tests.share.JPDADebuggeeSynchronizer.receiveMessage(JPDADebuggeeSynchronizer.java:107)
+STDOUT> 	at org.apache.harmony.jpda.tests.jdwp.MultiSession.MultiSessionDebuggee.run(MultiSessionDebuggee.java:49)
+STDOUT> 	at org.apache.harmony.jpda.tests.share.Debuggee.runDebuggee(Debuggee.java:84)
+STDOUT> 	at org.apache.harmony.jpda.tests.jdwp.MultiSession.MultiSessionDebuggee.main(MultiSessionDebuggee.java:63)
+STDOUT> [SYNC] Waiting for message: continue
+=> Exception while receiving event:org.apache.harmony.jpda.tests.framework.TestErrorException: org.apache.harmony.jpda.tests.framework.jdwp.exceptions.TimeoutException: Timeout was exceeded
+=> It's expected result, nothing was caught
+=> Resuming debuggee
+STDOUT> [SYNC] Received message: continue
+STDOUT> -> MultiSessionDebuggee: signal received!
+STDOUT> -> MultiSessionDebuggee: FINISH...
+STDOUT> [SYNC] Closed socket
+[SYNC] Message sent: continue
+==> testMethodEvent001 PASSED! 
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDERR> 03:52:47.265 ERROR: [PacketDispatcher.cpp:137] Run: Exception in reading command: TransportException [510/202] close socket failed (error code: -241)
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

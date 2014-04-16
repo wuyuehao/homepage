@@ -1,0 +1,6 @@
+
+USING: class org.apache.harmony.security.provider.cert.X509CRLImpl
+getNonCriticalExtensionOIDs: [2.5.29.35, 2.5.29.20]
+getCriticalExtensionOIDs: [2.5.29.28]
+hasUnsupportedCriticalExtension: true
+

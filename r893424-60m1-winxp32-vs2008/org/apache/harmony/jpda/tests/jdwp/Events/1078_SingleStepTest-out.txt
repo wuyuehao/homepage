@@ -1,0 +1,305 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.SingleStepTest.testSingleStep1
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4915
+Start listening on: null
+Listening on: IBM-L3XANCF:4916
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4916,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4915 org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4916,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4915 org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4916,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4915, org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4915
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+=> testSingleStep started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/Events/SingleStepDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+=> referenceTypeID for Debuggee class = 1000000142
+=> Send ReferenceType::Methods command and get methodIDs 
+STDOUT> [SYNC] Message sent: ready
+STDOUT> SingleStepDebuggee started
+STDOUT> [SYNC] Waiting for message: continue
+=> breakpointID = 1
+=> starting thread
+[SYNC] Message sent: continue
+=> breakpointThreadID = 1164
+=> RequestID = 2
+Sending VirtualMachine::Resume command...
+==> Wait for SINGLE_STEP event
+STDOUT> [SYNC] Received message: continue
+STDOUT> Line1
+==> Received 1 events
+
+==> Event #0;
+==> EventKind: 1(SINGLE_STEP)
+==> RequestID: 2
+==> Clearing SINGLE_STEP event..
+==> SINGLE_STEP event has been cleared
+==> Resuming debuggee
+Sending VirtualMachine::Resume command...
+STDOUT> Line2
+STDOUT> Line3
+STDOUT> SingleStepDebuggee finished
+STDOUT> [SYNC] Closed socket
+==> Test PASSED!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.SingleStepTest.testSingleStep2
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4919
+Start listening on: null
+Listening on: IBM-L3XANCF:4920
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4920,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4919 org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4920,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4919 org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4920,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4919, org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4919
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+=> testSingleStep started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/Events/SingleStepDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+=> referenceTypeID for Debuggee class = 1000000142
+=> Send ReferenceType::Methods command and get methodIDs 
+=> breakpointID = 1
+=> starting thread
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> SingleStepDebuggee started
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+=> breakpointThreadID = 1164
+=> RequestID = 2
+Sending VirtualMachine::Resume command...
+==> Wait for SINGLE_STEP event
+==> Received 1 events
+
+==> Event #0;
+==> EventKind: 1(SINGLE_STEP)
+==> RequestID: 2
+==> Clearing SINGLE_STEP event..
+==> SINGLE_STEP event has been cleared
+==> Resuming debuggee
+Sending VirtualMachine::Resume command...
+STDOUT> Line1
+STDOUT> Line2
+STDOUT> Line3
+STDOUT> SingleStepDebuggee finished
+STDOUT> [SYNC] Closed socket
+==> Test PASSED!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.SingleStepTest.testSingleStep3
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4924
+Start listening on: null
+Listening on: IBM-L3XANCF:4925
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4925,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4924 org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4925,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4924 org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4925,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4924, org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4924
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+=> testSingleStep started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/Events/SingleStepDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+=> referenceTypeID for Debuggee class = 1000000142
+=> Send ReferenceType::Methods command and get methodIDs 
+=> breakpointID = 1
+=> starting thread
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> SingleStepDebuggee started
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+=> breakpointThreadID = 1164
+=> RequestID = 2
+Sending VirtualMachine::Resume command...
+==> Wait for SINGLE_STEP event
+==> Received 1 events
+
+==> Event #0;
+==> EventKind: 1(SINGLE_STEP)
+==> RequestID: 2
+==> Clearing SINGLE_STEP event..
+==> SINGLE_STEP event has been cleared
+==> Resuming debuggee
+Sending VirtualMachine::Resume command...
+STDOUT> Line1
+STDOUT> Line2
+STDOUT> Line3
+STDOUT> SingleStepDebuggee finished
+STDOUT> [SYNC] Closed socket
+==> Test PASSED!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.SingleStepTest.testSingleStep4
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4928
+Start listening on: null
+Listening on: IBM-L3XANCF:4929
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4929,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4928 org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4929,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4928 org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4929,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4928, org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4928
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+=> testSingleStep started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/Events/SingleStepDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.Events.SingleStepDebuggee
+=> referenceTypeID for Debuggee class = 1000000142
+=> Send ReferenceType::Methods command and get methodIDs 
+=> breakpointID = 1
+=> starting thread
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> SingleStepDebuggee started
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+=> breakpointThreadID = 1164
+=> RequestID = 2
+Sending VirtualMachine::Resume command...
+==> Wait for SINGLE_STEP event
+==> Received 1 events
+
+==> Event #0;
+==> EventKind: 1(SINGLE_STEP)
+==> RequestID: 2
+==> Clearing SINGLE_STEP event..
+==> SINGLE_STEP event has been cleared
+==> Resuming debuggee
+Sending VirtualMachine::Resume command...
+==> Test PASSED!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> Line1
+STDOUT> Line2
+STDOUT> Line3
+STDOUT> SingleStepDebuggee finished
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

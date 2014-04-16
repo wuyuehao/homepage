@@ -1,0 +1,3 @@
+Cannot find unmapped char buffer for GB18030
+Cannot find unmapped char buffer for GB18030
+

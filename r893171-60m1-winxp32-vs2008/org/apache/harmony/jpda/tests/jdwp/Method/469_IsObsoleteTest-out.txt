@@ -1,0 +1,61 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Method.IsObsoleteTest.testIsObsoleteTest001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3574
+Start listening on: null
+Listening on: IBM-L3XANCF:3575
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3575,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3574 org.apache.harmony.jpda.tests.jdwp.Method.MethodDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3575,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3574 org.apache.harmony.jpda.tests.jdwp.Method.MethodDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3575,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3574, org.apache.harmony.jpda.tests.jdwp.Method.MethodDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3574
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+testObsoleteTest001 started
+=> Check, can VM redefine classes
+##WARNING: this VM can't redefine classes
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Attached socket
+STDOUT> [SYNC] Message sent: ready
+STDOUT> Hello World!
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> java.net.SocketException: The operation timed out
+STDOUT> 	at org.apache.harmony.luni.platform.OSNetworkSystem.read(OSNetworkSystem.java)
+STDOUT> 	at org.apache.harmony.luni.net.PlainSocketImpl.read(PlainSocketImpl.java:557)
+STDOUT> 	at org.apache.harmony.luni.net.SocketInputStream.read(SocketInputStream.java:88)
+STDOUT> 	at java.io.DataInputStream.readToBuff(DataInputStream.java:149)
+STDOUT> 	at java.io.DataInputStream.readUnsignedShort(DataInputStream.java:405)
+STDOUT> 	at java.io.DataInputStream.readUTF(DataInputStream.java:424)
+STDOUT> 	at org.apache.harmony.jpda.tests.share.JPDADebuggeeSynchronizer.receiveMessage(JPDADebuggeeSynchronizer.java:107)
+STDOUT> 	at org.apache.harmony.jpda.tests.jdwp.Method.MethodDebuggee.run(MethodDebuggee.java:36)
+STDOUT> 	at org.apache.harmony.jpda.tests.share.Debuggee.runDebuggee(Debuggee.java:84)
+STDOUT> 	at org.apache.harmony.jpda.tests.jdwp.Method.MethodDebuggee.main(MethodDebuggee.java:40)
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

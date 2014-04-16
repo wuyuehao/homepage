@@ -1,0 +1,4 @@
+2009-12-25 11:19:46.453::INFO:  Logging to STDERR via org.mortbay.log.StdErrLog
+2009-12-25 11:19:46.562::INFO:  jetty-6.0.x
+2009-12-25 11:19:46.656::INFO:  Started SocketConnector @ 0.0.0.0:2259
+

@@ -1,0 +1,56 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.FieldModificationTest.testFieldModifyEvent
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4820
+Start listening on: null
+Listening on: IBM-L3XANCF:4821
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4821,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4820 org.apache.harmony.jpda.tests.jdwp.Events.FieldDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4821,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4820 org.apache.harmony.jpda.tests.jdwp.Events.FieldDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4821,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4820, org.apache.harmony.jpda.tests.jdwp.Events.FieldDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4820
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+FieldModificationTest started
+=> Check capability: canWatchFieldModification
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+STDOUT> [SYNC] Message sent: ready
+STDOUT> FieldDebuggee started
+STDOUT> [SYNC] Waiting for message: continue
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+FieldModificationTest done
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> Access to field testIntField: value=512
+STDOUT> FieldDebuggee finished
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

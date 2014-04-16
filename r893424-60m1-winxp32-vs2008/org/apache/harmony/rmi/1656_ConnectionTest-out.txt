@@ -1,0 +1,9 @@
+Starting test server
+Expecting READY from server
+Destroying server
+Starting test server
+Expecting READY from server
+Destroying server
+WARNING: testProxyHTTP_SingleVM is skipped because proxy (your.proxy.host:3128) is not accessible.
+WARNING: testProxyCGI_SingleVM is skipped because proxy (your.proxy.host:3128) is not accessible.
+

@@ -1,0 +1,69 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.OwnedMonitorsTest.testOwnedMonitors001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3848
+Start listening on: null
+Listening on: IBM-L3XANCF:3849
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3849,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3848 org.apache.harmony.jpda.tests.jdwp.ThreadReference.OwnedMonitorsDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3849,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3848 org.apache.harmony.jpda.tests.jdwp.ThreadReference.OwnedMonitorsDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3849,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3848, org.apache.harmony.jpda.tests.jdwp.ThreadReference.OwnedMonitorsDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3848
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+==> Check capability: canGetOwnedMonitorInfo
+==> testedThreadName = TestedThread
+==> Get testedThreadID...
+STDOUT> TestedThread: started
+STDOUT> [SYNC] Message sent: ready
+STDOUT> TestedThread: wait for SGNL_CONTINUE
+STDOUT> [SYNC] Waiting for message: continue
+==> testedThreadID = 1147
+==> suspend testedThread...
+owned monitors: 3
+	0 tagged-object tag: OBJECT_TAG(76) ID: 2006
+		ownerThread ID:   1147
+		ownerThread name: TestedThread
+	1 tagged-object tag: OBJECT_TAG(76) ID: 1478
+		ownerThread ID:   1147
+		ownerThread name: TestedThread
+	2 tagged-object tag: OBJECT_TAG(76) ID: 1481
+		ownerThread ID:   1147
+		ownerThread name: TestedThread
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> TestedThread: finished
+Waiting for process exit
+STDOUT> thread is finished
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

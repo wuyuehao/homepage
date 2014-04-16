@@ -1,0 +1,165 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ObjectReference.GetValuesTest.testGetValues001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3604
+Start listening on: null
+Listening on: IBM-L3XANCF:3605
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3605,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3604 org.apache.harmony.jpda.tests.jdwp.ObjectReference.GetValuesDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3605,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3604 org.apache.harmony.jpda.tests.jdwp.ObjectReference.GetValuesDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3605,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3604, org.apache.harmony.jpda.tests.jdwp.ObjectReference.GetValuesDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3604
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testGetValues001 for ObjectReference::GetValues command: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> --> Debuggee: GetValuesDebuggee: START
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/GetValuesDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.ObjectReference.GetValuesDebuggee
+=> referenceTypeID for Debuggee class = 1000000412
+=> Send ReferenceType::Fields command and get field ID(s)
+=> Returned fields number = 11
+
+=> Field ID: 584353648
+=> Field name: getValuesDebuggeeObject
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/GetValuesDebuggee;
+=> Field modifiers: 0x8
+
+=> Field ID: 584353712
+=> Field name: classLoaderField
+=> Field signature: Ljava/lang/ClassLoader;
+=> Field modifiers: 0x0
+
+=> Field ID: 584353776
+=> Field name: classField
+=> Field signature: Ljava/lang/Class;
+=> Field modifiers: 0x0
+
+=> Field ID: 584353840
+=> Field name: threadGroupField
+=> Field signature: Ljava/lang/ThreadGroup;
+=> Field modifiers: 0x0
+
+=> Field ID: 584353904
+=> Field name: threadField
+=> Field signature: Ljava/lang/Thread;
+=> Field modifiers: 0x0
+
+=> Field ID: 584353968
+=> Field name: objectArrayField
+=> Field signature: [Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/GetValuesDebuggee;
+=> Field modifiers: 0x0
+
+=> Field ID: 584354032
+=> Field name: stringArrayField
+=> Field signature: [Ljava/lang/String;
+=> Field modifiers: 0x0
+
+=> Field ID: 584354096
+=> Field name: objectField
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/GetValuesDebuggee;
+=> Field modifiers: 0x0
+
+=> Field ID: 584354160
+=> Field name: stringField
+=> Field signature: Ljava/lang/String;
+=> Field modifiers: 0x0
+
+=> Field ID: 584354224
+=> Field name: longField
+=> Field signature: J
+=> Field modifiers: 0x0
+
+=> Field ID: 584354288
+=> Field name: intField
+=> Field signature: I
+=> Field modifiers: 0x0
+
+=> Expected fields were found and field IDs were got
+=> Send ReferenceType::GetValues command and and get ObjectID to check...
+=> Returned values number = 1
+=> Returned field value tag for checked object= 76(OBJECT_TAG)
+=> Returned checked ObjectID = 1085
+=> CHECK: send ObjectReference::GetValues command for this ObjectID and check reply...
+=> Returned values number = 10
+=> CHECK for returned values...
+
+=> Check for returned value for field: intField ...
+=> Returned value tag = 73(INT_TAG)
+=> Returned value = 9999
+
+=> Check for returned value for field: longField ...
+=> Returned value tag = 74(LONG_TAG)
+=> Returned value = 999999
+
+=> Check for returned value for field: objectField ...
+=> Returned value tag = 76(OBJECT_TAG)
+=> ObjectId value = 1102
+
+=> Check for returned value for field: stringArrayField ...
+=> Returned value tag = 91(ARRAY_TAG)
+=> ObjectId value = 1144
+
+=> Check for returned value for field: objectArrayField ...
+=> Returned value tag = 91(ARRAY_TAG)
+=> ObjectId value = 1176
+
+=> Check for returned value for field: threadField ...
+=> Returned value tag = 116(THREAD_TAG)
+=> ObjectId value = 1198
+
+=> Check for returned value for field: threadGroupField ...
+=> Returned value tag = 103(THREAD_GROUP_TAG)
+=> ObjectId value = 1322
+
+=> Check for returned value for field: classField ...
+=> Returned value tag = 99(CLASS_OBJECT_TAG)
+=> ObjectId value = 1436
+
+=> Check for returned value for field: classLoaderField ...
+=> Returned value tag = 108(CLASS_LOADER_TAG)
+=> ObjectId value = 1458
+
+=> Check for returned value for field: stringField ...
+=> Returned value tag = 115(STRING_TAG)
+=> ObjectId value = 1129
+=> CHECK PASSED: All expected field values are got and have expected attributes
+[SYNC] Message sent: continue
+==> testGetValues001 for ObjectReference::GetValues command: FINISH
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Debuggee: GetValuesDebuggee: FINISH
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

@@ -1,0 +1,68 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.Status002Test.testStatus003
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3856
+Start listening on: null
+Listening on: IBM-L3XANCF:3857
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3857,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3856 org.apache.harmony.jpda.tests.jdwp.ThreadReference.Status002Debuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3857,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3856 org.apache.harmony.jpda.tests.jdwp.ThreadReference.Status002Debuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3857,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3856, org.apache.harmony.jpda.tests.jdwp.ThreadReference.Status002Debuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3856
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testStatus003 for ThreadReference.Status command: START...
+==> This testStatus003 checks command for SLEEPING Thread: which is sleeping in Thread.sleep(Time) method...
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> --> Debuggee: Status002Debuggee: START
+STDOUT> --> Thread: Status002DebuggeeThread: started...
+STDOUT> --> Thread: Status002DebuggeeThread: will sleep 180000 mlsecs
+STDOUT> --> Debuggee: Status002Debuggee: will sleep for 10 seconds
+[SYNC] Received message: Status002DebuggeeThread
+=> checkedThreadName = Status002DebuggeeThread
+STDOUT> [SYNC] Message sent: Status002DebuggeeThread
+STDOUT> [SYNC] Waiting for any messsage
+=> checkedThreadID = 1583
+=> Send ThreadReference.Status command for checked Thread and check reply...
+
+=> Returned thread status = 0x2(SLEEPING)
+=> OK - Expected thread status is returned
+
+=> Returned thread suspend status = 0x0(NONE)
+=> OK - Expected thread suspend status is returned
+=> Send to Debuggee signal to funish ...
+[SYNC] Message sent: continue
+==> testStatus003 for ThreadReference.Status command: FINISH...
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Thread: Status002DebuggeeThread: is finishibg...
+Waiting for process exit
+STDOUT> --> Debuggee: Status002Debuggee: FINISH
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

@@ -1,0 +1,160 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ArrayReference.GetValuesTest.testGetValues001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4529
+Start listening on: null
+Listening on: IBM-L3XANCF:4530
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4530,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4529 org.apache.harmony.jpda.tests.jdwp.ArrayReference.ArrayReferenceDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4530,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4529 org.apache.harmony.jpda.tests.jdwp.ArrayReference.ArrayReferenceDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4530,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4529, org.apache.harmony.jpda.tests.jdwp.ArrayReference.ArrayReferenceDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4529
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> GetValuesTest.testGetValues001 started...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -- ArrayReferenceDebuggee: STARTED ...
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ArrayReference/ArrayReferenceDebuggee;
+=> Returned number of classes: 1
+
+==> testGetValues001: check for array field: 'int[] intArray'...
+==> testGetValues001: checked arrayID = 1380
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+==> testGetValues001: checkArrayRegion: arrayID = 1380; Expected error = 0(NONE); firstIndex = 0; length = 10
+==> arrayTag =  73(INT_TAG)
+==> arrayLength =  10
+==> elementTag =  73(INT_TAG)
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1380; Expected error = 0(NONE); firstIndex = 1; length = 9
+==> arrayTag =  73(INT_TAG)
+==> arrayLength =  9
+==> elementTag =  73(INT_TAG)
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1380; Expected error = 0(NONE); firstIndex = 0; length = 9
+==> arrayTag =  73(INT_TAG)
+==> arrayLength =  9
+==> elementTag =  73(INT_TAG)
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1380; Expected error = 0(NONE); firstIndex = 9 length = 1
+==> arrayTag =  73(INT_TAG)
+==> arrayLength =  1
+==> elementTag =  73(INT_TAG)
+==> PASSED!
+
+==> testGetValues001: check for array field: 'String[] strArray'...
+==> testGetValues001: checked arrayID = 1394
+==> testGetValues001: checkArrayRegion: arrayID = 1394; Expected error = 0(NONE); firstIndex = 0; length = 8
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  8
+==> elementTag =  115(STRING_TAG)
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1394; Expected error = 0(NONE); firstIndex = 1; length = 7
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  7
+==> elementTag =  115(STRING_TAG)
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1394; Expected error = 0(NONE); firstIndex = 0; length = 7
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  7
+==> elementTag =  115(STRING_TAG)
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1394; Expected error = 0(NONE); firstIndex = 7 length = 1
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  1
+==> elementTag =  115(STRING_TAG)
+==> PASSED!
+
+==> testGetValues001: check for non-array field: 'Integer intField = new Integer(-1)'...
+==> testGetValues001: checked arrayID = 1434
+==> testGetValues001: checkArrayRegion: arrayID = 1434; Expected error = 508(INVALID_ARRAY); firstIndex = 0; length = 0
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1434; Expected error = 508(INVALID_ARRAY); firstIndex = 1; length = -1
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1434; Expected error = 508(INVALID_ARRAY); firstIndex = 0; length = -1
+==> PASSED!
+==> testGetValues001: checkArrayRegion: arrayID = 1434; Expected error = 508(INVALID_ARRAY); firstIndex = -1 length = 1
+==> PASSED!
+
+==> testGetValues001: check for array field: 'threadArray'...
+==> testGetValues001: checked arrayID = 1438
+==> testGetValues001: checkArrayRegion: arrayID = 1438; Expected error = 0(NONE); firstIndex = 0; length = 1
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  1
+==> elementTag =  116(THREAD_TAG)
+==> PASSED!
+
+==> testGetValues001: check for array field: 'threadGroupArray...
+==> testGetValues001: checked arrayID = 1607
+==> testGetValues001: checkArrayRegion: arrayID = 1607; Expected error = 0(NONE); firstIndex = 0; length = 1
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  1
+==> elementTag =  103(THREAD_GROUP_TAG)
+==> PASSED!
+
+==> testGetValues001: check for array field: 'classArray'...
+==> testGetValues001: checked arrayID = 1673
+==> testGetValues001: checkArrayRegion: arrayID = 1673; Expected error = 0(NONE); firstIndex = 0; length = 1
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  1
+==> elementTag =  99(CLASS_OBJECT_TAG)
+==> PASSED!
+
+==> testGetValues001: check for array field: 'ClassLoaderArray'...
+==> testGetValues001: checked arrayID = 1678
+==> testGetValues001: checkArrayRegion: arrayID = 1678; Expected error = 0(NONE); firstIndex = 0; length = 1
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  1
+==> elementTag =  108(CLASS_LOADER_TAG)
+==> PASSED!
+
+==> testGetValues001: check for array field: 'myThreadArray'...
+==> testGetValues001: checked arrayID = 1401
+==> testGetValues001: checkArrayRegion: arrayID = 1401; Expected error = 0(NONE); firstIndex = 0; length = 1
+==> arrayTag =  76(OBJECT_TAG)
+==> arrayLength =  1
+==> elementTag =  116(THREAD_TAG)
+==> PASSED!
+
+==> testGetValues001: check for array field: 'objectArrayArray'...
+==> testGetValues001: checked arrayID = 1528
+==> testGetValues001: checkArrayRegion: arrayID = 1528; Expected error = 0(NONE); firstIndex = 0; length = 1
+==> arrayTag =  91(ARRAY_TAG)
+==> arrayLength =  1
+==> elementTag =  91(ARRAY_TAG)
+==> PASSED!
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> -- ArrayReferenceDebuggee: FINISHing ...
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

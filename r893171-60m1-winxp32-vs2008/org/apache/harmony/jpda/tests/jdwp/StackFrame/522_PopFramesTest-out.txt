@@ -1,0 +1,133 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.StackFrame.PopFramesTest.testPopFramesTest001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3777
+Start listening on: null
+Listening on: IBM-L3XANCF:3778
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3778,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3777 org.apache.harmony.jpda.tests.jdwp.StackFrame.PopFramesDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3778,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3777 org.apache.harmony.jpda.tests.jdwp.StackFrame.PopFramesDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3778,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3777, org.apache.harmony.jpda.tests.jdwp.StackFrame.PopFramesDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3777
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testPopFramesTest001 started
+=> Check capability: canPopFrames
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> Entering nestledMethod1
+STDOUT> Entering nestledMethod2
+STDOUT> Entering nestledMethod3
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/PopFramesDebuggee;
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.StackFrame.PopFramesDebuggee
+=> Set breakpoint at the beginning of nestledMethod4
+[SYNC] Message sent: continue
+=> Wait for breakpoint in nestledMethod4
+STDOUT> [SYNC] Received message: continue
+STDOUT> Entering nestledMethod4
+=> breakpointThreadID = 1164
+
+=> Get frames before PopFrames command, thread = 1164
+=> Frames before popFrame
+ 
+=> #0 frameID=1
+=> method name=nestledMethod4
+ 
+=> #1 frameID=2
+=> method name=nestledMethod3
+ 
+=> #2 frameID=3
+=> method name=nestledMethod2
+ 
+=> #3 frameID=4
+=> method name=nestledMethod1
+ 
+=> #4 frameID=5
+=> method name=run
+ 
+=> #5 frameID=6
+=> method name=runDebuggee
+ 
+=> #6 frameID=7
+=> method name=main
+ 
+=> Number of frames before command: 7
+
+=> Find frameID of method = nestledMethod4 for PopFrames command
+=> frameID for PopFrames command = 1
+
+=> Perform PopFrames command for method = nestledMethod4 with frameID = 1
+=> Get frames after PopFrames command, thread = 1164
+
+=> Frames after popFrame
+=> newNumberOfFrames = 6
+ 
+=> #0 frameID=8
+=> method name=nestledMethod3
+ 
+=> #1 frameID=9
+=> method name=nestledMethod2
+ 
+=> #2 frameID=10
+=> method name=nestledMethod1
+ 
+=> #3 frameID=11
+=> method name=run
+ 
+=> #4 frameID=12
+=> method name=runDebuggee
+ 
+=> #5 frameID=13
+=> method name=main
+ 
+=> Check that only one frame was discarded: frameID = 1, method = nestledMethod4
+=> Ckeck PASSED
+=> Resume debuggee
+=> Wait for breakpoint in nestledMethod4
+=> Resume debuggee
+STDOUT> nestledMethod4 achieved
+STDOUT> boolLocalVariable = true
+STDOUT> intLocalVariable = -512
+STDOUT> strLocalVariable = test string
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+[SYNC] Message sent: continue
+==> TEST PASSED
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> PopFramesDebuggee is ended
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

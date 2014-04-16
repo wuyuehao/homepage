@@ -1,0 +1,84 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.MultiSession.VMDeathTest.testVMDeathRequest
+----------------------------------------
+ATTACH connector kind
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1599
+Attach to: 127.0.0.1:9898
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1599 org.apache.harmony.jpda.tests.jdwp.Events.EventDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1599 org.apache.harmony.jpda.tests.jdwp.Events.EventDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:9898,server=y,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1599, org.apache.harmony.jpda.tests.jdwp.Events.EventDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Attaching for JDWP connection
+STDOUT> Listening for transport dt_socket at address: 9898
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1599
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testVMDeathRequest started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -> EventDebuggee: STARTED
+[SYNC] Received message: ready
+=> Create request for VM_DEATH event with suspend policy: 2/ALL
+=> RequestID = 1
+
+=> CLOSE CONNECTION
+STDERR> 03:54:57.953 ERROR: [PacketDispatcher.cpp:137] Run: Exception in reading command: TransportException [510/202] close socket failed (error code: -241)
+Closed transport connection
+=> CONNECTION IS CLOSED
+
+=> OPEN NEW CONNECTION
+Attaching for JDWP connection
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+Opened transport connection
+Adjusted VM-dependent type lengths
+=> CONNECTION IS OPENED
+STDOUT> [SYNC] Received message: continue
+[SYNC] Message sent: continue
+[SYNC] Message sent: continue
+=> Wait for event..
+STDOUT> -> EventDebuggee: SimpleThread started
+STDOUT> -> SimpleThread: Running...
+STDOUT> -> EventDebuggee: SimpleThread finished
+STDOUT> [SYNC] Message sent: ready
+STDOUT> -> EventDebuggee: wait for signal to continue...
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> -> EventDebuggee: signal received!
+STDOUT> -> EventDebuggee: FINISH...
+STDOUT> [SYNC] Closed socket
+=> Received event set: count=1
+=> Event #0;
+=> SuspendPolicy=0/NONE
+=> EventKind=99/VM_DEATH
+=> RequestID=0
+=> found auto VM_DEATH event!
+==> test PASSED!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

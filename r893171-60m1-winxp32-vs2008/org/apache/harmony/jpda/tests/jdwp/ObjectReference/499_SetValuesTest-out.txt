@@ -1,0 +1,146 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValuesTest.testSetValues001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3656
+Start listening on: null
+Listening on: IBM-L3XANCF:3657
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3657,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3656 org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValuesDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3657,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3656 org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValuesDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3657,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3656, org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValuesDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3656
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testSetValues001 for ObjectReference.SetValues command: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> --> Debuggee: SetValuesDebuggee: START
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/SetValuesDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValuesDebuggee
+=> referenceTypeID for Debuggee class = 1000000705
+=> Send ReferenceType::Fields command and get field ID(s)
+=> Returned fields number = 10
+
+=> Field ID: 584619976
+=> Field name: setValuesDebuggeeObject
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/SetValuesDebuggee;
+=> Field modifiers: 0x8
+
+=> Field ID: 584620040
+=> Field name: passedStatus
+=> Field signature: Ljava/lang/String;
+=> Field modifiers: 0x8
+
+=> Field ID: 584620104
+=> Field name: failedStatus
+=> Field signature: Ljava/lang/String;
+=> Field modifiers: 0x8
+
+=> Field ID: 584620168
+=> Field name: status
+=> Field signature: Ljava/lang/String;
+=> Field modifiers: 0x8
+
+=> Field ID: 584620232
+=> Field name: staticIntField
+=> Field signature: I
+=> Field modifiers: 0x8
+
+=> Field ID: 584620296
+=> Field name: finalIntField
+=> Field signature: I
+=> Field modifiers: 0x10
+
+=> Field ID: 584620360
+=> Field name: privateIntField
+=> Field signature: I
+=> Field modifiers: 0x2
+
+=> Field ID: 584620424
+=> Field name: objectField
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/SetValuesDebuggee;
+=> Field modifiers: 0x0
+
+=> Field ID: 584620488
+=> Field name: longField
+=> Field signature: J
+=> Field modifiers: 0x0
+
+=> Field ID: 584620552
+=> Field name: intField
+=> Field signature: I
+=> Field modifiers: 0x0
+
+=> Expected fields were found and field IDs were got
+=> Send ReferenceType::GetValues command and and get ObjectID to check...
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+=> Returned values number = 1
+=> Returned field value tag for checked object= 76(OBJECT_TAG)
+=> Returned checked ObjectID = 1187
+=> CHECK: send ObjectReference.SetValues command for this ObjectID and check reply...
+=> Reply was received without any Errors
+=> Wait for Debuggee's status about check for set fields...
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: PASSED
+[SYNC] Received message: PASSED
+=> testSetValues001: Debuggee returned status PASSED
+==> testSetValues001 for ObjectReference.SetValues command: FINISH
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Debuggee: SetValuesDebuggee: CHECK for set fields...
+STDOUT> 
+STDOUT> --> intField value = 1111
+STDOUT> --> Debuggee: PASSED: Expected value
+STDOUT> 
+STDOUT> --> longField value = 22222222
+STDOUT> --> Debuggee: PASSED: Expected value
+STDOUT> 
+STDOUT> --> objectField value = org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValuesDebuggee@4ac0ca3
+STDOUT> --> Debuggee: PASSED: Expected value
+STDOUT> 
+STDOUT> --> staticIntField value = 5555
+STDOUT> --> Debuggee: PASSED: Expected value
+STDOUT> 
+STDOUT> --> privateIntField value = 7777
+STDOUT> --> Debuggee: PASSED: Expected value
+STDOUT> 
+STDOUT> --> finalIntField value = 12345
+STDOUT> --> Debuggee: PASSED: Expected value
+STDOUT> 
+STDOUT> --> Debuggee: Check status = PASSED
+STDOUT> --> Debuggee: Send check status for SetValuesTest...
+STDOUT> 
+STDOUT> [SYNC] Message sent: PASSED
+STDOUT> --> Debuggee: SetValuesDebuggee: FINISH
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

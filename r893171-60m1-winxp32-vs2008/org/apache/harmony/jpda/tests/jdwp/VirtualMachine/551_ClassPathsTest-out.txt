@@ -1,0 +1,110 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.VirtualMachine.ClassPathsTest.testClassPaths001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3945
+Start listening on: null
+Listening on: IBM-L3XANCF:3946
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3946,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3945 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3946,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3945 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3946,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3945, org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3945
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+	request class paths
+baseDir = D:\workingcopy\hy6\build\test_report
+classpaths = 5
+	D:\workingcopy\hy6\working_jdktools\build\tests\classes
+	D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar
+	D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar
+	D:\tools\apache-ant-1.7.1\lib\ant.jar
+	D:\tools\apache-ant-1.7.1\lib\ant-junit.jar
+bootclasspaths = 50
+	d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\gc_gen.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\kernel.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\vmmagic-20070207.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\antlr-2.7.5.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\accessibility.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\annotation.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\applet.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\archive.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\auth.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\awt.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\beans.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\concurrent.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\crypto.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\imageio.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\instrument.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\jndi.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\lang-management.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\logging.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\luni.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\math.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\nio.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\nio_char.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\prefs.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\print.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\regex.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\rmi.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\security.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\sound.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\sql.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\swing.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\text.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\x-net.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\icu4j_4.2.1\icu4j-4_2_1.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\icu4j_4.2.1\icu4j-charsets-4_2_1.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\xalan-j_2.7.0\xalan.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\xerces_2.9.1\resolver.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\xerces_2.9.1\xercesimpl.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\xerces_2.9.1\xml-apis.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\mx4j_3.0.2\mx4j.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\mx4j_3.0.2\mx4j-remote.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\misc.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\yoko-1.0\yoko.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\yoko-1.0\yoko-core.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\yoko-1.0\yoko-rmi-spec.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\yoko-1.0\yoko-rmi-impl.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\bcel-5.2\bcel-5.2.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\pack200.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\asm-3.1\asm-3.1.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\bsf-3.0-beta3\bsf-api.jar
+	d:\workingcopy\hy6\target\hdk\jdk\jre\lib\boot\axis2-1.3\axis2-saaj-api-1.3.jar
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Message sent: ready
+STDOUT> Hello World
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

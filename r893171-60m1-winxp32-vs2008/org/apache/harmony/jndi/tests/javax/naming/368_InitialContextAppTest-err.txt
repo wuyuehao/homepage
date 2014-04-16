@@ -1,0 +1,12 @@
+Uncaught exception in Thread-64:
+junit.framework.AssertionFailedError: D:\workingcopy\hy6\working_classlib\deploy\build\test\jndi\src\test\resources\test1\jndi.properties
+	at junit.framework.Assert.fail(Assert.java:47)
+	at org.apache.harmony.jndi.tests.javax.naming.InitialContextAppTest$1.run(InitialContextAppTest.java:106)
+	at java.lang.Thread.run(Thread.java:669)
+java.io.FileNotFoundException: D:\workingcopy\hy6\working_classlib\deploy\build\test\jndi\src\test\resources\test2\jndi.properties
+	at org.apache.harmony.luni.platform.OSFileSystem.open(OSFileSystem.java:240)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:96)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:67)
+	at org.apache.harmony.jndi.tests.javax.naming.InitialContextAppTest$2.run(InitialContextAppTest.java:130)
+	at java.lang.Thread.run(Thread.java:669)
+

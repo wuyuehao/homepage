@@ -1,0 +1,107 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEvents002Test.testCombinedEvents002_01
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4728
+Start listening on: null
+Listening on: IBM-L3XANCF:4729
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4729,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4728 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEvents002Debuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4729,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4728 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEvents002Debuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4729,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4728, org.apache.harmony.jpda.tests.jdwp.Events.CombinedEvents002Debuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4728
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testCombinedEvents002_01: Start...
+==> Wait for SGNL_READY signal from debuggee...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> --> CombinedEvents002Debuggee: Start...
+STDOUT> --> CombinedEvents002Debuggee: Send SGNL_READY signal to test...
+[SYNC] Received message: ready
+==> OK - SGNL_READY signal received!
+==> Tested Class Name = 'org.apache.harmony.jpda.tests.jdwp.Events.CombinedEvents002Debuggee_TestedClass'
+==> testedClassID = 1000000560
+==> 
+==> Info for tested method 'emptyTestedMethod':
+STDOUT> [SYNC] Message sent: ready
+STDOUT> --> CombinedEvents002Debuggee: Wait for SGNL_CONTINUE signal from test...
+STDOUT> [SYNC] Waiting for message: continue
+==> testedMethodID = 591079404
+=== Line Table for method: emptyTestedMethod ===
+==> Method Start Code Index = 0
+==> Method End Code Index = 0
+==> Number of lines = 1
+====> Line Number 68 : Initial code index = 0
+=== End of Line Table emptyTestedMethod ===
+==> 
+==> Set request for METHOD_ENTRY event for 'org.apache.harmony.jpda.tests.jdwp.Events.CombinedEvents002Debuggee_TestedClass'... 
+==> OK - request for METHOD_ENTRY event is set!
+==> Set request for METHOD_EXIT event for 'org.apache.harmony.jpda.tests.jdwp.Events.CombinedEvents002Debuggee_TestedClass'... 
+==> OK - request for METHOD_EXIT event is set!
+==> Send SGNL_CONTINUE signal to debuggee...
+[SYNC] Message sent: continue
+==> 
+==> Receiving events... 
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> CombinedEvents002Debuggee: OK - SGNL_CONTINUE signal received!
+STDOUT> --> CombinedEvents002Debuggee: Call CombinedEvents002Debuggee_TestedClass.emptyTestedMethod()...
+==> Number of received events in event packet = 1
+==> Received event[0] kind = 40(METHOD_ENTRY)
+==> 
+==> Check received event #1...
+==> ClassID in event = 1000000560
+==> OK - it is expected ClassID (testedClassID)
+==> MethodID in event = 591079404
+==> OK - it is expected MethodID (testedMethodID)
+==> CodeIndex in event = 0
+==> OK - it is expected CodeIndex (testedMethodStartCodeIndex)
+==> 
+==> Resume debuggee VM...
+==> Receiving events... 
+==> Number of received events in event packet = 1
+==> Received event[0] kind = 41(METHOD_EXIT)
+==> 
+==> Check received event #2...
+==> ClassID in event = 1000000560
+==> OK - it is expected ClassID (testedClassID)
+==> MethodID in event = 591079404
+==> OK - it is expected MethodID (testedMethodID)
+==> CodeIndex in event = 0
+==> OK - it is expected CodeIndex (testedMethodEndCodeIndex)
+==> Resume debuggee VM...
+STDOUT> --> CombinedEvents002Debuggee: CombinedEvents002Debuggee_TestedClass.emptyTestedMethod() returned.
+STDOUT> --> CombinedEvents002Debuggee: Finishing...
+STDOUT> [SYNC] Closed socket
+==> testCombinedEvents002_01: PASSED! 
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDERR> 03:42:40.546  INFO: [RequestManager.cpp:1800] JDWP error in METHOD_ENTRY: 31
+STDERR> 03:42:40.546  INFO: [RequestManager.cpp:1966] JDWP error in METHOD_EXIT: 31
+STDERR> 03:42:40.546  INFO: [RequestManager.cpp:2057] JDWP error in METHOD_EXIT_WITH_RETURN_VALUE: 31
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

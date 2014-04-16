@@ -1,0 +1,5 @@
+Uncaught exception in Timer-62:
+java.lang.RuntimeException: task failure!
+	at org.apache.harmony.luni.tests.java.util.TimerTest$1.run(TimerTest.java:1195)
+	at java.util.Timer$TimerImpl.run(Timer.java:289)
+

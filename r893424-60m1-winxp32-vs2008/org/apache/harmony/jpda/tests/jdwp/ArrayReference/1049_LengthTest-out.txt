@@ -1,0 +1,59 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ArrayReference.LengthTest.testLength001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4533
+Start listening on: null
+Listening on: IBM-L3XANCF:4534
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4534,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4533 org.apache.harmony.jpda.tests.jdwp.ArrayReference.ArrayReferenceDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4534,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4533 org.apache.harmony.jpda.tests.jdwp.ArrayReference.ArrayReferenceDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4534,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4533, org.apache.harmony.jpda.tests.jdwp.ArrayReference.ArrayReferenceDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4533
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+testLength001 started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -- ArrayReferenceDebuggee: STARTED ...
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ArrayReference/ArrayReferenceDebuggee;
+=> Returned number of classes: 1
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+arrayID = 1380
+arrayID = 1394
+arrayID = 1434
+test PASSED!
+STDOUT> [SYNC] Received message: continue
+STDOUT> -- ArrayReferenceDebuggee: FINISHing ...
+STDOUT> [SYNC] Closed socket
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

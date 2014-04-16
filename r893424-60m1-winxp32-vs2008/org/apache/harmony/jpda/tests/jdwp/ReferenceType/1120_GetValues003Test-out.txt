@@ -1,0 +1,68 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ReferenceType.GetValues003Test.testGetValues003
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1083
+Start listening on: null
+Listening on: IBM-L3XANCF:1084
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1084,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1083 org.apache.harmony.jpda.tests.jdwp.ReferenceType.GetValues003Debuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1084,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1083 org.apache.harmony.jpda.tests.jdwp.ReferenceType.GetValues003Debuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1084,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1083, org.apache.harmony.jpda.tests.jdwp.ReferenceType.GetValues003Debuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1083
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testGetValues003 for ReferenceType.GetValues command: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> --> Debuggee: GetValues003Debuggee: START
+[SYNC] Received message: ready
+
+=> Get debuggeeRefTypeID for debuggee class = org.apache.harmony.jpda.tests.jdwp.ReferenceType.GetValues003Debuggee...
+=> debuggeeRefTypeID = 1000000265
+
+=> Get superClassCheckedFieldID for field of debuggee class...
+=> superClassCheckedFieldID = 591004216
+
+=> Get chekedClassRefTypeID for chekedClass class = RFGetValues003CheckedClass...
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+=> chekedClassRefTypeID = 1000000310
+
+=> CHECK ReferenceType::GetValues command for chekedClassRefTypeID, superClassCheckedFieldID...
+=> Returned value tag = 73(INT_TAG)
+=> Returned value = 99
+=> CHECK PASSED: Expected value is returned!
+[SYNC] Message sent: continue
+==> testGetValues003 for ReferenceType::GetValues command: FINISH
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Debuggee: GetValues003Debuggee: FINISH
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

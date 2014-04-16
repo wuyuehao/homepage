@@ -1,0 +1,228 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.StackFrame.GetValuesTest.testGetValues001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1144
+Start listening on: null
+Listening on: IBM-L3XANCF:1145
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1145,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1144 org.apache.harmony.jpda.tests.jdwp.StackFrame.StackTraceDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1145,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1144 org.apache.harmony.jpda.tests.jdwp.StackFrame.StackTraceDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1145,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1144, org.apache.harmony.jpda.tests.jdwp.StackFrame.StackTraceDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1144
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testGetValues001 started...
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: main
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+[SYNC] Received message: ready
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+[SYNC] Received message: ready
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.StackFrame.StackTraceDebuggee
+=> referenceTypeID for Debuggee class = 1000000374
+=> testedThreadID = 1164
+=> frames count = 12
+STDOUT> boolLocalVariable = true
+STDOUT> intLocalVariable = -512
+STDOUT> strLocalVariable = test string
+
+
+=> method name = write
+=> methodID = 582518984
+=> frameID = 1
+
+
+
+
+=> method name = write
+=> methodID = 591469868
+=> frameID = 2
+
+
+
+
+=> method name = write
+=> methodID = 591797340
+=> frameID = 3
+
+
+
+
+=> method name = write
+=> methodID = 592174844
+=> frameID = 4
+
+
+
+
+=> method name = writeUTF
+=> methodID = 592177028
+=> frameID = 5
+
+
+
+
+=> method name = sendMessage
+=> methodID = 591113500
+=> frameID = 6
+
+
+
+
+=> method name = nestledMethod3
+=> methodID = 590978892
+=> frameID = 7
+
+
+
+
+=> method name = nestledMethod2
+=> methodID = 590978736
+=> frameID = 8
+
+
+
+
+=> method name = nestledMethod1
+=> methodID = 590978580
+=> frameID = 9
+
+
+
+
+=> method name = run
+=> methodID = 590978424
+=> frameID = 10
+
+
+
+
+=> method name = runDebuggee
+=> methodID = 584710384
+=> frameID = 11
+
+
+
+
+=> method name = main
+=> methodID = 590978268
+=> frameID = 12
+
+
+=> Tested method is found
+=> method name = nestledMethod3
+=> methodID = 590978892
+=> frameID = 7
+
+=> Getting Variable Table...
+==> Number of variables = 4
+
+=> Name = this
+=> Slot = 0
+=> Sign = Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+
+
+=> Name = boolLocalVariable
+=> Slot = 1
+=> Sign = Z
+
+
+=> Name = intLocalVariable
+=> Slot = 2
+=> Sign = I
+
+
+=> Name = strLocalVariable
+=> Slot = 3
+=> Sign = Ljava/lang/String;
+
+=> Variable table check passed.
+
+=> Send StackFrame::GetValues command...
+=> Thread: 1164
+=> Frame: 7
+
+=> For variable #0:
+=> Slot = 0
+=> Tag = OBJECT_TAG
+
+
+=> For variable #1:
+=> Slot = 1
+=> Tag = BOOLEAN_TAG
+
+
+=> For variable #2:
+=> Slot = 2
+=> Tag = INT_TAG
+
+
+=> For variable #3:
+=> Slot = 3
+=> Tag = STRING_TAG
+
+=> Number of values = 4
+=> Values of variables: 
+=> Tag is correct
+
+=>Tag is correct
+=> boolLocalVariable = true
+
+=>Tag is correct
+=> intLocalVariable = -512
+
+=>Tag is correct
+=> intLocalVariable = test string
+
+[SYNC] Message sent: continue
+==> testGetValues001 - OK.
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

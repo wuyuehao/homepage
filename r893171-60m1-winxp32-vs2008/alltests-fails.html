@@ -1,0 +1,107 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Unit Test Results: All Failures</title>
+<link rel="stylesheet" type="text/css" title="Style" href="stylesheet.css">
+</head>
+<body onload="open('allclasses-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>All Failures</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap="nowrap">Time(s)</th>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/archive/tests/java/util/jar/134_JarExecTest.html">JarExecTest</a></td><td><a name="test_classpath"></a><a href="org/apache/harmony/archive/tests/java/util/jar/134_JarExecTest.html#test_classpath">test_classpath</a></td><td>Failure</td><td>Error executing class from ClassPath : result returned was incorrect.<br>
+<br>
+<code>junit.framework.AssertionFailedError: Error executing class from ClassPath : result returned was incorrect.<br/>	at org.apache.harmony.archive.tests.java.util.jar.JarExecTest.test_classpath(JarExecTest.java:190)<br/>	at java.lang.reflect.VMReflection.invokeMethod(VMReflection.java)<br/></code></td><td>0.312</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/798_MulticastSocketTest.html">MulticastSocketTest</a></td><td><a name="test_joinGroupLjava_net_InetAddress"></a><a href="org/apache/harmony/luni/tests/java/net/798_MulticastSocketTest.html#test_joinGroupLjava_net_InetAddress">test_joinGroupLjava_net_InetAddress</a></td><td>Failure</td><td>Group member did not recv data expected:&lt;[Hello World]&gt; but was:&lt;[&#65533;]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: Group member did not recv data expected:<[Hello World]> but was:<[?]><br/>	at org.apache.harmony.luni.tests.java.net.MulticastSocketTest.test_joinGroupLjava_net_InetAddress(MulticastSocketTest.java:344)<br/>	at java.lang.reflect.VMReflection.invokeMethod(VMReflection.java)<br/></code></td><td>2.031</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/798_MulticastSocketTest.html">MulticastSocketTest</a></td><td><a name="test_sendLjava_net_DatagramPacketB"></a><a href="org/apache/harmony/luni/tests/java/net/798_MulticastSocketTest.html#test_sendLjava_net_DatagramPacketB">test_sendLjava_net_DatagramPacketB</a></td><td>Failure</td><td>Failed to send data. Received 512 expected:&lt;[Hello World]&gt; but was:&lt;[&#65533;]&gt;<br>
+<br>
+<code>junit.framework.ComparisonFailure: Failed to send data. Received 512 expected:<[Hello World]> but was:<[?]><br/>	at org.apache.harmony.luni.tests.java.net.MulticastSocketTest.test_sendLjava_net_DatagramPacketB(MulticastSocketTest.java:730)<br/>	at java.lang.reflect.VMReflection.invokeMethod(VMReflection.java)<br/></code></td><td>1.219</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/798_MulticastSocketTest.html">MulticastSocketTest</a></td><td><a name="test_setInterfaceLjava_net_InetAddress"></a><a href="org/apache/harmony/luni/tests/java/net/798_MulticastSocketTest.html#test_setInterfaceLjava_net_InetAddress">test_setInterfaceLjava_net_InetAddress</a></td><td>Failure</td><td>Exception during test : null<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception during test : null<br/>	at org.apache.harmony.luni.tests.java.net.SocketTestCase.handleException(SocketTestCase.java:116)<br/>	at org.apache.harmony.luni.tests.java.net.MulticastSocketTest.test_setInterfaceLjava_net_InetAddress(MulticastSocketTest.java:747)<br/>	at java.lang.reflect.VMReflection.invokeMethod(VMReflection.java)<br/></code></td><td>0.016</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getName"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getName">test_getName</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getInetAddresses"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getInetAddresses">test_getInetAddresses</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.015</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getDisplayName"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getDisplayName">test_getDisplayName</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getByNameLjava_lang_String"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getByNameLjava_lang_String">test_getByNameLjava_lang_String</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.016</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getByInetAddressLjava_net_InetAddress"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getByInetAddressLjava_net_InetAddress">test_getByInetAddressLjava_net_InetAddress</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getNetworkInterfaces"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getNetworkInterfaces">test_getNetworkInterfaces</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.015</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_equalsLjava_lang_Object"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_equalsLjava_lang_Object">test_equalsLjava_lang_Object</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_hashCode"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_hashCode">test_hashCode</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_toString"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_toString">test_toString</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getInterfaceAddresses"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getInterfaceAddresses">test_getInterfaceAddresses</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_isLoopback"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_isLoopback">test_isLoopback</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.015</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getHardwareAddress"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getHardwareAddress">test_getHardwareAddress</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html">NetworkInterfaceTest</a></td><td><a name="test_getMTU"></a><a href="org/apache/harmony/luni/tests/java/net/800_NetworkInterfaceTest.html#test_getMTU">test_getMTU</a></td><td>Failure</td><td>Exception occurred getting network interfaces : java.lang.NullPointerException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Exception occurred getting network interfaces : java.lang.NullPointerException<br/>	at org.apache.harmony.luni.tests.java.net.NetworkInterfaceTest.setUp(NetworkInterfaceTest.java:496)<br/></code></td><td>0.000</td>
+</tr>
+</table>
+</body>
+</html>

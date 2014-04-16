@@ -1,0 +1,89 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValues002Test.testSetValues002
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3644
+Start listening on: null
+Listening on: IBM-L3XANCF:3645
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3645,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3644 org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValues002Debuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3645,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3644 org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValues002Debuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3645,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3644, org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValues002Debuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3644
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testSetValues002 for ObjectReference.SetValues command: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> --> Debuggee: SetValues002Debuggee: START
+STDOUT> 
+STDOUT> --> Debuggee: SetValues002Debuggee: Before ObjectReference::SetValues command:
+STDOUT> --> objectField value = null
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/SetValues002Debuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.ObjectReference.SetValues002Debuggee
+=> referenceTypeID for Debuggee class = 1000000369
+=> Send ReferenceType::Fields command and get field ID(s)
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+=> Returned fields number = 2
+
+=> Field ID: 590990240
+=> Field name: setValues002DebuggeeObject
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/SetValues002Debuggee;
+=> Field modifiers: 0x8
+
+=> Field ID: 590990304
+=> Field name: objectField
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/SetValues002Debuggee;
+=> Field modifiers: 0x0
+
+=> Expected fields were found and field IDs were got
+=> Send ReferenceType::GetValues command and get ObjectID to check...
+=> Returned values number = 1
+=> Returned field value tag for checked object= 76(OBJECT_TAG)
+=> Returned checked ObjectID = 1201
+=> CHECK: send ObjectReference.SetValues command for this ObjectID with value which is unknown objectID: INVALID_OBJECT error is expected...
+=> unknown objectID = 1301
+=> CHECK PASSED: Expected error (INVALID_OBJECT) is returned
+=> Wait for Debuggee to check for set field...
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+==> testSetValues002 for ObjectReference.SetValues command: FINISH
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> 
+STDOUT> --> Debuggee: SetValues002Debuggee: After ObjectReference::SetValues command:
+STDOUT> --> objectField value = null
+STDOUT> [SYNC] Message sent: ready
+STDOUT> --> Debuggee: SetValues002Debuggee: FINISH
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

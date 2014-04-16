@@ -1,0 +1,64 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.MultiSession.ListenConnectorTest.testListenConnector
+----------------------------------------
+LISTEN connector kind
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1481
+Start listening on: null
+Listening on: IBM-L3XANCF:1482
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1482,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1481 org.apache.harmony.jpda.tests.jdwp.MultiSession.ConnectorKindDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1482,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1481 org.apache.harmony.jpda.tests.jdwp.MultiSession.ConnectorKindDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1482,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1481, org.apache.harmony.jpda.tests.jdwp.MultiSession.ConnectorKindDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1481
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+description	= JVM version 1.5.0 (DRLVM, no info, 11.2.0)
+jdwpMajor	= 1
+jdwpMinor	= 6
+vmVersion	= 1.5.0
+vmName		= DRLVM
+CHECK PASSED
+System property: null
+[SYNC] Message sent: stop
+[SYNC] Waiting for message: END
+STDOUT> [SYNC] Message sent: ready
+STDOUT> Hello World ---- 0
+STDOUT> [SYNC] Waiting for any messsage
+[SYNC] Received message: END
+==> testListenConnector001 PASSED!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Received message: stop
+STDOUT> [SYNC] Message sent: END
+STDOUT> Debuggee ended
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

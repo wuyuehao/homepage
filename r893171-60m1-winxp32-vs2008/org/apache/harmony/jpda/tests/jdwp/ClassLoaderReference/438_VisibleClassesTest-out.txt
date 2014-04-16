@@ -1,0 +1,65 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ClassLoaderReference.VisibleClassesTest.testVisibleClasses001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3111
+Start listening on: null
+Listening on: IBM-L3XANCF:3112
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3112,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3111 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3112,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3111 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3112,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3111, org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3111
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+Number of reference types = 494
+0.  refTypeTag = CLASS(1);  referenceTypeID = 1000000672
+1.  refTypeTag = CLASS(1);  referenceTypeID = 1000000565
+2.  refTypeTag = CLASS(1);  referenceTypeID = 1000000854
+3.  refTypeTag = CLASS(1);  referenceTypeID = 1000000784
+4.  refTypeTag = CLASS(1);  referenceTypeID = 1000000551
+...
+...
+...
+489.  refTypeTag = CLASS(1);  referenceTypeID = 1000000855
+490.  refTypeTag = CLASS(1);  referenceTypeID = 1000000302
+491.  refTypeTag = CLASS(1);  referenceTypeID = 1000000312
+492.  refTypeTag = CLASS(1);  referenceTypeID = 1000000217
+493.  refTypeTag = CLASS(1);  referenceTypeID = 1000001408
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Message sent: ready
+STDOUT> Hello World
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

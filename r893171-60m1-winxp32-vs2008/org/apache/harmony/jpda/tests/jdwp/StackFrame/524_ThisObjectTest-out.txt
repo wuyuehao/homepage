@@ -1,0 +1,225 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.StackFrame.ThisObjectTest.testThisObjectTest001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3785
+Start listening on: null
+Listening on: IBM-L3XANCF:3786
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3786,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3785 org.apache.harmony.jpda.tests.jdwp.StackFrame.StackTraceDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3786,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3785 org.apache.harmony.jpda.tests.jdwp.StackFrame.StackTraceDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3786,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3785, org.apache.harmony.jpda.tests.jdwp.StackFrame.StackTraceDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3785
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> ThisObjectTestTest001 started
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: main
+==> Searching for main thread by name: main
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+==> Found main thread: 1164
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+[SYNC] Message sent: continue
+[SYNC] Waiting for message: ready
+[SYNC] Received message: ready
+==> Suspending main thread
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> boolLocalVariable = true
+STDOUT> intLocalVariable = -512
+STDOUT> strLocalVariable = test string
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+==> Getting frames count
+==> frames count = 13
+==> Getting frames
+==> frames count = 13
+
+==> frame #0
+==> frameID=1
+==> method name=read
+==> method signature=(Ljava.io.FileDescriptor;[BIII)
+==> class signature=Lorg/apache/harmony/luni/platform/OSNetworkSystem;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=0
+
+==> frame #1
+==> frameID=2
+==> method name=read
+==> method signature=([BII)
+==> class signature=Lorg/apache/harmony/luni/net/PlainSocketImpl;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1027
+==> class=Lorg/apache/harmony/luni/net/PlainSocketImpl;
+
+==> frame #2
+==> frameID=3
+==> method name=read
+==> method signature=([BII)
+==> class signature=Lorg/apache/harmony/luni/net/SocketInputStream;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1884
+==> class=Lorg/apache/harmony/luni/net/SocketInputStream;
+
+==> frame #3
+==> frameID=4
+==> method name=readToBuff
+==> method signature=(I)
+==> class signature=Ljava/io/DataInputStream;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1869
+==> class=Ljava/io/DataInputStream;
+
+==> frame #4
+==> frameID=5
+==> method name=readUnsignedShort
+==> method signature=()
+==> class signature=Ljava/io/DataInputStream;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1869
+==> class=Ljava/io/DataInputStream;
+
+==> frame #5
+==> frameID=6
+==> method name=readUTF
+==> method signature=()
+==> class signature=Ljava/io/DataInputStream;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1869
+==> class=Ljava/io/DataInputStream;
+
+==> frame #6
+==> frameID=7
+==> method name=receiveMessage
+==> method signature=(Ljava.lang.String;)
+==> class signature=Lorg/apache/harmony/jpda/tests/share/JPDADebuggeeSynchronizer;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1439
+==> class=Lorg/apache/harmony/jpda/tests/share/JPDADebuggeeSynchronizer;
+
+==> frame #7
+==> frameID=8
+==> method name=nestledMethod3
+==> method signature=()
+==> class signature=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1425
+==> class=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+==> frame for known method: nestledMethod3
+
+==> frame #8
+==> frameID=9
+==> method name=nestledMethod2
+==> method signature=()
+==> class signature=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1425
+==> class=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+==> frame for known method: nestledMethod2
+
+==> frame #9
+==> frameID=10
+==> method name=nestledMethod1
+==> method signature=()
+==> class signature=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1425
+==> class=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+==> frame for known method: nestledMethod1
+
+==> frame #10
+==> frameID=11
+==> method name=run
+==> method signature=()
+==> class signature=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=1425
+==> class=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+
+==> frame #11
+==> frameID=12
+==> method name=runDebuggee
+==> method signature=(Ljava.lang.Class;)
+==> class signature=Lorg/apache/harmony/jpda/tests/share/Debuggee;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=0
+
+==> frame #12
+==> frameID=13
+==> method name=main
+==> method signature=([Ljava.lang.String;)
+==> class signature=Lorg/apache/harmony/jpda/tests/jdwp/StackFrame/StackTraceDebuggee;
+==> Send StackFrame::ThisObject command...
+==> thisObject:
+==> tag=76(OBJECT_TAG)
+==> id=0
+==> frame for method: main
+==> Resuming main thread
+[SYNC] Message sent: continue
+==> ThisObjectTestTest001 finished
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

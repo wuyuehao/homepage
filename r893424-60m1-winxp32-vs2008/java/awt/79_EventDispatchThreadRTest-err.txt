@@ -1,0 +1,9 @@
+java.lang.RuntimeException: expected from EDT
+	at java.awt.EventDispatchThreadRTest$1.run(EventDispatchThreadRTest.java:33)
+	at java.awt.event.InvocationEvent.runAndNotify(InvocationEvent.java:89)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:77)
+	at java.awt.EventQueueCore.dispatchEventImpl(EventQueueCore.java:137)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:143)
+	at java.awt.EventDispatchThread.runModalLoop(EventDispatchThread.java:75)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:49)
+

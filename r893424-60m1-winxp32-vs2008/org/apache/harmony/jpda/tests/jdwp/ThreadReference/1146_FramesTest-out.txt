@@ -1,0 +1,462 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesTest.testFrames005
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1239
+Start listening on: null
+Listening on: IBM-L3XANCF:1240
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1240,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1239 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1240,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1239 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1240,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1239, org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1239
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testFrames005 START 
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> 	invoke tested method: depth=1
+STDOUT> 	invoke tested method: depth=2
+STDOUT> 	invoke tested method: depth=3
+STDOUT> 	invoke tested method: depth=4
+STDOUT> 	invoke tested method: depth=5
+STDOUT> 	invoke tested method: depth=6
+STDOUT> 	invoke tested method: depth=7
+STDOUT> 	invoke tested method: depth=8
+STDOUT> 	invoke tested method: depth=9
+STDOUT> 	sending SGNL_READY signal
+[SYNC] Received message: main
+==> testedThreadName = |main|
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+==> threadID = 1164
+startFrame=0; length=-1
+framesCount=20
+	0. frameID=1 - Lorg/apache/harmony/luni/platform/OSNetworkSystem;read(-1)
+	1. frameID=2 - Lorg/apache/harmony/luni/net/PlainSocketImpl;read(24)
+	2. frameID=3 - Lorg/apache/harmony/luni/net/SocketInputStream;read(79)
+	3. frameID=4 - Ljava/io/DataInputStream;readToBuff(17)
+	4. frameID=5 - Ljava/io/DataInputStream;readUnsignedShort(2)
+	5. frameID=6 - Ljava/io/DataInputStream;readUTF(2)
+	6. frameID=7 - Lorg/apache/harmony/jpda/tests/share/JPDADebuggeeSynchronizer;receiveMessage(27)
+	7. frameID=8 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(83)
+	8. frameID=9 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	9. frameID=10 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	10. frameID=11 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	11. frameID=12 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	12. frameID=13 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	13. frameID=14 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	14. frameID=15 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	15. frameID=16 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	16. frameID=17 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	17. frameID=18 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;run(10)
+	18. frameID=19 - Lorg/apache/harmony/jpda/tests/share/Debuggee;runDebuggee(47)
+	19. frameID=20 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;main(2)
+startFrame=0; length=21
+	threadID=1164 - INVALID_LENGTH
+Caught expected error - INVALID_LENGTH(504)
+==> testFrames005 OK. 
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesTest.testFrames004
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1243
+Start listening on: null
+Listening on: IBM-L3XANCF:1244
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1244,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1243 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1244,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1243 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1244,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1243, org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1243
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testFrames004 START 
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> 	invoke tested method: depth=1
+STDOUT> 	invoke tested method: depth=2
+STDOUT> 	invoke tested method: depth=3
+STDOUT> 	invoke tested method: depth=4
+STDOUT> 	invoke tested method: depth=5
+STDOUT> 	invoke tested method: depth=6
+STDOUT> 	invoke tested method: depth=7
+STDOUT> 	invoke tested method: depth=8
+STDOUT> 	invoke tested method: depth=9
+STDOUT> 	sending SGNL_READY signal
+[SYNC] Received message: main
+==> testedThreadName = |main|
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+==> threadID = 1164
+startFrame=0; length=-1
+framesCount=20
+	0. frameID=1 - Lorg/apache/harmony/luni/platform/OSNetworkSystem;read(-1)
+	1. frameID=2 - Lorg/apache/harmony/luni/net/PlainSocketImpl;read(24)
+	2. frameID=3 - Lorg/apache/harmony/luni/net/SocketInputStream;read(79)
+	3. frameID=4 - Ljava/io/DataInputStream;readToBuff(17)
+	4. frameID=5 - Ljava/io/DataInputStream;readUnsignedShort(2)
+	5. frameID=6 - Ljava/io/DataInputStream;readUTF(2)
+	6. frameID=7 - Lorg/apache/harmony/jpda/tests/share/JPDADebuggeeSynchronizer;receiveMessage(27)
+	7. frameID=8 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(83)
+	8. frameID=9 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	9. frameID=10 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	10. frameID=11 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	11. frameID=12 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	12. frameID=13 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	13. frameID=14 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	14. frameID=15 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	15. frameID=16 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	16. frameID=17 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	17. frameID=18 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;run(10)
+	18. frameID=19 - Lorg/apache/harmony/jpda/tests/share/Debuggee;runDebuggee(47)
+	19. frameID=20 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;main(2)
+startFrame=21; length=-1
+	threadID=1164 - INVALID_INDEX
+Caught expected error - INVALID_INDEX(503)
+==> testFrames004 OK. 
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesTest.testFrames003
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1247
+Start listening on: null
+Listening on: IBM-L3XANCF:1248
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1248,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1247 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1248,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1247 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1248,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1247, org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1247
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testFrames003 START 
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> 	invoke tested method: depth=1
+STDOUT> 	invoke tested method: depth=2
+STDOUT> 	invoke tested method: depth=3
+STDOUT> 	invoke tested method: depth=4
+STDOUT> 	invoke tested method: depth=5
+STDOUT> 	invoke tested method: depth=6
+STDOUT> 	invoke tested method: depth=7
+STDOUT> 	invoke tested method: depth=8
+STDOUT> 	invoke tested method: depth=9
+STDOUT> 	sending SGNL_READY signal
+[SYNC] Received message: main
+==> testedThreadName = |main|
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+==> threadID = 1164
+startFrame=0; length=-1
+framesCount=20
+	0. frameID=1 - Lorg/apache/harmony/luni/platform/OSNetworkSystem;read(-1)
+	1. frameID=2 - Lorg/apache/harmony/luni/net/PlainSocketImpl;read(24)
+	2. frameID=3 - Lorg/apache/harmony/luni/net/SocketInputStream;read(79)
+	3. frameID=4 - Ljava/io/DataInputStream;readToBuff(17)
+	4. frameID=5 - Ljava/io/DataInputStream;readUnsignedShort(2)
+	5. frameID=6 - Ljava/io/DataInputStream;readUTF(2)
+	6. frameID=7 - Lorg/apache/harmony/jpda/tests/share/JPDADebuggeeSynchronizer;receiveMessage(27)
+	7. frameID=8 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(83)
+	8. frameID=9 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	9. frameID=10 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	10. frameID=11 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	11. frameID=12 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	12. frameID=13 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	13. frameID=14 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	14. frameID=15 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	15. frameID=16 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	16. frameID=17 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	17. frameID=18 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;run(10)
+	18. frameID=19 - Lorg/apache/harmony/jpda/tests/share/Debuggee;runDebuggee(47)
+	19. frameID=20 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;main(2)
+startFrame=20; length=-1
+framesCount=0
+empty set of frames is returned
+==> testFrames003 OK. 
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesTest.testFrames002
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1251
+Start listening on: null
+Listening on: IBM-L3XANCF:1252
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1252,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1251 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1252,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1251 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1252,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1251, org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1251
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testFrames002 START 
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> 	invoke tested method: depth=1
+STDOUT> 	invoke tested method: depth=2
+[SYNC] Received message: main
+==> testedThreadName = |main|
+STDOUT> 	invoke tested method: depth=3
+STDOUT> 	invoke tested method: depth=4
+STDOUT> 	invoke tested method: depth=5
+STDOUT> 	invoke tested method: depth=6
+STDOUT> 	invoke tested method: depth=7
+STDOUT> 	invoke tested method: depth=8
+STDOUT> 	invoke tested method: depth=9
+STDOUT> 	sending SGNL_READY signal
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+==> threadID = 1164
+startFrame=0; length=-1
+framesCount=20
+	0. frameID=1 - Lorg/apache/harmony/luni/platform/OSNetworkSystem;read(-1)
+	1. frameID=2 - Lorg/apache/harmony/luni/net/PlainSocketImpl;read(24)
+	2. frameID=3 - Lorg/apache/harmony/luni/net/SocketInputStream;read(79)
+	3. frameID=4 - Ljava/io/DataInputStream;readToBuff(17)
+	4. frameID=5 - Ljava/io/DataInputStream;readUnsignedShort(2)
+	5. frameID=6 - Ljava/io/DataInputStream;readUTF(2)
+	6. frameID=7 - Lorg/apache/harmony/jpda/tests/share/JPDADebuggeeSynchronizer;receiveMessage(27)
+	7. frameID=8 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(83)
+	8. frameID=9 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	9. frameID=10 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	10. frameID=11 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	11. frameID=12 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	12. frameID=13 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	13. frameID=14 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	14. frameID=15 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	15. frameID=16 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	16. frameID=17 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	17. frameID=18 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;run(10)
+	18. frameID=19 - Lorg/apache/harmony/jpda/tests/share/Debuggee;runDebuggee(47)
+	19. frameID=20 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;main(2)
+startFrame=7; length=10
+framesCount=10
+	7. frameID=8 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(83)
+	8. frameID=9 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	9. frameID=10 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	10. frameID=11 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	11. frameID=12 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	12. frameID=13 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	13. frameID=14 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	14. frameID=15 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	15. frameID=16 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	16. frameID=17 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+[SYNC] Message sent: continue
+==> testFrames002 OK. 
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesTest.testFrames001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 1255
+Start listening on: null
+Listening on: IBM-L3XANCF:1256
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1256,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1255 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1256,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=1255 org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:1256,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=1255, org.apache.harmony.jpda.tests.jdwp.ThreadReference.FramesDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:1255
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testFrames001 START 
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> 	invoke tested method: depth=1
+STDOUT> 	invoke tested method: depth=2
+STDOUT> 	invoke tested method: depth=3
+STDOUT> 	invoke tested method: depth=4
+STDOUT> 	invoke tested method: depth=5
+STDOUT> 	invoke tested method: depth=6
+STDOUT> 	invoke tested method: depth=7
+STDOUT> 	invoke tested method: depth=8
+STDOUT> 	invoke tested method: depth=9
+STDOUT> 	sending SGNL_READY signal
+[SYNC] Received message: main
+==> testedThreadName = |main|
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+==> threadID = 1164
+startFrame=0; length=-1
+framesCount=20
+	0. frameID=1 - Lorg/apache/harmony/luni/platform/OSNetworkSystem;read(-1)
+	1. frameID=2 - Lorg/apache/harmony/luni/net/PlainSocketImpl;read(24)
+	2. frameID=3 - Lorg/apache/harmony/luni/net/SocketInputStream;read(79)
+	3. frameID=4 - Ljava/io/DataInputStream;readToBuff(17)
+	4. frameID=5 - Ljava/io/DataInputStream;readUnsignedShort(2)
+	5. frameID=6 - Ljava/io/DataInputStream;readUTF(2)
+	6. frameID=7 - Lorg/apache/harmony/jpda/tests/share/JPDADebuggeeSynchronizer;receiveMessage(27)
+	7. frameID=8 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(83)
+	8. frameID=9 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	9. frameID=10 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	10. frameID=11 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	11. frameID=12 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	12. frameID=13 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	13. frameID=14 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	14. frameID=15 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	15. frameID=16 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	16. frameID=17 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	17. frameID=18 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;run(10)
+	18. frameID=19 - Lorg/apache/harmony/jpda/tests/share/Debuggee;runDebuggee(47)
+	19. frameID=20 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;main(2)
+startFrame=7; length=-1
+framesCount=13
+	7. frameID=8 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(83)
+	8. frameID=9 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	9. frameID=10 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	10. frameID=11 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	11. frameID=12 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	12. frameID=13 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	13. frameID=14 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	14. frameID=15 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	15. frameID=16 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	16. frameID=17 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;recursiveMethod(46)
+	17. frameID=18 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;run(10)
+	18. frameID=19 - Lorg/apache/harmony/jpda/tests/share/Debuggee;runDebuggee(47)
+	19. frameID=20 - Lorg/apache/harmony/jpda/tests/jdwp/ThreadReference/FramesDebuggee;main(2)
+[SYNC] Message sent: continue
+==> testFrames001 OK. 
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

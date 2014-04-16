@@ -1,0 +1,161 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.VirtualMachine.AllClassesTest.testAllClasses002
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3911
+Start listening on: null
+Listening on: IBM-L3XANCF:3912
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3912,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3911 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3912,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3911 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3912,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3911, org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3911
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testAllClasses002: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+==> Send VirtualMachine::AllClasses command...
+[SYNC] Message sent: continue
+==> testAllClasses002: OK.
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Message sent: ready
+STDOUT> Hello World
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.VirtualMachine.AllClassesTest.testAllClasses001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3915
+Start listening on: null
+Listening on: IBM-L3XANCF:3916
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3916,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3915 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3916,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3915 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3916,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3915, org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3915
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testAllClasses001: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+==> Send VirtualMachine::AllClasses command...
+==> Number of reference types = 496
+
+0. CLASS: Ljava/lang/VMClassRegistry; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000000672
+	refTypeTag = CLASS(1)
+	signature = Ljava/lang/VMClassRegistry;
+
+1. CLASS: Ljava/lang/VMMemoryManager; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000000565
+	refTypeTag = CLASS(1)
+	signature = Ljava/lang/VMMemoryManager;
+
+2. CLASS: Ljava/lang/StringBuilder; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000000854
+	refTypeTag = CLASS(1)
+	signature = Ljava/lang/StringBuilder;
+
+3. CLASS: Ljava/lang/Integer; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000000784
+	refTypeTag = CLASS(1)
+	signature = Ljava/lang/Integer;
+
+4. CLASS: Ljava/lang/VMThreadManager; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000000551
+	refTypeTag = CLASS(1)
+	signature = Ljava/lang/VMThreadManager;
+...
+...
+...
+
+491. CLASS: Lorg/apache/harmony/jpda/tests/share/Debuggee; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000002143
+	refTypeTag = CLASS(1)
+	signature = Lorg/apache/harmony/jpda/tests/share/Debuggee;
+
+492. CLASS: Lorg/apache/harmony/jpda/tests/share/JPDATestOptions; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000000267
+	refTypeTag = CLASS(1)
+	signature = Lorg/apache/harmony/jpda/tests/share/JPDATestOptions;
+
+493. CLASS: Lorg/apache/harmony/jpda/tests/share/JPDALogWriter; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000000892
+	refTypeTag = CLASS(1)
+	signature = Lorg/apache/harmony/jpda/tests/share/JPDALogWriter;
+
+494. CLASS: Lorg/apache/harmony/jpda/tests/framework/TestErrorException; PREPARED
+	referenceTypeID = 1000000030
+	refTypeTag = CLASS(1)
+	signature = Lorg/apache/harmony/jpda/tests/framework/TestErrorException;
+
+495. CLASS: Lorg/apache/harmony/jpda/tests/framework/TestOptions; VERIFIED|PREPARED|INITIALIZED
+	referenceTypeID = 1000001171
+	refTypeTag = CLASS(1)
+	signature = Lorg/apache/harmony/jpda/tests/framework/TestOptions;
+[SYNC] Message sent: continue
+==> testAllClasses001: OK.
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Message sent: ready
+Waiting for process exit
+STDOUT> Hello World
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

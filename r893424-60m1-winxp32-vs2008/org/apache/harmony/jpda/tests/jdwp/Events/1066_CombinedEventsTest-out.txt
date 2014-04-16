@@ -1,0 +1,1173 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsTest.testCombinedEvents_01
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4737
+Start listening on: null
+Listening on: IBM-L3XANCF:4738
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4738,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4737 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4738,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4737 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4738,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4737, org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4737
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testCombinedEvents_01 started
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> -> CombinedEventsDebuggee: Starting...
+[SYNC] Received message: main
+=> debuggeeClassID = 1000000244
+=> threadID = 1164
+=> runMethodID = 584710384
+
+=> Info for tested method 'sampleMethod':
+=> testedMethodID = 584710228
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+=== Line Table for method: sampleMethod ===
+==> Method Start Code Index = 0
+==> Method End Code Index = 9
+==> Number of lines = 2
+====> Line Number 44 : Initial code index = 0
+====> Line Number 45 : Initial code index = 9
+=== End of Line Table sampleMethod ===
+
+=> Set request for BREAKPOINT event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, beginning of method: sampleMethod
+=> Breakpoint requestID = 1
+=> Set request for METHOD_ENTRY event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, method: sampleMethod
+=> METHOD_ENTRY requestID = 2
+=> Set request for SINGLE_STEP event in class Lorg/apache/harmony/jpda/tests/jdwp/Events/CombinedEventsDebuggee;
+=> SINGLE_STEP requestID = 3
+
+=> Send SGNL_CONTINUE signal to debuggee...
+STDOUT> [SYNC] Received message: continue
+[SYNC] Message sent: continue
+=> Try to receive and check combined events:  METHOD_ENTRY, SINGLE_STEP, BREAKPOINT events; ignore single SINGLE_STEP event
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 37
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 38
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 39
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 42
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 44
+
+STDOUT> -> CombinedEventsDebuggee: Before calling sampleMethod
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 47
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 48
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 3 :
+
+=> Event #1 in packet -
+=> EventKind: 40[METHOD_ENTRY]
+=> RequestID: 2
+
+=> Event #2 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Event #3 in packet -
+=> EventKind: 2[BREAKPOINT]
+=> RequestID: 1
+
+=> Chcek location for event : Event kind = 40(METHOD_ENTRY); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 0
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 0
+
+=> Chcek location for event : Event kind = 2(BREAKPOINT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 0
+
+
+=> Combined events are received. Check events..
+
+=> Chcek location for combined event N 1: Event kind = 40(METHOD_ENTRY); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 0
+=> OK - it is expected CodeIndex)
+
+=> Chcek location for combined event N 2: Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 0
+=> OK - it is expected CodeIndex)
+
+=> Chcek location for combined event N 3: Event kind = 2(BREAKPOINT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 0
+=> OK - it is expected CodeIndex)
+
+=> OK - all combined events have expected location!
+
+=> Clean request for METHOD_ENTRY event...
+
+=> Clean request for SINGLE_STEP event...
+=> Resume debuggee
+STDOUT> -> CombinedEventsDebuggee: inside of sampleMethod()!
+STDOUT> -> CombinedEventsDebuggee: Finishing...
+STDOUT> [SYNC] Closed socket
+=> Wait for VM_DEATH event...
+=> Receiving events...
+=> OK - VM_DEATH event was received. 
+
+==> testCombinedEvents_01 PASSED
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsTest.testCombinedEvents_02
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4741
+Start listening on: null
+Listening on: IBM-L3XANCF:4742
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4742,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4741 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4742,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4741 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4742,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4741, org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4741
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testCombinedEvents_02 started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -> CombinedEventsDebuggee: Starting...
+[SYNC] Received message: main
+=> debuggeeClassID = 1000000244
+=> runMethodID = 584710384
+
+=> Info for tested method 'sampleMethod':
+=> testedMethodID = 584710228
+=== Line Table for method: sampleMethod ===
+==> Method Start Code Index = 0
+==> Method End Code Index = 9
+==> Number of lines = 2
+====> Line Number 44 : Initial code index = 0
+====> Line Number 45 : Initial code index = 9
+=== End of Line Table sampleMethod ===
+
+=> Set breakpoint at the beginning of sampleMethod
+[SYNC] Message sent: continue
+=> Wait for breakpoint event..
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> -> CombinedEventsDebuggee: Before calling sampleMethod
+=> threadID = 1164
+=> Set request for BREAKPOINT event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, at end of method: sampleMethod
+=> Breakpoint requestID = 2
+=> Set request for METHOD_EXIT event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, method: sampleMethod
+=> METHOD_EXIT requestID = 3
+=> Set request for SINGLE_STEP event in class Lorg/apache/harmony/jpda/tests/jdwp/Events/CombinedEventsDebuggee;
+=> SINGLE_STEP requestID = 4
+
+=> Resume debuggee
+=> Try to receive and check combined events:  METHOD_EXIT, SINGLE_STEP, BREAKPOINT events; ignore single SINGLE_STEP event
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 4
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 1
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 4
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 4
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 4
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 6
+
+=>
+=> Receiving events...
+STDOUT> -> CombinedEventsDebuggee: inside of sampleMethod()!
+=> Received event packet with events number = 2 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 4
+
+=> Event #2 in packet -
+=> EventKind: 2[BREAKPOINT]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 9
+
+=> Chcek location for event : Event kind = 2(BREAKPOINT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 9
+
+
+=> Combined events are received. Check events..
+
+=> Chcek location for combined event N 1: Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 9
+=> OK - it is expected CodeIndex)
+
+=> Chcek location for combined event N 2: Event kind = 2(BREAKPOINT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 9
+=> OK - it is expected CodeIndex)
+
+=> OK - all combined events have expected location!
+
+=> Clean request for SINGLE_STEP event...
+=> Resume debuggee
+=> Wait for VM_DEATH event...
+=> Receiving events...
+##FAILURE: Received unexpected events
+=> Events received: 1
+
+=> Event #0;
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 9
+
+=> Resume debuggee
+=> Receiving events...
+STDOUT> -> CombinedEventsDebuggee: Finishing...
+##FAILURE: Received unexpected events
+=> Events received: 1
+
+=> Event #0;
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 60
+
+=> Resume debuggee
+=> Receiving events...
+STDOUT> [SYNC] Closed socket
+##FAILURE: Received unexpected events
+=> Events received: 1
+
+=> Event #0;
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710072
+=> CodeIndex in event = 5
+
+=> Resume debuggee
+=> Receiving events...
+STDERR> 03:42:46.390  INFO: [RequestManager.cpp:1966] JDWP error in METHOD_EXIT: 31
+STDERR> 03:42:46.390  INFO: [RequestManager.cpp:2057] JDWP error in METHOD_EXIT_WITH_RETURN_VALUE: 31
+=> OK - VM_DEATH event was received. 
+
+==> testCombinedEvents_02 PASSED
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsTest.testCombinedEvents_03
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4745
+Start listening on: null
+Listening on: IBM-L3XANCF:4746
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4746,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4745 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4746,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4745 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4746,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4745, org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4745
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testCombinedEvents_03 started
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> -> CombinedEventsDebuggee: Starting...
+[SYNC] Received message: main
+=> debuggeeClassID = 1000000244
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+=> threadID = 1164
+=> runMethodID = 584710384
+
+=> Info for tested method 'sampleMethod':
+=> testedMethodID = 584710228
+=== Line Table for method: sampleMethod ===
+==> Method Start Code Index = 0
+==> Method End Code Index = 9
+==> Number of lines = 2
+====> Line Number 44 : Initial code index = 0
+====> Line Number 45 : Initial code index = 9
+=== End of Line Table sampleMethod ===
+=> Set request for METHOD_ENTRY event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, method: sampleMethod
+=> METHOD_ENTRY requestID = 1
+=> Set request for SINGLE_STEP event in class Lorg/apache/harmony/jpda/tests/jdwp/Events/CombinedEventsDebuggee;
+=> SINGLE_STEP requestID = 2
+
+=> Send SGNL_CONTINUE signal to debuggee...
+[SYNC] Message sent: continue
+=> Try to receive and check combined events: METHOD_ENTRY, SINGLE_STEP events; ignore single SINGLE_STEP event
+=>
+=> Receiving events...
+STDOUT> [SYNC] Received message: continue
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 37
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 38
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 39
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 42
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 44
+
+STDOUT> -> CombinedEventsDebuggee: Before calling sampleMethod
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 47
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 48
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 2 :
+
+=> Event #1 in packet -
+=> EventKind: 40[METHOD_ENTRY]
+=> RequestID: 1
+
+=> Event #2 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 40(METHOD_ENTRY); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 0
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 0
+
+
+=> Combined events are received. Check events..
+
+=> Chcek location for combined event N 1: Event kind = 40(METHOD_ENTRY); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 0
+=> OK - it is expected CodeIndex)
+
+=> Chcek location for combined event N 2: Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 0
+=> OK - it is expected CodeIndex)
+
+=> OK - all combined events have expected location!
+
+=> Clean request for METHOD_ENTRY event...
+
+=> Clean request for SINGLE_STEP event
+=> Resume debuggee
+STDOUT> -> CombinedEventsDebuggee: inside of sampleMethod()!
+STDOUT> -> CombinedEventsDebuggee: Finishing...
+STDOUT> [SYNC] Closed socket
+=> Wait for VM_DEATH event...
+=> Receiving events...
+=> OK - VM_DEATH event was received. 
+
+==> testCombinedEvents_03 PASSED
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsTest.testCombinedEvents_04
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4750
+Start listening on: null
+Listening on: IBM-L3XANCF:4751
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4751,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4750 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4751,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4750 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4751,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4750, org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4750
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testCombinedEvents004 started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -> CombinedEventsDebuggee: Starting...
+[SYNC] Received message: main
+=> debuggeeClassID = 1000000244
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+=> runMethodID = 584710384
+
+=> Info for tested method 'sampleMethod':
+=> testedMethodID = 584710228
+=== Line Table for method: sampleMethod ===
+==> Method Start Code Index = 0
+==> Method End Code Index = 9
+==> Number of lines = 2
+====> Line Number 44 : Initial code index = 0
+====> Line Number 45 : Initial code index = 9
+=== End of Line Table sampleMethod ===
+
+=> Set breakpoint at the beginning of sampleMethod
+STDOUT> [SYNC] Received message: continue
+STDOUT> -> CombinedEventsDebuggee: Before calling sampleMethod
+[SYNC] Message sent: continue
+=> Wait for breakpoint event..
+=> threadID = 1164
+=> Set request for METHOD_EXIT event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, method: sampleMethod
+=> METHOD_EXIT requestID = 2
+=> Set request for SINGLE_STEP event in class Lorg/apache/harmony/jpda/tests/jdwp/Events/CombinedEventsDebuggee;
+=> SINGLE_STEP requestID = 3
+
+=> Resume debuggee
+=> Try to receive and check combined events: METHOD_EXIT, SINGLE_STEP events; ignore single SINGLE_STEP event
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 1
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 4
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 6
+
+=>
+=> Receiving events...
+STDOUT> -> CombinedEventsDebuggee: inside of sampleMethod()!
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 9
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 9
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 51
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 52
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 55
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 57
+
+STDOUT> -> CombinedEventsDebuggee: Finishing...
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 60
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 60
+
+STDOUT> [SYNC] Closed socket
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 1[SINGLE_STEP]
+=> RequestID: 3
+
+=> Chcek location for event : Event kind = 1(SINGLE_STEP); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710072
+=> CodeIndex in event = 5
+
+=>
+=> Receiving events...
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710072
+=> CodeIndex in event = 5
+
+=>
+=> Receiving events...
+STDERR> 03:42:50.062  INFO: [RequestManager.cpp:1966] JDWP error in METHOD_EXIT: 31
+STDERR> 03:42:50.062  INFO: [RequestManager.cpp:2057] JDWP error in METHOD_EXIT_WITH_RETURN_VALUE: 31
+=> Received event packet with events number = 1 :
+
+=> Event #1 in packet -
+=> EventKind: 99[VM_DEATH]
+=> RequestID: 0
+==> testCombinedEvents004 is FINISHing as VM_DEATH is received!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsTest.testCombinedEvents_05
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4754
+Start listening on: null
+Listening on: IBM-L3XANCF:4755
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4755,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4754 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4755,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4754 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4755,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4754, org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4754
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testCombinedEvents_05 started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -> CombinedEventsDebuggee: Starting...
+[SYNC] Received message: main
+=> debuggeeClassID = 1000000244
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+=> runMethodID = 584710384
+
+=> Info for tested method 'sampleMethod':
+=> testedMethodID = 584710228
+=== Line Table for method: sampleMethod ===
+==> Method Start Code Index = 0
+==> Method End Code Index = 9
+==> Number of lines = 2
+====> Line Number 44 : Initial code index = 0
+====> Line Number 45 : Initial code index = 9
+=== End of Line Table sampleMethod ===
+
+=> Set request for BREAKPOINT event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, beginning of method: sampleMethod
+=> Breakpoint requestID = 1
+=> Set request for METHOD_ENTRY event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, method: sampleMethod
+=> METHOD_ENTRY requestID = 2
+
+[SYNC] Message sent: continue
+=> Try to receive and check combined events: METHOD_ENTRY, BREAKPOINT events
+STDOUT> [SYNC] Received message: continue
+STDOUT> -> CombinedEventsDebuggee: Before calling sampleMethod
+=> Events received: 2
+
+=> Event #0;
+=> EventKind: 40[METHOD_ENTRY]
+=> RequestID: 2
+
+=> Event #1;
+=> EventKind: 2[BREAKPOINT]
+=> RequestID: 1
+
+=> Chcek location for event : Event kind = 40(METHOD_ENTRY); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 0
+=> OK - it is expected CodeIndex)
+
+=> Chcek location for event : Event kind = 2(BREAKPOINT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 0
+=> OK - it is expected CodeIndex)
+
+=> OK - all checked events have expected location!
+
+=> Combined events are received. Check events..
+
+=> Clean request for METHOD_ENTRY event...
+=> Resume debuggee
+STDOUT> -> CombinedEventsDebuggee: inside of sampleMethod()!
+STDOUT> -> CombinedEventsDebuggee: Finishing...
+STDOUT> [SYNC] Closed socket
+=> Wait for VM_DEATH event...
+=> Receiving events...
+=> OK - VM_DEATH event was received. 
+
+==> testCombinedEvents_05 PASSED
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsTest.testCombinedEvents_06
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4758
+Start listening on: null
+Listening on: IBM-L3XANCF:4759
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4759,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4758 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4759,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4758 org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4759,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4758, org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4758
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testCombinedEvents_06 started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -> CombinedEventsDebuggee: Starting...
+[SYNC] Received message: main
+=> debuggeeClassID = 1000000244
+=> runMethodID = 584710384
+
+=> Info for tested method 'sampleMethod':
+=> testedMethodID = 584710228
+=== Line Table for method: sampleMethod ===
+==> Method Start Code Index = 0
+==> Method End Code Index = 9
+==> Number of lines = 2
+====> Line Number 44 : Initial code index = 0
+====> Line Number 45 : Initial code index = 9
+=== End of Line Table sampleMethod ===
+
+=> Set request for BREAKPOINT event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, at end of method: sampleMethod
+=> Breakpoint requestID = 1
+=> Set request for METHOD_EXIT event in debuggee: org.apache.harmony.jpda.tests.jdwp.Events.CombinedEventsDebuggee, method: sampleMethod
+=> METHOD_EXIT requestID = 2
+
+Send SGNL_CONTINUE signal to debuggee...
+[SYNC] Message sent: continue
+=> Try to receive and check combined events: METHOD_EXIT, BREAKPOINT events
+STDOUT> [SYNC] Message sent: main
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> -> CombinedEventsDebuggee: Before calling sampleMethod
+STDOUT> -> CombinedEventsDebuggee: inside of sampleMethod()!
+=> Events received: 1
+
+=> Event #0;
+=> EventKind: 2[BREAKPOINT]
+=> RequestID: 1
+
+=> Chcek location for event : Event kind = 2(BREAKPOINT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> OK - it is expected ClassID
+=> MethodID in event = 584710228
+=> OK - it is expected MethodID
+=> CodeIndex in event = 9
+=> OK - it is expected CodeIndex)
+
+=> OK - all checked events have expected location!
+##FAILURE: received unexpected number of events: 1 instead of 2
+=> Resume debuggee
+=> Wait for VM_DEATH event...
+=> Receiving events...
+##FAILURE: Received unexpected events
+=> Events received: 1
+
+=> Event #0;
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710228
+=> CodeIndex in event = 9
+
+=> Resume debuggee
+=> Receiving events...
+##FAILURE: Received unexpected events
+=> Events received: 1
+
+=> Event #0;
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710384
+=> CodeIndex in event = 60
+
+=> Resume debuggee
+=> Receiving events...
+STDOUT> -> CombinedEventsDebuggee: Finishing...
+STDOUT> [SYNC] Closed socket
+##FAILURE: Received unexpected events
+=> Events received: 1
+
+=> Event #0;
+=> EventKind: 41[METHOD_EXIT]
+=> RequestID: 2
+
+=> Chcek location for event : Event kind = 41(METHOD_EXIT); eventThreadID = 1164
+=> ClassID in event = 1000000244
+=> MethodID in event = 584710072
+=> CodeIndex in event = 5
+
+=> Resume debuggee
+=> Receiving events...
+STDERR> 03:42:53.593  INFO: [RequestManager.cpp:1966] JDWP error in METHOD_EXIT: 31
+STDERR> 03:42:53.593  INFO: [RequestManager.cpp:2057] JDWP error in METHOD_EXIT_WITH_RETURN_VALUE: 31
+=> OK - VM_DEATH event was received. 
+
+==> testCombinedEvents_06 PASSED
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

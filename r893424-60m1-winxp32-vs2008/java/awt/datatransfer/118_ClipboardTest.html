@@ -1,0 +1,651 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Unit Test Results: java.awt.datatransfer.ClipboardTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['java.awt.datatransfer.ClipboardTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'D:\\tools\\apache-ant-1.7.1\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\build.xml';
+    
+        cur['ant.file.AWT Build'] = 'D:\\workingcopy\\hy6\\working_classlib\\modules\\awt\\build.xml';
+    
+        cur['ant.file.build-harmony'] = 'D:\\workingcopy\\hy6\\build.xml';
+    
+        cur['ant.file.Classlib dependency definitions'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\ant\\depends.xml';
+    
+        cur['ant.file.Classlib property definitions'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\ant\\properties.xml';
+    
+        cur['ant.file.classlib-test'] = 'D:\\workingcopy\\hy6\\working_classlib\\make\\build-test.xml';
+    
+        cur['ant.file.Harmony AWT Test'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\build.xml';
+    
+        cur['ant.file.Top-Level property definitions'] = 'D:\\workingcopy\\hy6\\working_classlib\\make\\properties.xml';
+    
+        cur['ant.home'] = 'D:\\tools\\apache-ant-1.7.1\\bin\\..';
+    
+        cur['ant.java.version'] = '1.5';
+    
+        cur['ant.library.dir'] = 'D:\\tools\\apache-ant-1.7.1\\lib';
+    
+        cur['ant.project.name'] = 'Harmony AWT Test';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.1 compiled on June 27 2008';
+    
+        cur['awt.base'] = 'http://people.apache.org/~hindessm/classlib-depends/windows.x86';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt';
+    
+        cur['bcprov.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/bcprov-jdk15-144';
+    
+        cur['bcprov.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/bcprov-jdk15-144/bcprov.jar';
+    
+        cur['bcprov.md5'] = '0d6f0b31730db6fd1f8360cf1f7666d4';
+    
+        cur['bcprov.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends/jars/bcprov/bcprov-jdk15-144/bcprov.jar';
+    
+        cur['bcprov.ver'] = 'bcprov-jdk15-144';
+    
+        cur['build.compilerarg'] = '-nowarn -g';
+    
+        cur['build.module'] = '*';
+    
+        cur['common.exclude.file'] = 'exclude.common';
+    
+        cur['common.exclude.interm'] = 'exclude.interm';
+    
+        cur['converted.tc'] = '${test\\case}.java';
+    
+        cur['converted.tc.class'] = '${test\\case}.class';
+    
+        cur['D:\workingcopy\hy6\working_classlib\depends/dejavu-fonts/dejavu-ttf-2.18-1.zip.exists'] = 'true';
+    
+        cur['D:\workingcopy\hy6\working_classlib\depends/libs/windows.x86/jpeg-6b.tar.gz.exists'] = 'true';
+    
+        cur['D:\workingcopy\hy6\working_classlib\depends/libs/windows.x86/lcms-1.18.tar.gz.exists'] = 'true';
+    
+        cur['D:\workingcopy\hy6\working_classlib\depends/libs/windows.x86/png-1.2.38.tar.gz.exists'] = 'true';
+    
+        cur['D:\workingcopy\hy6\working_classlib\deploy/build/ant/patternsets/awt.txt.content'] = 'java/awt/AWTError$*.* java/awt/AWTError.* java/awt/AWTEvent.* java/awt/AWTEvent$*.* java/awt/AWTEventMulticaster$*.* java/awt/AWTEventMulticaster.* java/awt/AWTException.* java/awt/AWTException$*.* java/awt/AWTKeyStroke.* java/awt/AWTKeyStroke$*.* java/awt/AWTListenerList$*.* java/awt/AWTListenerList.* java/awt/AWTPermission$*.* java/awt/AWTPermission.* java/awt/ActiveEvent.* java/awt/ActiveEvent$*.* java/awt/Adjustable.* java/awt/Adjustable$*.* java/awt/AlphaComposite.* java/awt/AlphaComposite$*.* java/awt/BasicStroke$*.* java/awt/BasicStroke.* java/awt/BorderLayout$*.* java/awt/BorderLayout.* java/awt/BufferCapabilities$*.* java/awt/BufferCapabilities.* java/awt/Button$*.* java/awt/Button.* java/awt/Canvas$*.* java/awt/Canvas.* java/awt/CardLayout.* java/awt/CardLayout$*.* java/awt/Checkbox.* java/awt/Checkbox$*.* java/awt/CheckboxGroup.* java/awt/CheckboxGroup$*.* java/awt/CheckboxMenuItem.* java/awt/CheckboxMenuItem$*.* java/awt/Choice.* java/awt/Choice$*.* java/awt/ChoicePopupBox$*.* java/awt/ChoicePopupBox.* java/awt/Color$*.* java/awt/Color.* java/awt/Component.* java/awt/Component$*.* java/awt/ComponentBehavior$*.* java/awt/ComponentBehavior.* java/awt/ComponentOrientation.* java/awt/ComponentOrientation$*.* java/awt/Composite$*.* java/awt/Composite.* java/awt/CompositeContext.* java/awt/CompositeContext$*.* java/awt/Container$*.* java/awt/Container.* java/awt/ContainerOrderFocusTraversalPolicy.* java/awt/ContainerOrderFocusTraversalPolicy$*.* java/awt/Cursor.* java/awt/Cursor$*.* java/awt/DefaultFocusTraversalPolicy.* java/awt/DefaultFocusTraversalPolicy$*.* java/awt/DefaultKeyboardFocusManager.* java/awt/DefaultKeyboardFocusManager$*.* java/awt/DefaultMouseDragGestureRecognizer.* java/awt/DefaultMouseDragGestureRecognizer$*.* java/awt/Dialog$*.* java/awt/Dialog.* java/awt/Dimension.* java/awt/Dimension$*.* java/awt/Dispatcher.* java/awt/Dispatcher$*.* java/awt/DisplayMode.* java/awt/DisplayMode$*.* java/awt/EmbeddedWindow.* java/awt/EmbeddedWindow$*.* java/awt/Event$*.* java/awt/Event.* java/awt/EventDispatchThread.* java/awt/EventDispatchThread$*.* java/awt/EventQueue$*.* java/awt/EventQueue.* java/awt/EventQueueCore.* java/awt/EventQueueCore$*.* java/awt/EventQueueThread.* java/awt/EventQueueThread$*.* java/awt/FileDialog$*.* java/awt/FileDialog.* java/awt/FlowLayout.* java/awt/FlowLayout$*.* java/awt/FocusDispatcher$*.* java/awt/FocusDispatcher.* java/awt/FocusTraversalPolicy.* java/awt/FocusTraversalPolicy$*.* java/awt/Font.* java/awt/Font$*.* java/awt/FontFormatException.* java/awt/FontFormatException$*.* java/awt/FontMetrics.* java/awt/FontMetrics$*.* java/awt/Frame.* java/awt/Frame$*.* java/awt/GradientPaint.* java/awt/GradientPaint$*.* java/awt/GradientPaintContext$*.* java/awt/GradientPaintContext.* java/awt/Graphics.* java/awt/Graphics$*.* java/awt/Graphics2D.* java/awt/Graphics2D$*.* java/awt/GraphicsConfigTemplate.* java/awt/GraphicsConfigTemplate$*.* java/awt/GraphicsConfiguration.* java/awt/GraphicsConfiguration$*.* java/awt/GraphicsDevice.* java/awt/GraphicsDevice$*.* java/awt/GraphicsEnvironment.* java/awt/GraphicsEnvironment$*.* java/awt/GridBagConstraints$*.* java/awt/GridBagConstraints.* java/awt/GridBagLayout$*.* java/awt/GridBagLayout.* java/awt/GridBagLayoutInfo$*.* java/awt/GridBagLayoutInfo.* java/awt/GridLayout.* java/awt/GridLayout$*.* java/awt/HWBehavior.* java/awt/HWBehavior$*.* java/awt/HeadlessEventDispatchThread.* java/awt/HeadlessEventDispatchThread$*.* java/awt/HeadlessException$*.* java/awt/HeadlessException.* java/awt/HeadlessGraphicsEnvironment$*.* java/awt/HeadlessGraphicsEnvironment.* java/awt/HeadlessToolkit.* java/awt/HeadlessToolkit$*.* java/awt/IllegalComponentStateException.* java/awt/IllegalComponentStateException$*.* java/awt/Image$*.* java/awt/Image.* java/awt/ImageCapabilities$*.* java/awt/ImageCapabilities.* java/awt/Insets$*.* java/awt/Insets.* java/awt/ItemSelectable$*.* java/awt/ItemSelectable.* java/awt/JobAttributes.* java/awt/JobAttributes$*.* java/awt/KeyEventDispatcher.* java/awt/KeyEventDispatcher$*.* java/awt/KeyEventPostProcessor$*.* java/awt/KeyEventPostProcessor.* java/awt/KeyboardFocusManager.* java/awt/KeyboardFocusManager$*.* java/awt/LWBehavior$*.* java/awt/LWBehavior.* java/awt/Label$*.* java/awt/Label.* java/awt/LayoutManager.* java/awt/LayoutManager$*.* java/awt/LayoutManager2.* java/awt/LayoutManager2$*.* java/awt/List.* java/awt/List$*.* java/awt/MediaTracker$*.* java/awt/MediaTracker.* java/awt/Menu.* java/awt/Menu$*.* java/awt/MenuBar$*.* java/awt/MenuBar.* java/awt/MenuComponent.* java/awt/MenuComponent$*.* java/awt/MenuContainer.* java/awt/MenuContainer$*.* java/awt/MenuItem$*.* java/awt/MenuItem.* java/awt/MenuShortcut$*.* java/awt/MenuShortcut.* java/awt/ModalContext.* java/awt/ModalContext$*.* java/awt/MouseDispatcher.* java/awt/MouseDispatcher$*.* java/awt/MouseInfo.* java/awt/MouseInfo$*.* java/awt/PageAttributes.* java/awt/PageAttributes$*.* java/awt/Paint$*.* java/awt/Paint.* java/awt/PaintContext.* java/awt/PaintContext$*.* java/awt/Panel$*.* java/awt/Panel.* java/awt/Point.* java/awt/Point$*.* java/awt/PointerInfo$*.* java/awt/PointerInfo.* java/awt/Polygon.* java/awt/Polygon$*.* java/awt/PopupBox.* java/awt/PopupBox$*.* java/awt/PopupMenu$*.* java/awt/PopupMenu.* java/awt/PrintGraphics.* java/awt/PrintGraphics$*.* java/awt/PrintJob$*.* java/awt/PrintJob.* java/awt/Rectangle$*.* java/awt/Rectangle.* java/awt/RedrawManager.* java/awt/RedrawManager$*.* java/awt/RenderingHints.* java/awt/RenderingHints$*.* java/awt/Robot$*.* java/awt/Robot.* java/awt/ScrollPane.* java/awt/ScrollPane$*.* java/awt/ScrollPaneAdjustable$*.* java/awt/ScrollPaneAdjustable.* java/awt/Scrollbar$*.* java/awt/Scrollbar.* java/awt/Shape.* java/awt/Shape$*.* java/awt/Stroke$*.* java/awt/Stroke.* java/awt/SystemColor.* java/awt/SystemColor$*.* java/awt/TextArea.* java/awt/TextArea$*.* java/awt/TextComponent$*.* java/awt/TextComponent.* java/awt/TextField.* java/awt/TextField$*.* java/awt/TexturePaint$*.* java/awt/TexturePaint.* java/awt/TexturePaintContext.* java/awt/TexturePaintContext$*.* java/awt/Toolkit$*.* java/awt/Toolkit.* java/awt/ToolkitImpl$*.* java/awt/ToolkitImpl.* java/awt/Transparency.* java/awt/Transparency$*.* java/awt/Window.* java/awt/Window$*.* java/awt/color/CMMException$*.* java/awt/color/CMMException.* java/awt/color/ColorSpace$*.* java/awt/color/ColorSpace.* java/awt/color/ICC_ColorSpace$*.* java/awt/color/ICC_ColorSpace.* java/awt/color/ICC_Profile.* java/awt/color/ICC_Profile$*.* java/awt/color/ICC_ProfileGray.* java/awt/color/ICC_ProfileGray$*.* java/awt/color/ICC_ProfileRGB.* java/awt/color/ICC_ProfileRGB$*.* java/awt/color/ICC_ProfileStub.* java/awt/color/ICC_ProfileStub$*.* java/awt/color/ProfileDataException.* java/awt/color/ProfileDataException$*.* java/awt/datatransfer/Clipboard.* java/awt/datatransfer/Clipboard$*.* java/awt/datatransfer/ClipboardOwner.* java/awt/datatransfer/ClipboardOwner$*.* java/awt/datatransfer/DataFlavor.* java/awt/datatransfer/DataFlavor$*.* java/awt/datatransfer/DuplicatedPropertiesResourceBundle$*.* java/awt/datatransfer/DuplicatedPropertiesResourceBundle.* java/awt/datatransfer/FlavorEvent.* java/awt/datatransfer/FlavorEvent$*.* java/awt/datatransfer/FlavorListener.* java/awt/datatransfer/FlavorListener$*.* java/awt/datatransfer/FlavorMap$*.* java/awt/datatransfer/FlavorMap.* java/awt/datatransfer/FlavorTable.* java/awt/datatransfer/FlavorTable$*.* java/awt/datatransfer/MimeTypeParseException.* java/awt/datatransfer/MimeTypeParseException$*.* java/awt/datatransfer/MimeTypeProcessor.* java/awt/datatransfer/MimeTypeProcessor$*.* java/awt/datatransfer/StringSelection.* java/awt/datatransfer/StringSelection$*.* java/awt/datatransfer/SystemFlavorMap$*.* java/awt/datatransfer/SystemFlavorMap.* java/awt/datatransfer/Transferable$*.* java/awt/datatransfer/Transferable.* java/awt/datatransfer/UnsupportedFlavorException.* java/awt/datatransfer/UnsupportedFlavorException$*.* java/awt/dnd/Autoscroll$*.* java/awt/dnd/Autoscroll.* java/awt/dnd/DnDConstants$*.* java/awt/dnd/DnDConstants.* java/awt/dnd/DragGestureEvent.* java/awt/dnd/DragGestureEvent$*.* java/awt/dnd/DragGestureListener.* java/awt/dnd/DragGestureListener$*.* java/awt/dnd/DragGestureRecognizer$*.* java/awt/dnd/DragGestureRecognizer.* java/awt/dnd/DragSource.* java/awt/dnd/DragSource$*.* java/awt/dnd/DragSourceAdapter$*.* java/awt/dnd/DragSourceAdapter.* java/awt/dnd/DragSourceContext.* java/awt/dnd/DragSourceContext$*.* java/awt/dnd/DragSourceDragEvent.* java/awt/dnd/DragSourceDragEvent$*.* java/awt/dnd/DragSourceDropEvent$*.* java/awt/dnd/DragSourceDropEvent.* java/awt/dnd/DragSourceEvent$*.* java/awt/dnd/DragSourceEvent.* java/awt/dnd/DragSourceListener.* java/awt/dnd/DragSourceListener$*.* java/awt/dnd/DragSourceMotionListener.* java/awt/dnd/DragSourceMotionListener$*.* java/awt/dnd/DragSourceMulticaster$*.* java/awt/dnd/DragSourceMulticaster.* java/awt/dnd/DropTarget.* java/awt/dnd/DropTarget$*.* java/awt/dnd/DropTargetAdapter$*.* java/awt/dnd/DropTargetAdapter.* java/awt/dnd/DropTargetContext.* java/awt/dnd/DropTargetContext$*.* java/awt/dnd/DropTargetDragEvent$*.* java/awt/dnd/DropTargetDragEvent.* java/awt/dnd/DropTargetDropEvent.* java/awt/dnd/DropTargetDropEvent$*.* java/awt/dnd/DropTargetEvent$*.* java/awt/dnd/DropTargetEvent.* java/awt/dnd/DropTargetListener$*.* java/awt/dnd/DropTargetListener.* java/awt/dnd/InvalidDnDOperationException.* java/awt/dnd/InvalidDnDOperationException$*.* java/awt/dnd/MouseDragGestureRecognizer$*.* java/awt/dnd/MouseDragGestureRecognizer.* java/awt/dnd/peer/DragSourceContextPeer$*.* java/awt/dnd/peer/DragSourceContextPeer.* java/awt/dnd/peer/DropTargetContextPeer$*.* java/awt/dnd/peer/DropTargetContextPeer.* java/awt/event/AWTEventListener$*.* java/awt/event/AWTEventListener.* java/awt/event/AWTEventListenerProxy.* java/awt/event/AWTEventListenerProxy$*.* java/awt/event/ActionEvent.* java/awt/event/ActionEvent$*.* java/awt/event/ActionListener.* java/awt/event/ActionListener$*.* java/awt/event/AdjustmentEvent$*.* java/awt/event/AdjustmentEvent.* java/awt/event/AdjustmentListener.* java/awt/event/AdjustmentListener$*.* java/awt/event/ComponentAdapter.* java/awt/event/ComponentAdapter$*.* java/awt/event/ComponentEvent$*.* java/awt/event/ComponentEvent.* java/awt/event/ComponentListener$*.* java/awt/event/ComponentListener.* java/awt/event/ContainerAdapter.* java/awt/event/ContainerAdapter$*.* java/awt/event/ContainerEvent.* java/awt/event/ContainerEvent$*.* java/awt/event/ContainerListener.* java/awt/event/ContainerListener$*.* java/awt/event/FocusAdapter.* java/awt/event/FocusAdapter$*.* java/awt/event/FocusEvent$*.* java/awt/event/FocusEvent.* java/awt/event/FocusListener$*.* java/awt/event/FocusListener.* java/awt/event/HierarchyBoundsAdapter$*.* java/awt/event/HierarchyBoundsAdapter.* java/awt/event/HierarchyBoundsListener$*.* java/awt/event/HierarchyBoundsListener.* java/awt/event/HierarchyEvent.* java/awt/event/HierarchyEvent$*.* java/awt/event/HierarchyListener.* java/awt/event/HierarchyListener$*.* java/awt/event/InputEvent$*.* java/awt/event/InputEvent.* java/awt/event/InputMethodEvent.* java/awt/event/InputMethodEvent$*.* java/awt/event/InputMethodListener.* java/awt/event/InputMethodListener$*.* java/awt/event/InvocationEvent.* java/awt/event/InvocationEvent$*.* java/awt/event/ItemEvent.* java/awt/event/ItemEvent$*.* java/awt/event/ItemListener.* java/awt/event/ItemListener$*.* java/awt/event/KeyAdapter.* java/awt/event/KeyAdapter$*.* java/awt/event/KeyEvent$*.* java/awt/event/KeyEvent.* java/awt/event/KeyListener$*.* java/awt/event/KeyListener.* java/awt/event/MouseAdapter$*.* java/awt/event/MouseAdapter.* java/awt/event/MouseEvent.* java/awt/event/MouseEvent$*.* java/awt/event/MouseListener.* java/awt/event/MouseListener$*.* java/awt/event/MouseMotionAdapter$*.* java/awt/event/MouseMotionAdapter.* java/awt/event/MouseMotionListener.* java/awt/event/MouseMotionListener$*.* java/awt/event/MouseWheelEvent$*.* java/awt/event/MouseWheelEvent.* java/awt/event/MouseWheelListener.* java/awt/event/MouseWheelListener$*.* java/awt/event/PaintEvent.* java/awt/event/PaintEvent$*.* java/awt/event/TextEvent.* java/awt/event/TextEvent$*.* java/awt/event/TextListener$*.* java/awt/event/TextListener.* java/awt/event/WindowAdapter$*.* java/awt/event/WindowAdapter.* java/awt/event/WindowEvent.* java/awt/event/WindowEvent$*.* java/awt/event/WindowFocusListener.* java/awt/event/WindowFocusListener$*.* java/awt/event/WindowListener.* java/awt/event/WindowListener$*.* java/awt/event/WindowStateListener$*.* java/awt/event/WindowStateListener.* java/awt/font/FontRenderContext$*.* java/awt/font/FontRenderContext.* java/awt/font/GlyphJustificationInfo.* java/awt/font/GlyphJustificationInfo$*.* java/awt/font/GlyphMetrics$*.* java/awt/font/GlyphMetrics.* java/awt/font/GlyphVector.* java/awt/font/GlyphVector$*.* java/awt/font/GraphicAttribute.* java/awt/font/GraphicAttribute$*.* java/awt/font/ImageGraphicAttribute$*.* java/awt/font/ImageGraphicAttribute.* java/awt/font/LineBreakMeasurer$*.* java/awt/font/LineBreakMeasurer.* java/awt/font/LineMetrics$*.* java/awt/font/LineMetrics.* java/awt/font/MultipleMaster$*.* java/awt/font/MultipleMaster.* java/awt/font/NumericShaper$*.* java/awt/font/NumericShaper.* java/awt/font/OpenType.* java/awt/font/OpenType$*.* java/awt/font/ShapeGraphicAttribute.* java/awt/font/ShapeGraphicAttribute$*.* java/awt/font/TextAttribute$*.* java/awt/font/TextAttribute.* java/awt/font/TextHitInfo.* java/awt/font/TextHitInfo$*.* java/awt/font/TextLayout.* java/awt/font/TextLayout$*.* java/awt/font/TextMeasurer.* java/awt/font/TextMeasurer$*.* java/awt/font/TransformAttribute$*.* java/awt/font/TransformAttribute.* java/awt/geom/AffineTransform.* java/awt/geom/AffineTransform$*.* java/awt/geom/Arc2D.* java/awt/geom/Arc2D$*.* java/awt/geom/Area.* java/awt/geom/Area$*.* java/awt/geom/CubicCurve2D.* java/awt/geom/CubicCurve2D$*.* java/awt/geom/Dimension2D$*.* java/awt/geom/Dimension2D.* java/awt/geom/Ellipse2D$*.* java/awt/geom/Ellipse2D.* java/awt/geom/FlatteningPathIterator$*.* java/awt/geom/FlatteningPathIterator.* java/awt/geom/GeneralPath.* java/awt/geom/GeneralPath$*.* java/awt/geom/IllegalPathStateException$*.* java/awt/geom/IllegalPathStateException.* java/awt/geom/Line2D.* java/awt/geom/Line2D$*.* java/awt/geom/NoninvertibleTransformException$*.* java/awt/geom/NoninvertibleTransformException.* java/awt/geom/PathIterator.* java/awt/geom/PathIterator$*.* java/awt/geom/Point2D$*.* java/awt/geom/Point2D.* java/awt/geom/QuadCurve2D$*.* java/awt/geom/QuadCurve2D.* java/awt/geom/Rectangle2D.* java/awt/geom/Rectangle2D$*.* java/awt/geom/RectangularShape.* java/awt/geom/RectangularShape$*.* java/awt/geom/RoundRectangle2D$*.* java/awt/geom/RoundRectangle2D.* java/awt/im/InputContext$*.* java/awt/im/InputContext.* java/awt/im/InputMethodHighlight$*.* java/awt/im/InputMethodHighlight.* java/awt/im/InputMethodRequests$*.* java/awt/im/InputMethodRequests.* java/awt/im/InputSubset.* java/awt/im/InputSubset$*.* java/awt/im/spi/InputMethod.* java/awt/im/spi/InputMethod$*.* java/awt/im/spi/InputMethodContext$*.* java/awt/im/spi/InputMethodContext.* java/awt/im/spi/InputMethodDescriptor.* java/awt/im/spi/InputMethodDescriptor$*.* java/awt/image/AffineTransformOp.* java/awt/image/AffineTransformOp$*.* java/awt/image/AreaAveragingScaleFilter$*.* java/awt/image/AreaAveragingScaleFilter.* java/awt/image/AwtImageBackdoorAccessorImpl.* java/awt/image/AwtImageBackdoorAccessorImpl$*.* java/awt/image/BandCombineOp$*.* java/awt/image/BandCombineOp.* java/awt/image/BandedSampleModel.* java/awt/image/BandedSampleModel$*.* java/awt/image/BufferStrategy.* java/awt/image/BufferStrategy$*.* java/awt/image/BufferedImage$*.* java/awt/image/BufferedImage.* java/awt/image/BufferedImageFilter$*.* java/awt/image/BufferedImageFilter.* java/awt/image/BufferedImageOp$*.* java/awt/image/BufferedImageOp.* java/awt/image/ByteLookupTable.* java/awt/image/ByteLookupTable$*.* java/awt/image/ColorConvertOp.* java/awt/image/ColorConvertOp$*.* java/awt/image/ColorModel.* java/awt/image/ColorModel$*.* java/awt/image/ComponentColorModel$*.* java/awt/image/ComponentColorModel.* java/awt/image/ComponentSampleModel.* java/awt/image/ComponentSampleModel$*.* java/awt/image/ConvolveOp.* java/awt/image/ConvolveOp$*.* java/awt/image/CropImageFilter.* java/awt/image/CropImageFilter$*.* java/awt/image/DataBuffer.* java/awt/image/DataBuffer$*.* java/awt/image/DataBufferByte$*.* java/awt/image/DataBufferByte.* java/awt/image/DataBufferDouble.* java/awt/image/DataBufferDouble$*.* java/awt/image/DataBufferFloat.* java/awt/image/DataBufferFloat$*.* java/awt/image/DataBufferInt.* java/awt/image/DataBufferInt$*.* java/awt/image/DataBufferShort.* java/awt/image/DataBufferShort$*.* java/awt/image/DataBufferUShort$*.* java/awt/image/DataBufferUShort.* java/awt/image/DirectColorModel.* java/awt/image/DirectColorModel$*.* java/awt/image/FilteredImageSource$*.* java/awt/image/FilteredImageSource.* java/awt/image/ImageConsumer$*.* java/awt/image/ImageConsumer.* java/awt/image/ImageFilter.* java/awt/image/ImageFilter$*.* java/awt/image/ImageObserver.* java/awt/image/ImageObserver$*.* java/awt/image/ImageProducer.* java/awt/image/ImageProducer$*.* java/awt/image/ImagingOpException.* java/awt/image/ImagingOpException$*.* java/awt/image/IndexColorModel.* java/awt/image/IndexColorModel$*.* java/awt/image/Kernel.* java/awt/image/Kernel$*.* java/awt/image/LookupOp$*.* java/awt/image/LookupOp.* java/awt/image/LookupTable$*.* java/awt/image/LookupTable.* java/awt/image/MemoryImageSource.* java/awt/image/MemoryImageSource$*.* java/awt/image/MultiPixelPackedSampleModel$*.* java/awt/image/MultiPixelPackedSampleModel.* java/awt/image/PackedColorModel$*.* java/awt/image/PackedColorModel.* java/awt/image/PixelGrabber.* java/awt/image/PixelGrabber$*.* java/awt/image/PixelInterleavedSampleModel.* java/awt/image/PixelInterleavedSampleModel$*.* java/awt/image/RGBImageFilter$*.* java/awt/image/RGBImageFilter.* java/awt/image/Raster.* java/awt/image/Raster$*.* java/awt/image/RasterFormatException.* java/awt/image/RasterFormatException$*.* java/awt/image/RasterOp.* java/awt/image/RasterOp$*.* java/awt/image/RenderedImage.* java/awt/image/RenderedImage$*.* java/awt/image/ReplicateScaleFilter.* java/awt/image/ReplicateScaleFilter$*.* java/awt/image/RescaleOp.* java/awt/image/RescaleOp$*.* java/awt/image/SampleModel.* java/awt/image/SampleModel$*.* java/awt/image/ShortLookupTable.* java/awt/image/ShortLookupTable$*.* java/awt/image/SinglePixelPackedSampleModel$*.* java/awt/image/SinglePixelPackedSampleModel.* java/awt/image/TileObserver$*.* java/awt/image/TileObserver.* java/awt/image/VolatileImage.* java/awt/image/VolatileImage$*.* java/awt/image/WritableRaster$*.* java/awt/image/WritableRaster.* java/awt/image/WritableRenderedImage.* java/awt/image/WritableRenderedImage$*.* java/awt/image/renderable/ContextualRenderedImageFactory.* java/awt/image/renderable/ContextualRenderedImageFactory$*.* java/awt/image/renderable/ParameterBlock.* java/awt/image/renderable/ParameterBlock$*.* java/awt/image/renderable/RenderContext$*.* java/awt/image/renderable/RenderContext.* java/awt/image/renderable/RenderableImage$*.* java/awt/image/renderable/RenderableImage.* java/awt/image/renderable/RenderableImageOp.* java/awt/image/renderable/RenderableImageOp$*.* java/awt/image/renderable/RenderableImageProducer$*.* java/awt/image/renderable/RenderableImageProducer.* java/awt/image/renderable/RenderedImageFactory.* java/awt/image/renderable/RenderedImageFactory$*.* java/awt/peer/ButtonPeer$*.* java/awt/peer/ButtonPeer.* java/awt/peer/CanvasPeer$*.* java/awt/peer/CanvasPeer.* java/awt/peer/CheckboxMenuItemPeer$*.* java/awt/peer/CheckboxMenuItemPeer.* java/awt/peer/CheckboxPeer$*.* java/awt/peer/CheckboxPeer.* java/awt/peer/ChoicePeer.* java/awt/peer/ChoicePeer$*.* java/awt/peer/ComponentPeer$*.* java/awt/peer/ComponentPeer.* java/awt/peer/DialogPeer$*.* java/awt/peer/DialogPeer.* java/awt/peer/FileDialogPeer$*.* java/awt/peer/FileDialogPeer.* java/awt/peer/FontPeer.* java/awt/peer/FontPeer$*.* java/awt/peer/FramePeer$*.* java/awt/peer/FramePeer.* java/awt/peer/LabelPeer.* java/awt/peer/LabelPeer$*.* java/awt/peer/LightweightPeer.* java/awt/peer/LightweightPeer$*.* java/awt/peer/ListPeer$*.* java/awt/peer/ListPeer.* java/awt/peer/MenuBarPeer$*.* java/awt/peer/MenuBarPeer.* java/awt/peer/MenuComponentPeer$*.* java/awt/peer/MenuComponentPeer.* java/awt/peer/MenuItemPeer$*.* java/awt/peer/MenuItemPeer.* java/awt/peer/MenuPeer.* java/awt/peer/MenuPeer$*.* java/awt/peer/MouseInfoPeer$*.* java/awt/peer/MouseInfoPeer.* java/awt/peer/PanelPeer.* java/awt/peer/PanelPeer$*.* java/awt/peer/PopupMenuPeer$*.* java/awt/peer/PopupMenuPeer.* java/awt/peer/ScrollPanePeer.* java/awt/peer/ScrollPanePeer$*.* java/awt/peer/ScrollbarPeer.* java/awt/peer/ScrollbarPeer$*.* java/awt/peer/TextAreaPeer.* java/awt/peer/TextAreaPeer$*.* java/awt/peer/TextFieldPeer$*.* java/awt/peer/TextFieldPeer.* java/awt/peer/WindowPeer$*.* java/awt/peer/WindowPeer.* java/awt/print/Book$*.* java/awt/print/Book.* java/awt/print/PageFormat$*.* java/awt/print/PageFormat.* java/awt/print/Pageable$*.* java/awt/print/Pageable.* java/awt/print/Paper.* java/awt/print/Paper$*.* java/awt/print/Printable.* java/awt/print/Printable$*.* java/awt/print/PrinterAbortException.* java/awt/print/PrinterAbortException$*.* java/awt/print/PrinterException$*.* java/awt/print/PrinterException.* java/awt/print/PrinterGraphics$*.* java/awt/print/PrinterGraphics.* java/awt/print/PrinterIOException$*.* java/awt/print/PrinterIOException.* java/awt/print/PrinterJob.* java/awt/print/PrinterJob$*.* java/awt/print/PrinterJobImpl$*.* java/awt/print/PrinterJobImpl.* org/apache/harmony/awt/AWTPermissionCollection$*.* org/apache/harmony/awt/AWTPermissionCollection.* org/apache/harmony/awt/ButtonStateController$*.* org/apache/harmony/awt/ButtonStateController.* org/apache/harmony/awt/ByteVector.* org/apache/harmony/awt/ByteVector$*.* org/apache/harmony/awt/ChoiceStyle.* org/apache/harmony/awt/ChoiceStyle$*.* org/apache/harmony/awt/ClipRegion$*.* org/apache/harmony/awt/ClipRegion.* org/apache/harmony/awt/ComponentInternals$*.* org/apache/harmony/awt/ComponentInternals.* org/apache/harmony/awt/ContextStorage.* org/apache/harmony/awt/ContextStorage$*.* org/apache/harmony/awt/ContextThreadGroup.* org/apache/harmony/awt/ContextThreadGroup$*.* org/apache/harmony/awt/FieldsAccessor$*.* org/apache/harmony/awt/FieldsAccessor.* org/apache/harmony/awt/ListenerList.* org/apache/harmony/awt/ListenerList$*.* org/apache/harmony/awt/MouseEventPreprocessor.* org/apache/harmony/awt/MouseEventPreprocessor$*.* org/apache/harmony/awt/PeriodicTimer$*.* org/apache/harmony/awt/PeriodicTimer.* org/apache/harmony/awt/ReadOnlyIterator.* org/apache/harmony/awt/ReadOnlyIterator$*.* org/apache/harmony/awt/RelativeTimer$*.* org/apache/harmony/awt/RelativeTimer.* org/apache/harmony/awt/ScrollStateController$*.* org/apache/harmony/awt/ScrollStateController.* org/apache/harmony/awt/Scrollable$*.* org/apache/harmony/awt/Scrollable.* org/apache/harmony/awt/ScrollbarStateController.* org/apache/harmony/awt/ScrollbarStateController$*.* org/apache/harmony/awt/SingleShotTimer.* org/apache/harmony/awt/SingleShotTimer$*.* org/apache/harmony/awt/Theme.* org/apache/harmony/awt/Theme$*.* org/apache/harmony/awt/Utils$*.* org/apache/harmony/awt/Utils.* org/apache/harmony/awt/datatransfer/DTK.* org/apache/harmony/awt/datatransfer/DTK$*.* org/apache/harmony/awt/datatransfer/DataProvider.* org/apache/harmony/awt/datatransfer/DataProvider$*.* org/apache/harmony/awt/datatransfer/DataProxy.* org/apache/harmony/awt/datatransfer/DataProxy$*.* org/apache/harmony/awt/datatransfer/DataSnapshot$*.* org/apache/harmony/awt/datatransfer/DataSnapshot.* org/apache/harmony/awt/datatransfer/DataSource.* org/apache/harmony/awt/datatransfer/DataSource$*.* org/apache/harmony/awt/datatransfer/DataTransferThread.* org/apache/harmony/awt/datatransfer/DataTransferThread$*.* org/apache/harmony/awt/datatransfer/DragSourceEventProxy.* org/apache/harmony/awt/datatransfer/DragSourceEventProxy$*.* org/apache/harmony/awt/datatransfer/FlavorsComparator$*.* org/apache/harmony/awt/datatransfer/FlavorsComparator.* org/apache/harmony/awt/datatransfer/NativeClipboard$*.* org/apache/harmony/awt/datatransfer/NativeClipboard.* org/apache/harmony/awt/datatransfer/RawBitmap$*.* org/apache/harmony/awt/datatransfer/RawBitmap.* org/apache/harmony/awt/datatransfer/TextFlavor$*.* org/apache/harmony/awt/datatransfer/TextFlavor.* org/apache/harmony/awt/geom/CrossingHelper.* org/apache/harmony/awt/geom/CrossingHelper$*.* org/apache/harmony/awt/geom/CurveCrossingHelper.* org/apache/harmony/awt/geom/CurveCrossingHelper$*.* org/apache/harmony/awt/geom/GeometryUtil$*.* org/apache/harmony/awt/geom/GeometryUtil.* org/apache/harmony/awt/geom/IntersectPoint.* org/apache/harmony/awt/geom/IntersectPoint$*.* org/apache/harmony/awt/gl/AwtImageBackdoorAccessor.* org/apache/harmony/awt/gl/AwtImageBackdoorAccessor$*.* org/apache/harmony/awt/gl/CommonGraphics2D.* org/apache/harmony/awt/gl/CommonGraphics2D$*.* org/apache/harmony/awt/gl/CommonGraphics2DFactory$*.* org/apache/harmony/awt/gl/CommonGraphics2DFactory.* org/apache/harmony/awt/gl/CommonGraphicsEnvironment.* org/apache/harmony/awt/gl/CommonGraphicsEnvironment$*.* org/apache/harmony/awt/gl/Crossing$*.* org/apache/harmony/awt/gl/Crossing.* org/apache/harmony/awt/gl/GLGraphicsDevice.* org/apache/harmony/awt/gl/GLGraphicsDevice$*.* org/apache/harmony/awt/gl/GLVolatileImage$*.* org/apache/harmony/awt/gl/GLVolatileImage.* org/apache/harmony/awt/gl/ICompositeContext.* org/apache/harmony/awt/gl/ICompositeContext$*.* org/apache/harmony/awt/gl/ImageSurface$*.* org/apache/harmony/awt/gl/ImageSurface.* org/apache/harmony/awt/gl/MultiRectArea$*.* org/apache/harmony/awt/gl/MultiRectArea.* org/apache/harmony/awt/gl/MultiRectAreaOp$*.* org/apache/harmony/awt/gl/MultiRectAreaOp.* org/apache/harmony/awt/gl/Surface.* org/apache/harmony/awt/gl/Surface$*.* org/apache/harmony/awt/gl/TextRenderer$*.* org/apache/harmony/awt/gl/TextRenderer.* org/apache/harmony/awt/gl/Utils.* org/apache/harmony/awt/gl/Utils$*.* org/apache/harmony/awt/gl/XORComposite$*.* org/apache/harmony/awt/gl/XORComposite.* org/apache/harmony/awt/gl/color/ColorConverter.* org/apache/harmony/awt/gl/color/ColorConverter$*.* org/apache/harmony/awt/gl/color/ColorScaler.* org/apache/harmony/awt/gl/color/ColorScaler$*.* org/apache/harmony/awt/gl/color/ICC_ProfileHelper.* org/apache/harmony/awt/gl/color/ICC_ProfileHelper$*.* org/apache/harmony/awt/gl/color/ICC_Transform$*.* org/apache/harmony/awt/gl/color/ICC_Transform.* org/apache/harmony/awt/gl/color/LUTColorConverter$*.* org/apache/harmony/awt/gl/color/LUTColorConverter.* org/apache/harmony/awt/gl/color/NativeCMM.* org/apache/harmony/awt/gl/color/NativeCMM$*.* org/apache/harmony/awt/gl/color/NativeImageFormat$*.* org/apache/harmony/awt/gl/color/NativeImageFormat.* org/apache/harmony/awt/gl/font/BasicMetrics.* org/apache/harmony/awt/gl/font/BasicMetrics$*.* org/apache/harmony/awt/gl/font/CaretManager$*.* org/apache/harmony/awt/gl/font/CaretManager.* org/apache/harmony/awt/gl/font/CommonGlyphVector.* org/apache/harmony/awt/gl/font/CommonGlyphVector$*.* org/apache/harmony/awt/gl/font/CompositeFont$*.* org/apache/harmony/awt/gl/font/CompositeFont.* org/apache/harmony/awt/gl/font/FontExtraMetrics$*.* org/apache/harmony/awt/gl/font/FontExtraMetrics.* org/apache/harmony/awt/gl/font/FontFinder$*.* org/apache/harmony/awt/gl/font/FontFinder.* org/apache/harmony/awt/gl/font/FontManager$*.* org/apache/harmony/awt/gl/font/FontManager.* org/apache/harmony/awt/gl/font/FontMetricsImpl$*.* org/apache/harmony/awt/gl/font/FontMetricsImpl.* org/apache/harmony/awt/gl/font/FontPeerImpl.* org/apache/harmony/awt/gl/font/FontPeerImpl$*.* org/apache/harmony/awt/gl/font/FontProperty.* org/apache/harmony/awt/gl/font/FontProperty$*.* org/apache/harmony/awt/gl/font/Glyph.* org/apache/harmony/awt/gl/font/Glyph$*.* org/apache/harmony/awt/gl/font/LineMetricsImpl$*.* org/apache/harmony/awt/gl/font/LineMetricsImpl.* org/apache/harmony/awt/gl/font/TextDecorator$*.* org/apache/harmony/awt/gl/font/TextDecorator.* org/apache/harmony/awt/gl/font/TextMetricsCalculator.* org/apache/harmony/awt/gl/font/TextMetricsCalculator$*.* org/apache/harmony/awt/gl/font/TextRunBreaker$*.* org/apache/harmony/awt/gl/font/TextRunBreaker.* org/apache/harmony/awt/gl/font/TextRunSegment.* org/apache/harmony/awt/gl/font/TextRunSegment$*.* org/apache/harmony/awt/gl/font/TextRunSegmentImpl.* org/apache/harmony/awt/gl/font/TextRunSegmentImpl$*.* org/apache/harmony/awt/gl/font/fontlib/FLFontManager$*.* org/apache/harmony/awt/gl/font/fontlib/FLFontManager.* org/apache/harmony/awt/gl/font/fontlib/FLFontPeer$*.* org/apache/harmony/awt/gl/font/fontlib/FLFontPeer.* org/apache/harmony/awt/gl/font/fontlib/FLGlyph$*.* org/apache/harmony/awt/gl/font/fontlib/FLGlyph.* org/apache/harmony/awt/gl/font/fontlib/FLOutline.* org/apache/harmony/awt/gl/font/fontlib/FLOutline$*.* org/apache/harmony/awt/gl/font/fontlib/FLPath.* org/apache/harmony/awt/gl/font/fontlib/FLPath$*.* org/apache/harmony/awt/gl/font/fontlib/FLTextRenderer$*.* org/apache/harmony/awt/gl/font/fontlib/FLTextRenderer.* org/apache/harmony/awt/gl/image/BufferedImageGraphics2D$*.* org/apache/harmony/awt/gl/image/BufferedImageGraphics2D.* org/apache/harmony/awt/gl/image/BufferedImageSource$*.* org/apache/harmony/awt/gl/image/BufferedImageSource.* org/apache/harmony/awt/gl/image/ByteArrayDecodingImageSource.* org/apache/harmony/awt/gl/image/ByteArrayDecodingImageSource$*.* org/apache/harmony/awt/gl/image/DataBufferListener$*.* org/apache/harmony/awt/gl/image/DataBufferListener.* org/apache/harmony/awt/gl/image/DecodingImageSource$*.* org/apache/harmony/awt/gl/image/DecodingImageSource.* org/apache/harmony/awt/gl/image/FileDecodingImageSource$*.* org/apache/harmony/awt/gl/image/FileDecodingImageSource.* org/apache/harmony/awt/gl/image/GifDecoder.* org/apache/harmony/awt/gl/image/GifDecoder$*.* org/apache/harmony/awt/gl/image/ImageDecoder$*.* org/apache/harmony/awt/gl/image/ImageDecoder.* org/apache/harmony/awt/gl/image/ImageLoader.* org/apache/harmony/awt/gl/image/ImageLoader$*.* org/apache/harmony/awt/gl/image/JpegDecoder.* org/apache/harmony/awt/gl/image/JpegDecoder$*.* org/apache/harmony/awt/gl/image/OffscreenImage.* org/apache/harmony/awt/gl/image/OffscreenImage$*.* org/apache/harmony/awt/gl/image/OrdinaryWritableRaster.* org/apache/harmony/awt/gl/image/OrdinaryWritableRaster$*.* org/apache/harmony/awt/gl/image/PngDecoder.* org/apache/harmony/awt/gl/image/PngDecoder$*.* org/apache/harmony/awt/gl/image/URLDecodingImageSource$*.* org/apache/harmony/awt/gl/image/URLDecodingImageSource.* org/apache/harmony/awt/gl/opengl/GL$*.* org/apache/harmony/awt/gl/opengl/GL.* org/apache/harmony/awt/gl/opengl/GLDefs$*.* org/apache/harmony/awt/gl/opengl/GLDefs.* org/apache/harmony/awt/gl/opengl/OGLBlitter.* org/apache/harmony/awt/gl/opengl/OGLBlitter$*.* org/apache/harmony/awt/gl/opengl/OGLContextManager$*.* org/apache/harmony/awt/gl/opengl/OGLContextManager.* org/apache/harmony/awt/gl/opengl/OGLGraphics2D$*.* org/apache/harmony/awt/gl/opengl/OGLGraphics2D.* org/apache/harmony/awt/gl/opengl/OGLSurface.* org/apache/harmony/awt/gl/opengl/OGLSurface$*.* org/apache/harmony/awt/gl/opengl/OGLTextRenderer.* org/apache/harmony/awt/gl/opengl/OGLTextRenderer$*.* org/apache/harmony/awt/gl/opengl/OGLVolatileImage.* org/apache/harmony/awt/gl/opengl/OGLVolatileImage$*.* org/apache/harmony/awt/gl/opengl/TextureCache$*.* org/apache/harmony/awt/gl/opengl/TextureCache.* org/apache/harmony/awt/gl/render/Blitter$*.* org/apache/harmony/awt/gl/render/Blitter.* org/apache/harmony/awt/gl/render/JavaArcRasterizer$*.* org/apache/harmony/awt/gl/render/JavaArcRasterizer.* org/apache/harmony/awt/gl/render/JavaBlitter$*.* org/apache/harmony/awt/gl/render/JavaBlitter.* org/apache/harmony/awt/gl/render/JavaLineRasterizer.* org/apache/harmony/awt/gl/render/JavaLineRasterizer$*.* org/apache/harmony/awt/gl/render/JavaShapeRasterizer$*.* org/apache/harmony/awt/gl/render/JavaShapeRasterizer.* org/apache/harmony/awt/gl/render/JavaTextRenderer.* org/apache/harmony/awt/gl/render/JavaTextRenderer$*.* org/apache/harmony/awt/gl/render/NativeImageBlitter.* org/apache/harmony/awt/gl/render/NativeImageBlitter$*.* org/apache/harmony/awt/gl/render/NullBlitter.* org/apache/harmony/awt/gl/render/NullBlitter$*.* org/apache/harmony/awt/im/CompositionWindow.* org/apache/harmony/awt/im/CompositionWindow$*.* org/apache/harmony/awt/im/IMJFrame$*.* org/apache/harmony/awt/im/IMJFrame.* org/apache/harmony/awt/im/IMManager.* org/apache/harmony/awt/im/IMManager$*.* org/apache/harmony/awt/im/IMWindow$*.* org/apache/harmony/awt/im/IMWindow.* org/apache/harmony/awt/im/InputMethodContext.* org/apache/harmony/awt/im/InputMethodContext$*.* org/apache/harmony/awt/internal/nls/Messages$*.* org/apache/harmony/awt/internal/nls/Messages.* org/apache/harmony/awt/nativebridge/BasicLibWrapper.* org/apache/harmony/awt/nativebridge/BasicLibWrapper$*.* org/apache/harmony/awt/nativebridge/ByteBase.* org/apache/harmony/awt/nativebridge/ByteBase$*.* org/apache/harmony/awt/nativebridge/CLongPointer$*.* org/apache/harmony/awt/nativebridge/CLongPointer.* org/apache/harmony/awt/nativebridge/CommonStructWrapper.* org/apache/harmony/awt/nativebridge/CommonStructWrapper$*.* org/apache/harmony/awt/nativebridge/DoublePointer.* org/apache/harmony/awt/nativebridge/DoublePointer$*.* org/apache/harmony/awt/nativebridge/FloatPointer$*.* org/apache/harmony/awt/nativebridge/FloatPointer.* org/apache/harmony/awt/nativebridge/Int16Pointer$*.* org/apache/harmony/awt/nativebridge/Int16Pointer.* org/apache/harmony/awt/nativebridge/Int32Pointer$*.* org/apache/harmony/awt/nativebridge/Int32Pointer.* org/apache/harmony/awt/nativebridge/Int64Pointer$*.* org/apache/harmony/awt/nativebridge/Int64Pointer.* org/apache/harmony/awt/nativebridge/Int8Pointer.* org/apache/harmony/awt/nativebridge/Int8Pointer$*.* org/apache/harmony/awt/nativebridge/NativeBridge$*.* org/apache/harmony/awt/nativebridge/NativeBridge.* org/apache/harmony/awt/nativebridge/PointerPointer$*.* org/apache/harmony/awt/nativebridge/PointerPointer.* org/apache/harmony/awt/nativebridge/VoidPointer.* org/apache/harmony/awt/nativebridge/VoidPointer$*.* org/apache/harmony/awt/state/ButtonState$*.* org/apache/harmony/awt/state/ButtonState.* org/apache/harmony/awt/state/CheckboxState$*.* org/apache/harmony/awt/state/CheckboxState.* org/apache/harmony/awt/state/ChoiceState.* org/apache/harmony/awt/state/ChoiceState$*.* org/apache/harmony/awt/state/LabelState$*.* org/apache/harmony/awt/state/LabelState.* org/apache/harmony/awt/state/ListState.* org/apache/harmony/awt/state/ListState$*.* org/apache/harmony/awt/state/MenuBarState.* org/apache/harmony/awt/state/MenuBarState$*.* org/apache/harmony/awt/state/MenuItemState$*.* org/apache/harmony/awt/state/MenuItemState.* org/apache/harmony/awt/state/MenuState.* org/apache/harmony/awt/state/MenuState$*.* org/apache/harmony/awt/state/ScrollbarState$*.* org/apache/harmony/awt/state/ScrollbarState.* org/apache/harmony/awt/state/State.* org/apache/harmony/awt/state/State$*.* org/apache/harmony/awt/state/TextComponentState.* org/apache/harmony/awt/state/TextComponentState$*.* org/apache/harmony/awt/state/TextState.* org/apache/harmony/awt/state/TextState$*.* org/apache/harmony/awt/text/AWTHighlighter$*.* org/apache/harmony/awt/text/AWTHighlighter.* org/apache/harmony/awt/text/AWTTextAction$*.* org/apache/harmony/awt/text/AWTTextAction.* org/apache/harmony/awt/text/ActionNames$*.* org/apache/harmony/awt/text/ActionNames.* org/apache/harmony/awt/text/ActionSet$*.* org/apache/harmony/awt/text/ActionSet.* org/apache/harmony/awt/text/ComposedTextParams.* org/apache/harmony/awt/text/ComposedTextParams$*.* org/apache/harmony/awt/text/InputMethodListenerImpl.* org/apache/harmony/awt/text/InputMethodListenerImpl$*.* org/apache/harmony/awt/text/InputMethodRequestsImpl$*.* org/apache/harmony/awt/text/InputMethodRequestsImpl.* org/apache/harmony/awt/text/PropertyNames.* org/apache/harmony/awt/text/PropertyNames$*.* org/apache/harmony/awt/text/RootViewContext.* org/apache/harmony/awt/text/RootViewContext$*.* org/apache/harmony/awt/text/TextCaret$*.* org/apache/harmony/awt/text/TextCaret.* org/apache/harmony/awt/text/TextFactory.* org/apache/harmony/awt/text/TextFactory$*.* org/apache/harmony/awt/text/TextFieldKit.* org/apache/harmony/awt/text/TextFieldKit$*.* org/apache/harmony/awt/text/TextKit.* org/apache/harmony/awt/text/TextKit$*.* org/apache/harmony/awt/text/TextUtils.* org/apache/harmony/awt/text/TextUtils$*.* org/apache/harmony/awt/theme/DefaultButton.* org/apache/harmony/awt/theme/DefaultButton$*.* org/apache/harmony/awt/theme/DefaultCheckbox.* org/apache/harmony/awt/theme/DefaultCheckbox$*.* org/apache/harmony/awt/theme/DefaultChoice.* org/apache/harmony/awt/theme/DefaultChoice$*.* org/apache/harmony/awt/theme/DefaultFileDialog.* org/apache/harmony/awt/theme/DefaultFileDialog$*.* org/apache/harmony/awt/theme/DefaultLabel.* org/apache/harmony/awt/theme/DefaultLabel$*.* org/apache/harmony/awt/theme/DefaultList$*.* org/apache/harmony/awt/theme/DefaultList.* org/apache/harmony/awt/theme/DefaultMenu$*.* org/apache/harmony/awt/theme/DefaultMenu.* org/apache/harmony/awt/theme/DefaultMenuBar.* org/apache/harmony/awt/theme/DefaultMenuBar$*.* org/apache/harmony/awt/theme/DefaultScrollbar.* org/apache/harmony/awt/theme/DefaultScrollbar$*.* org/apache/harmony/awt/theme/DefaultStyle$*.* org/apache/harmony/awt/theme/DefaultStyle.* org/apache/harmony/awt/theme/DefaultTextComponent.* org/apache/harmony/awt/theme/DefaultTextComponent$*.* org/apache/harmony/awt/wtk/CreationParams$*.* org/apache/harmony/awt/wtk/CreationParams.* org/apache/harmony/awt/wtk/CursorFactory$*.* org/apache/harmony/awt/wtk/CursorFactory.* org/apache/harmony/awt/wtk/GraphicsFactory.* org/apache/harmony/awt/wtk/GraphicsFactory$*.* org/apache/harmony/awt/wtk/KeyInfo.* org/apache/harmony/awt/wtk/KeyInfo$*.* org/apache/harmony/awt/wtk/NativeCursor.* org/apache/harmony/awt/wtk/NativeCursor$*.* org/apache/harmony/awt/wtk/NativeEvent$*.* org/apache/harmony/awt/wtk/NativeEvent.* org/apache/harmony/awt/wtk/NativeEventListener$*.* org/apache/harmony/awt/wtk/NativeEventListener.* org/apache/harmony/awt/wtk/NativeEventQueue.* org/apache/harmony/awt/wtk/NativeEventQueue$*.* org/apache/harmony/awt/wtk/NativeEventThread$*.* org/apache/harmony/awt/wtk/NativeEventThread.* org/apache/harmony/awt/wtk/NativeIM$*.* org/apache/harmony/awt/wtk/NativeIM.* org/apache/harmony/awt/wtk/NativeMouseInfo.* org/apache/harmony/awt/wtk/NativeMouseInfo$*.* org/apache/harmony/awt/wtk/NativeRobot.* org/apache/harmony/awt/wtk/NativeRobot$*.* org/apache/harmony/awt/wtk/NativeWindow.* org/apache/harmony/awt/wtk/NativeWindow$*.* org/apache/harmony/awt/wtk/ShutdownThread$*.* org/apache/harmony/awt/wtk/ShutdownThread.* org/apache/harmony/awt/wtk/ShutdownWatchdog$*.* org/apache/harmony/awt/wtk/ShutdownWatchdog.* org/apache/harmony/awt/wtk/Synchronizer$*.* org/apache/harmony/awt/wtk/Synchronizer.* org/apache/harmony/awt/wtk/SystemProperties.* org/apache/harmony/awt/wtk/SystemProperties$*.* org/apache/harmony/awt/wtk/WTK$*.* org/apache/harmony/awt/wtk/WTK.* org/apache/harmony/awt/wtk/WindowFactory$*.* org/apache/harmony/awt/wtk/WindowFactory.* org/apache/harmony/awt/www/content/image/gif.* org/apache/harmony/awt/www/content/image/gif$*.* org/apache/harmony/awt/www/content/image/jpeg.* org/apache/harmony/awt/www/content/image/jpeg$*.* org/apache/harmony/awt/www/content/image/png$*.* org/apache/harmony/awt/www/content/image/png.* org/apache/harmony/awt/datatransfer/linux/LinuxDTK.* org/apache/harmony/awt/datatransfer/linux/LinuxDTK$*.* org/apache/harmony/awt/datatransfer/linux/LinuxDragSource.* org/apache/harmony/awt/datatransfer/linux/LinuxDragSource$*.* org/apache/harmony/awt/datatransfer/linux/LinuxDropTarget.* org/apache/harmony/awt/datatransfer/linux/LinuxDropTarget$*.* org/apache/harmony/awt/datatransfer/linux/LinuxSelection$*.* org/apache/harmony/awt/datatransfer/linux/LinuxSelection.* org/apache/harmony/awt/gl/font/LinuxFont$*.* org/apache/harmony/awt/gl/font/LinuxFont.* org/apache/harmony/awt/gl/font/LinuxFontManager.* org/apache/harmony/awt/gl/font/LinuxFontManager$*.* org/apache/harmony/awt/gl/font/LinuxFontProperty$*.* org/apache/harmony/awt/gl/font/LinuxFontProperty.* org/apache/harmony/awt/gl/font/LinuxGlyph$*.* org/apache/harmony/awt/gl/font/LinuxGlyph.* org/apache/harmony/awt/gl/font/LinuxLineMetrics.* org/apache/harmony/awt/gl/font/LinuxLineMetrics$*.* org/apache/harmony/awt/gl/font/LinuxNativeFont.* org/apache/harmony/awt/gl/font/LinuxNativeFont$*.* org/apache/harmony/awt/gl/linux/DrawableTextRenderer$*.* org/apache/harmony/awt/gl/linux/DrawableTextRenderer.* org/apache/harmony/awt/gl/linux/GLXGraphicsConfiguration$*.* org/apache/harmony/awt/gl/linux/GLXGraphicsConfiguration.* org/apache/harmony/awt/gl/linux/LinuxGraphics2DFactory.* org/apache/harmony/awt/gl/linux/LinuxGraphics2DFactory$*.* org/apache/harmony/awt/gl/linux/LinuxUtils$*.* org/apache/harmony/awt/gl/linux/LinuxUtils.* org/apache/harmony/awt/gl/linux/PixmapSurface.* org/apache/harmony/awt/gl/linux/PixmapSurface$*.* org/apache/harmony/awt/gl/linux/XBlitter.* org/apache/harmony/awt/gl/linux/XBlitter$*.* org/apache/harmony/awt/gl/linux/XGraphics2D.* org/apache/harmony/awt/gl/linux/XGraphics2D$*.* org/apache/harmony/awt/gl/linux/XGraphicsConfiguration$*.* org/apache/harmony/awt/gl/linux/XGraphicsConfiguration.* org/apache/harmony/awt/gl/linux/XGraphicsDevice.* org/apache/harmony/awt/gl/linux/XGraphicsDevice$*.* org/apache/harmony/awt/gl/linux/XGraphicsEnvironment$*.* org/apache/harmony/awt/gl/linux/XGraphicsEnvironment.* org/apache/harmony/awt/gl/linux/XSurface.* org/apache/harmony/awt/gl/linux/XSurface$*.* org/apache/harmony/awt/gl/linux/XVolatileImage.* org/apache/harmony/awt/gl/linux/XVolatileImage$*.* org/apache/harmony/awt/nativebridge/linux/ErrorHandler$*.* org/apache/harmony/awt/nativebridge/linux/ErrorHandler.* org/apache/harmony/awt/nativebridge/linux/GLX$*.* org/apache/harmony/awt/nativebridge/linux/GLX.* org/apache/harmony/awt/nativebridge/linux/LinuxNativeFontWrapper$*.* org/apache/harmony/awt/nativebridge/linux/LinuxNativeFontWrapper.* org/apache/harmony/awt/nativebridge/linux/X11.* org/apache/harmony/awt/nativebridge/linux/X11$*.* org/apache/harmony/awt/nativebridge/linux/X11Defs.* org/apache/harmony/awt/nativebridge/linux/X11Defs$*.* org/apache/harmony/awt/nativebridge/linux/Xft.* org/apache/harmony/awt/nativebridge/linux/Xft$*.* org/apache/harmony/awt/wtk/linux/ContentWindow.* org/apache/harmony/awt/wtk/linux/ContentWindow$*.* org/apache/harmony/awt/wtk/linux/KeyCodeTranslator$*.* org/apache/harmony/awt/wtk/linux/KeyCodeTranslator.* org/apache/harmony/awt/wtk/linux/LinuxCursor.* org/apache/harmony/awt/wtk/linux/LinuxCursor$*.* org/apache/harmony/awt/wtk/linux/LinuxCursorFactory.* org/apache/harmony/awt/wtk/linux/LinuxCursorFactory$*.* org/apache/harmony/awt/wtk/linux/LinuxEvent.* org/apache/harmony/awt/wtk/linux/LinuxEvent$*.* org/apache/harmony/awt/wtk/linux/LinuxEventQueue$*.* org/apache/harmony/awt/wtk/linux/LinuxEventQueue.* org/apache/harmony/awt/wtk/linux/LinuxMouseInfo.* org/apache/harmony/awt/wtk/linux/LinuxMouseInfo$*.* org/apache/harmony/awt/wtk/linux/LinuxSystemProperties$*.* org/apache/harmony/awt/wtk/linux/LinuxSystemProperties.* org/apache/harmony/awt/wtk/linux/LinuxWTK$*.* org/apache/harmony/awt/wtk/linux/LinuxWTK.* org/apache/harmony/awt/wtk/linux/LinuxWindow$*.* org/apache/harmony/awt/wtk/linux/LinuxWindow.* org/apache/harmony/awt/wtk/linux/LinuxWindowFactory$*.* org/apache/harmony/awt/wtk/linux/LinuxWindowFactory.* org/apache/harmony/awt/wtk/linux/LinuxWindowMap.* org/apache/harmony/awt/wtk/linux/LinuxWindowMap$*.* org/apache/harmony/awt/wtk/linux/WindowManager$*.* org/apache/harmony/awt/wtk/linux/WindowManager.* org/apache/harmony/awt/wtk/linux/XServerConnection.* org/apache/harmony/awt/wtk/linux/XServerConnection$*.* org/apache/harmony/awt/wtk/linux/XTestRobot.* org/apache/harmony/awt/wtk/linux/XTestRobot$*.* org/apache/harmony/awt/datatransfer/windows/WinClipboard.* org/apache/harmony/awt/datatransfer/windows/WinClipboard$*.* org/apache/harmony/awt/datatransfer/windows/WinDTK.* org/apache/harmony/awt/datatransfer/windows/WinDTK$*.* org/apache/harmony/awt/datatransfer/windows/WinDragSource$*.* org/apache/harmony/awt/datatransfer/windows/WinDragSource.* org/apache/harmony/awt/datatransfer/windows/WinDropTarget$*.* org/apache/harmony/awt/datatransfer/windows/WinDropTarget.* org/apache/harmony/awt/gl/font/NativeFont.* org/apache/harmony/awt/gl/font/NativeFont$*.* org/apache/harmony/awt/gl/font/WinFontManager.* org/apache/harmony/awt/gl/font/WinFontManager$*.* org/apache/harmony/awt/gl/font/WinFontProperty$*.* org/apache/harmony/awt/gl/font/WinFontProperty.* org/apache/harmony/awt/gl/font/WinGlyph.* org/apache/harmony/awt/gl/font/WinGlyph$*.* org/apache/harmony/awt/gl/font/WindowsFont.* org/apache/harmony/awt/gl/font/WindowsFont$*.* org/apache/harmony/awt/gl/windows/BitmapSurface.* org/apache/harmony/awt/gl/windows/BitmapSurface$*.* org/apache/harmony/awt/gl/windows/GDIBlitter$*.* org/apache/harmony/awt/gl/windows/GDIBlitter.* org/apache/harmony/awt/gl/windows/GDIPTextRenderer$*.* org/apache/harmony/awt/gl/windows/GDIPTextRenderer.* org/apache/harmony/awt/gl/windows/GDISurface.* org/apache/harmony/awt/gl/windows/GDISurface$*.* org/apache/harmony/awt/gl/windows/GDITextRenderer$*.* org/apache/harmony/awt/gl/windows/GDITextRenderer.* org/apache/harmony/awt/gl/windows/WGLGraphicsConfiguration$*.* org/apache/harmony/awt/gl/windows/WGLGraphicsConfiguration.* org/apache/harmony/awt/gl/windows/WinGDIGraphics2D.* org/apache/harmony/awt/gl/windows/WinGDIGraphics2D$*.* org/apache/harmony/awt/gl/windows/WinGDIPGraphics2D.* org/apache/harmony/awt/gl/windows/WinGDIPGraphics2D$*.* org/apache/harmony/awt/gl/windows/WinGraphics2DFactory$*.* org/apache/harmony/awt/gl/windows/WinGraphics2DFactory.* org/apache/harmony/awt/gl/windows/WinGraphicsConfiguration$*.* org/apache/harmony/awt/gl/windows/WinGraphicsConfiguration.* org/apache/harmony/awt/gl/windows/WinGraphicsDevice.* org/apache/harmony/awt/gl/windows/WinGraphicsDevice$*.* org/apache/harmony/awt/gl/windows/WinGraphicsEnvironment$*.* org/apache/harmony/awt/gl/windows/WinGraphicsEnvironment.* org/apache/harmony/awt/gl/windows/WinUtils$*.* org/apache/harmony/awt/gl/windows/WinUtils.* org/apache/harmony/awt/gl/windows/WinVolatileImage$*.* org/apache/harmony/awt/gl/windows/WinVolatileImage.* org/apache/harmony/awt/nativebridge/windows/Callback.* org/apache/harmony/awt/nativebridge/windows/Callback$*.* org/apache/harmony/awt/nativebridge/windows/WGL.* org/apache/harmony/awt/nativebridge/windows/WGL$*.* org/apache/harmony/awt/nativebridge/windows/WGLDefs$*.* org/apache/harmony/awt/nativebridge/windows/WGLDefs.* org/apache/harmony/awt/nativebridge/windows/Win32$*.* org/apache/harmony/awt/nativebridge/windows/Win32.* org/apache/harmony/awt/nativebridge/windows/WinDataTransfer$*.* org/apache/harmony/awt/nativebridge/windows/WinDataTransfer.* org/apache/harmony/awt/nativebridge/windows/WinManagement$*.* org/apache/harmony/awt/nativebridge/windows/WinManagement.* org/apache/harmony/awt/nativebridge/windows/WindowsConsts$*.* org/apache/harmony/awt/nativebridge/windows/WindowsConsts.* org/apache/harmony/awt/nativebridge/windows/WindowsDefs$*.* org/apache/harmony/awt/nativebridge/windows/WindowsDefs.* org/apache/harmony/awt/theme/windows/WinButton$*.* org/apache/harmony/awt/theme/windows/WinButton.* org/apache/harmony/awt/theme/windows/WinCheckbox.* org/apache/harmony/awt/theme/windows/WinCheckbox$*.* org/apache/harmony/awt/theme/windows/WinChoice.* org/apache/harmony/awt/theme/windows/WinChoice$*.* org/apache/harmony/awt/theme/windows/WinFileDialog$*.* org/apache/harmony/awt/theme/windows/WinFileDialog.* org/apache/harmony/awt/theme/windows/WinScrollbar.* org/apache/harmony/awt/theme/windows/WinScrollbar$*.* org/apache/harmony/awt/theme/windows/WinStyle$*.* org/apache/harmony/awt/theme/windows/WinStyle.* org/apache/harmony/awt/theme/windows/WinTextComponent.* org/apache/harmony/awt/theme/windows/WinTextComponent$*.* org/apache/harmony/awt/theme/windows/WinTheme.* org/apache/harmony/awt/theme/windows/WinTheme$*.* org/apache/harmony/awt/theme/windows/WinThemeGraphics$*.* org/apache/harmony/awt/theme/windows/WinThemeGraphics.* org/apache/harmony/awt/wtk/windows/WinCursor$*.* org/apache/harmony/awt/wtk/windows/WinCursor.* org/apache/harmony/awt/wtk/windows/WinCursorFactory$*.* org/apache/harmony/awt/wtk/windows/WinCursorFactory.* org/apache/harmony/awt/wtk/windows/WinEvent.* org/apache/harmony/awt/wtk/windows/WinEvent$*.* org/apache/harmony/awt/wtk/windows/WinEventQueue.* org/apache/harmony/awt/wtk/windows/WinEventQueue$*.* org/apache/harmony/awt/wtk/windows/WinIM$*.* org/apache/harmony/awt/wtk/windows/WinIM.* org/apache/harmony/awt/wtk/windows/WinIcons$*.* org/apache/harmony/awt/wtk/windows/WinIcons.* org/apache/harmony/awt/wtk/windows/WinMouseInfo$*.* org/apache/harmony/awt/wtk/windows/WinMouseInfo.* org/apache/harmony/awt/wtk/windows/WinRobot$*.* org/apache/harmony/awt/wtk/windows/WinRobot.* org/apache/harmony/awt/wtk/windows/WinSystemProperties$*.* org/apache/harmony/awt/wtk/windows/WinSystemProperties.* org/apache/harmony/awt/wtk/windows/WinWTK.* org/apache/harmony/awt/wtk/windows/WinWTK$*.* org/apache/harmony/awt/wtk/windows/WinWindow$*.* org/apache/harmony/awt/wtk/windows/WinWindow.* org/apache/harmony/awt/wtk/windows/WinWindowFactory$*.* org/apache/harmony/awt/wtk/windows/WinWindowFactory.* org/apache/harmony/awt/wtk/windows/WindowProcHandler$*.* org/apache/harmony/awt/wtk/windows/WindowProcHandler.*';
+    
+        cur['D:\workingcopy\hy6\working_classlib\deploy/build/ant/patternsets/awt.txt.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\ant\\patternsets';
+    
+        cur['D:\workingcopy\hy6\working_classlib\deploy\build\test\awt/test.exclude.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt';
+    
+        cur['dejavu-fonts.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/dejavu-fonts';
+    
+        cur['dejavu-fonts.fonts.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/dejavu-fonts/dejavu-ttf-2.18';
+    
+        cur['dejavu-fonts.md5'] = '72e0a87ec1f9c5c26c66eabcf1e2018e';
+    
+        cur['dejavu-fonts.uptodate'] = 'true';
+    
+        cur['dejavu-fonts.url'] = 'http://internap.dl.sourceforge.net/sourceforge/dejavu/dejavu-ttf-2.18-1.zip';
+    
+        cur['dejavu-fonts.zip'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/dejavu-fonts/dejavu-ttf-2.18-1.zip';
+    
+        cur['depends.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends';
+    
+        cur['depends.jars'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars';
+    
+        cur['depends.lib.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86';
+    
+        cur['depends.oss'] = '${depends.oss}';
+    
+        cur['depends.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends';
+    
+        cur['DSTAMP'] = '20091225';
+    
+        cur['exclude.module'] = 'nothing';
+    
+        cur['exe.suffix'] = '.exe';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['findbugs.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/oss/findbugs-1.3.9';
+    
+        cur['findbugs.md5'] = '73702d533a505bd98d0c2c585a29a08b';
+    
+        cur['findBugs.report'] = 'D:\\workingcopy\\hy6\\working_classlib\\build\\findbugs_report';
+    
+        cur['findbugs.url'] = 'http://downloads.sourceforge.net/project/findbugs/findbugs/1.3.9/findbugs-1.3.9.zip';
+    
+        cur['findbugs.zip'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/oss/findbugs-1.3.9/findbugs-1.3.9.zip';
+    
+        cur['ftp.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['ftp.proxyPort'] = '80';
+    
+        cur['hamcrest-library.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/hamcrest-library_1.1';
+    
+        cur['hamcrest-library.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/hamcrest-library_1.1/hamcrest-library-1.1.jar';
+    
+        cur['hamcrest-library.md5'] = '271f78edc4333f0f44df617676e0a874';
+    
+        cur['hamcrest-library.url'] = 'http://repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar';
+    
+        cur['http.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['http.proxyPort'] = '80';
+    
+        cur['https.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['https.proxyPort'] = '80';
+    
+        cur['hy.arch'] = 'x86';
+    
+        cur['hy.bits'] = '32';
+    
+        cur['hy.cfg'] = 'debug';
+    
+        cur['hy.hdk'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy';
+    
+        cur['hy.javac.compiler'] = 'org.eclipse.jdt.core.JDTCompilerAdapter';
+    
+        cur['hy.javac.debug'] = 'on';
+    
+        cur['hy.javac.maxmem'] = '384M';
+    
+        cur['hy.javac.source'] = '1.5';
+    
+        cur['hy.javac.target'] = '1.5';
+    
+        cur['hy.jdk'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\jdk';
+    
+        cur['hy.jre'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\jdk\\jre';
+    
+        cur['hy.libstdc++.suffix'] = '';
+    
+        cur['hy.local.zlib'] = 'false';
+    
+        cur['hy.module'] = 'awt';
+    
+        cur['hy.no.thr'] = 'false';
+    
+        cur['hy.os'] = 'windows';
+    
+        cur['hy.os.family'] = 'windows';
+    
+        cur['hy.platform'] = 'windows.x86';
+    
+        cur['hy.platform.path'] = 'windows/x86';
+    
+        cur['hy.platform.variant'] = 'windows.x86';
+    
+        cur['hy.portlib.stubs'] = 'false';
+    
+        cur['hy.skip.zip.api'] = 'true';
+    
+        cur['hy.test.forkmode'] = 'once';
+    
+        cur['hy.test.timeout'] = '900000';
+    
+        cur['hy.test.vm.name'] = 'drl';
+    
+        cur['hy.test.vmargs'] = '';
+    
+        cur['hy.zip.api'] = 'false';
+    
+        cur['icu4j.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/icu4j_4.2.1';
+    
+        cur['icu4j.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/icu4j_4.2.1/icu4j-4_2_1.jar';
+    
+        cur['icu4j.md5'] = '2bef290de1db6970a6699bf78f0dca77';
+    
+        cur['icu4j.url'] = 'http://download.icu-project.org/files/icu4j/4.2.1/icu4j-4_2_1.jar';
+    
+        cur['icu4j.ver'] = 'icu4j_4.2.1';
+    
+        cur['icu4j-charsets.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/icu4j_4.2.1';
+    
+        cur['icu4j-charsets.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/icu4j_4.2.1/icu4j-charsets-4_2_1.jar';
+    
+        cur['icu4j-charsets.md5'] = 'bccab3c39d735171fb54ce5e4f49207b';
+    
+        cur['icu4j-charsets.url'] = 'http://download.icu-project.org/files/icu4j/4.2.1/icu4j-charsets-4_2_1.jar';
+    
+        cur['icu4j-charsets.ver'] = 'icu4j_4.2.1';
+    
+        cur['is.32bit'] = 'true';
+    
+        cur['is.windows'] = 'true';
+    
+        cur['is.x86'] = 'true';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\jetty-6.0.0.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\jetty-util-6.0.0.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\junit-4.6.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\junit.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\servlet-api-2.5-6.0.0.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\support.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\resources;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\awt_boot_tests.jar;D:\\tools\\apache-ant-1.7.1\\lib\\junit-4.1.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant-launcher.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant-junit.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.compiler'] = 'client';
+    
+        cur['java.endorsed.dirs'] = 'C:\\Program Files\\Java\\jre1.5.0_13\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\ext';
+    
+        cur['java.fullversion'] = 'pre-alpha : not complete or compatible svn = r893424, (Dec 24 2009), Windows/ia32/msvc 1500, release build http://harmony.apache.org';
+    
+        cur['java.home'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre';
+    
+        cur['java.io.tmpdir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\temp\\tmpdir';
+    
+        cur['java.library.path'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\;.;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\;d:\\VS9\\Common7\\IDE;d:\\VS9\\VC\\BIN;d:\\VS9\\Common7\\Tools;C:\\WINDOWS\\Microsoft.NET\\Framework\\v3.5;C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727;d:\\VS9\\VC\\VCPackages;C:\\Program Files\\\\Microsoft SDKs\\Windows\\v6.0A\\bin;C:\\Program Files\\ThinkPad\\Utilities;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\IBM\\Infoprint Select;c:\\notes;c:\\Program Files\\XLView;C:\\Utilities;C:\\lotus\\component;C:\\Program Files\\IBM\\Personal Communications\\;C:\\Program Files\\IBM\\Trace Facility\\;C:\\lotus\\compnent;C:\\Program Files\\Intel\\Wireless\\Bin\\;C:\\Program Files\\ThinkPad\\ConnectUtilities;C:\\WINDOWS\\Downloaded Program Files;C:\\Program Files\\Subversion\\bin;C:\\Program Files\\QuickTime\\QTSystem\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;D:\\tools\\UnxUtils\\usr\\local\\wbin\\;c:\\Program Files\\Vim\\vim72\\;C:\\Program Files\\IBM\\CMVCDC50;D:\\tools\\apache-ant-1.7.1\\bin\\';
+    
+        cur['java.runtime.name'] = 'Apache Harmony';
+    
+        cur['java.runtime.version'] = '1.6.0';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp';
+    
+        cur['java.vendor'] = 'Apache Software Foundation';
+    
+        cur['java.vendor.url'] = 'http://harmony.apache.org';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.5.0';
+    
+        cur['java.vm.info'] = 'no info';
+    
+        cur['java.vm.name'] = 'DRLVM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Apache Software Foundation';
+    
+        cur['java.vm.version'] = '11.2.0';
+    
+        cur['javax.xml.transform.TransformerFactory'] = 'org.apache.xalan.xsltc.trax.TransformerFactoryImpl';
+    
+        cur['jetty.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/jetty';
+    
+        cur['jetty.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/jetty/jetty-6.0.0.jar';
+    
+        cur['jetty.md5'] = '930507973c9ad19a874af06f10be7223';
+    
+        cur['jetty.url'] = 'http://repo1.maven.org/maven2/jetty/jetty/6.0.0/jetty-6.0.0.jar';
+    
+        cur['jetty-util.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/jetty/jetty-util-6.0.0.jar';
+    
+        cur['jetty-util.md5'] = '7cf65d83814718afdd1d3bd74f8799fc';
+    
+        cur['jetty-util.url'] = 'http://repo1.maven.org/maven2/jetty/jetty-util/6.0.0/jetty-util-6.0.0.jar';
+    
+        cur['jpeg.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/jpeg-6b';
+    
+        cur['jpeg.home'] = '/usr';
+    
+        cur['jpeg.md5'] = '610ebc3e6a9f93c9ac9d9261b3fe6611';
+    
+        cur['jpeg.md5@x86_64@'] = '132fe7221ba3e5c3aa96b851a42ef2a4';
+    
+        cur['jpeg.tar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/jpeg-6b.tar.gz';
+    
+        cur['jpeg.testfile'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/jpeg-6b/jversion.h';
+    
+        cur['jpeg.uptodate'] = 'true';
+    
+        cur['jpeg.url'] = 'http://people.apache.org/~hindessm/classlib-depends/windows.x86/jpeg-6b.tar.gz';
+    
+        cur['jpeg.ver'] = '6b';
+    
+        cur['junit.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/junit_4.6';
+    
+        cur['junit.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/junit_4.6/junit-4.6.jar';
+    
+        cur['junit.java.io.tmpdir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\temp\\tmpdir';
+    
+        cur['junit.md5'] = '37dc57962c1275ebc572726a6f5cdd13';
+    
+        cur['junit.tempdir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\temp\\ant';
+    
+        cur['junit.url'] = 'http://repo1.maven.org/maven2/junit/junit/4.6/junit-4.6.jar';
+    
+        cur['junit.user.home'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\temp\\user';
+    
+        cur['keep.working'] = 'true';
+    
+        cur['lcms.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/lcms-1.18';
+    
+        cur['lcms.home'] = '/usr';
+    
+        cur['lcms.md5'] = '85cf182f4bf93c9fabe0ddd9fc396a8a';
+    
+        cur['lcms.md5@x86_64@'] = 'e23282246ba9e1cf8b32c52d7fe97c78';
+    
+        cur['lcms.tar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/lcms-1.18.tar.gz';
+    
+        cur['lcms.testfile'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/lcms-1.18/lcms.h';
+    
+        cur['lcms.uptodate'] = 'true';
+    
+        cur['lcms.url'] = 'http://people.apache.org/~hindessm/classlib-depends/windows.x86/lcms-1.18.tar.gz';
+    
+        cur['lcms.ver'] = '1.18';
+    
+        cur['lcms.ver@x86_64@'] = '1.15';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['linklib.suffix'] = '.lib';
+    
+        cur['make.arg'] = '/nologo';
+    
+        cur['make.command'] = 'nmake.exe';
+    
+        cur['manifest.suffix'] = '.manifest';
+    
+        cur['maven2.base'] = 'http://repo1.maven.org/maven2';
+    
+        cur['module.temp.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\temp';
+    
+        cur['module.work.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt';
+    
+        cur['msvcp.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86';
+    
+        cur['msvcp.dll@x86_64@'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/msvcp80.dll';
+    
+        cur['msvcp.dll@x86@'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/msvcp71.dll';
+    
+        cur['msvcp.md5.deprecated@x86_64@'] = '5ae0f01f02a03558da0cbd249e4df263';
+    
+        cur['msvcp.md5.deprecated@x86@'] = '561fa2abb31dfa8fab762145f81667c2';
+    
+        cur['msvcp.md5@x86_64@'] = 'c332db81197e6e5d4a67d3789dbeb02a';
+    
+        cur['msvcp.md5@x86@'] = 'a94dc60a90efd7a35c36d971e3ee7470';
+    
+        cur['msvcp.url@x86_64@'] = 'file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%208/VC/redist/amd64/Microsoft.VC80.CRT/msvcp80.dll';
+    
+        cur['msvcp.url@x86@'] = 'file:///${hyenv.SystemRoot}/system32/msvcp71.dll';
+    
+        cur['msvcr.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86';
+    
+        cur['msvcr.dll@x86_64@'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/msvcr80.dll';
+    
+        cur['msvcr.dll@x86@'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/msvcr71.dll';
+    
+        cur['msvcr.md5.deprecated@x86_64@'] = '465cebd7da2ceaba5e552fc9118a1415';
+    
+        cur['msvcr.md5.deprecated@x86@'] = '86f1895ae8c5e8b17d99ece768a70732';
+    
+        cur['msvcr.md5@x86_64@'] = '4d89f6191db56cfa659388378f3dd688';
+    
+        cur['msvcr.md5@x86@'] = 'ca2f560921b7b8be1cf555a5a18d54c3';
+    
+        cur['msvcr.url@x86_64@'] = 'file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%208/VC/redist/amd64/Microsoft.VC80.CRT/msvcr80.dll';
+    
+        cur['msvcr.url@x86@'] = 'file:///${hyenv.SystemRoot}/system32/msvcr71.dll';
+    
+        cur['object.suffix'] = '.obj';
+    
+        cur['org.apache.harmony.boot.class.path'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x_mgt.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xml.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1/icu4j-4_2_1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1/icu4j-charsets-4_2_1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0/xalan.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/resolver.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/xercesImpl.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/xml-apis.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2/mx4j.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2/mx4j-remote.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-core.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-rmi-spec.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-rmi-impl.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2/bcel-5.2.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xmlsec-1.4.0/commons-logging.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xmlsec-1.4.0/xmlsec-1.4.0.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1/asm-3.1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3/bsf-api.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3/axis2-saaj-api-1.3.jar';
+    
+        cur['org.apache.harmony.vm.vmdir'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['platform.exclude.file'] = 'exclude.windows.x86.drl';
+    
+        cur['platform.exclude.interm'] = 'exclude.windows.x86.drl.interm';
+    
+        cur['png.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/png-1.2.38';
+    
+        cur['png.home'] = '/usr';
+    
+        cur['png.md5'] = 'd7cc20b44f12b4e46da29ed6cccbcba5';
+    
+        cur['png.md5@x86_64@'] = 'b562d8042aeb71d877cfd10518d019bc';
+    
+        cur['png.tar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/png-1.2.38.tar.gz';
+    
+        cur['png.testfile'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/libs/windows.x86/png-1.2.38/png.h';
+    
+        cur['png.uptodate'] = 'true';
+    
+        cur['png.url'] = 'http://people.apache.org/~hindessm/classlib-depends/windows.x86/png-1.2.38.tar.gz';
+    
+        cur['png.ver'] = '1.2.38';
+    
+        cur['png.ver@x86_64@'] = '1.2.12';
+    
+        cur['progdb.suffix'] = '.pdb';
+    
+        cur['servlet-api.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/jetty/servlet-api-2.5-6.0.0.jar';
+    
+        cur['servlet-api.md5'] = 'c27c02fb0a00cc3a7d05ea993a9bf56e';
+    
+        cur['servlet-api.url'] = 'http://repo1.maven.org/maven2/jetty/servlet-api/2.5-6.0.0/servlet-api-2.5-6.0.0.jar';
+    
+        cur['sf.base'] = 'http://internap.dl.sourceforge.net/sourceforge';
+    
+        cur['shlib.prefix'] = '';
+    
+        cur['shlib.suffix'] = '.dll';
+    
+        cur['src/main.loc'] = 'D:\\workingcopy\\hy6\\working_classlib\\modules\\awt\\src\\main';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\gc_gen.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\kernel.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\vmmagic-20070207.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\antlr-2.7.5.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-charsets-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0\\xalan.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\resolver.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xercesimpl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xml-apis.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j-remote.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-core.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-spec.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-impl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2\\bcel-5.2.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1\\asm-3.1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3\\bsf-api.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3\\axis2-saaj-api-1.3.jar;d:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\awt_boot_tests.jar;d:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\junit.jar';
+    
+        cur['sun.boot.library.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 3';
+    
+        cur['svn.info'] = '${harmony.long.version}';
+    
+        cur['svn.info.tmp'] = '';
+    
+        cur['svn.rc'] = '0';
+    
+        cur['svn.revision'] = '${harmony.version}';
+    
+        cur['target.dir'] = '..';
+    
+        cur['test.exclude.file'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt/test.exclude';
+    
+        cur['test.excludes.dir'] = '../awt/excludes';
+    
+        cur['test.jre.home'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre';
+    
+        cur['test.module.dir'] = '../awt';
+    
+        cur['test.resources.dir'] = '../awt/resources';
+    
+        cur['test.vm.info.tmp'] = 'Apache Harmony Launcher : (c) Copyright 1991, 2009 The Apache Software Foundation or its licensors, as applicable. java version "1.5.0" Apache Harmony (1.6.0) DRLVM (11.2.0) pre-alpha : not complete or compatible svn = r893424, (Dec 24 2009), Windows/ia32/msvc 1500, release build http://harmony.apache.org';
+    
+        cur['tests.excludes.hdk.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy/build/test/awt/excludes';
+    
+        cur['tests.hdk.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy/build/test/awt';
+    
+        cur['tests.output'] = 'D:\\workingcopy\\hy6\\build\\test_report';
+    
+        cur['tests.resources.hdk.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy/build/test/awt/resources';
+    
+        cur['TODAY'] = 'December 25 2009';
+    
+        cur['TSTAMP'] = '1113';
+    
+        cur['user.country'] = 'US';
+    
+        cur['user.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt';
+    
+        cur['user.home'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\temp\\user';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.name'] = 'tony';
+    
+        cur['user.timezone'] = 'GMT+8:00';
+    
+        cur['user.variant'] = '';
+    
+        cur['vm.boot.class.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\gc_gen.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\kernel.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\vmmagic-20070207.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\antlr-2.7.5.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-charsets-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0\\xalan.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\resolver.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xercesimpl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xml-apis.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j-remote.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-core.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-spec.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-impl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2\\bcel-5.2.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1\\asm-3.1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3\\bsf-api.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3\\axis2-saaj-api-1.3.jar;d:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\awt\\awt_boot_tests.jar;d:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\junit.jar';
+    
+        cur['vm.boot.library.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin';
+    
+        cur['work.dir'] = '..';
+    
+        cur['xalan.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/xalan-j_2.7.0';
+    
+        cur['xalan.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/xalan-j_2.7.0/xalan.jar';
+    
+        cur['xalan.md5'] = 'a018d032c21a873225e702b36b171a10';
+    
+        cur['xalan.orig.jar'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/xalan-j_2.7.0/xalan.orig.jar';
+    
+        cur['xalan.url'] = 'http://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.jar';
+    
+        cur['xerces.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/xerces_2.9.1';
+    
+        cur['xerces.md5'] = 'a0e07ede1c3bd5231fe15eae24032b2e';
+    
+        cur['xerces.url'] = 'http://www.apache.org/dist/xml/xerces-j/Xerces-J-bin.2.9.1.zip';
+    
+        cur['xerces.zip'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/xerces_2.9.1/xerces.zip';
+    
+        cur['xmlsec.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/xmlsec_1.4.0';
+    
+        cur['xmlsec.md5'] = '79ffece964a40d33fb25f3f7a8e83f6b';
+    
+        cur['xmlsec.url'] = 'http://xml.apache.org/security/dist/java-library/xml-security-bin-1_4_0.zip';
+    
+        cur['xmlsec.zip'] = 'D:\\workingcopy\\hy6\\working_classlib\\depends/jars/xmlsec_1.4.0/xmlsec.zip';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class java.awt.datatransfer.ClipboardTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap="nowrap">Time(s)</th><th nowrap="nowrap">Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="118_ClipboardTest.html">ClipboardTest</a></td><td><a title="Display all tests" href="118_ClipboardTest.html">11</a></td><td>0</td><td>0</td><td>0.094</td><td>2009-12-25T03:14:33</td><td>IBM-L3XANCF</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap="nowrap">Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testClipboard"></a>testClipboard</td><td>Success</td><td></td><td>0.016</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetName"></a>testGetName</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testAddFlavorListener"></a>testAddFlavorListener</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testRemoveFlavorListener"></a>testRemoveFlavorListener</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetFlavorListeners"></a>testGetFlavorListeners</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetContents"></a>testSetContents</td><td>Success</td><td></td><td>0.031</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetContents"></a>testGetContents</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIsDataFlavorAvailable"></a>testIsDataFlavorAvailable</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetAvailableDataFlavors"></a>testGetAvailableDataFlavors</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetData"></a>testGetData</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testNullContent"></a>testNullContent</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('java.awt.datatransfer.ClipboardTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

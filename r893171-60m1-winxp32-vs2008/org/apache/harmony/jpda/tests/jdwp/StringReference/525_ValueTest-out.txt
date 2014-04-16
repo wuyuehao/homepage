@@ -1,0 +1,60 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.StringReference.ValueTest.testStringReferenceValueTest001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3789
+Start listening on: null
+Listening on: IBM-L3XANCF:3790
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3790,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3789 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3790,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3789 org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3790,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3789, org.apache.harmony.jpda.tests.jdwp.share.debuggee.HelloWorld]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3789
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+StringReferenceValueTest001 started
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+=> Test string: ""
+STDOUT> [SYNC] Message sent: ready
+STDOUT> Hello World
+STDOUT> [SYNC] Waiting for message: continue
+=> Returned string: ""
+=> Test string: "1234567890"
+=> Returned string: "1234567890"
+=> Test string: "Some test string with various ASCII symbols ~!@#$%^&*()_+|}{"'?><,./"
+=> Returned string: "Some test string with various ASCII symbols ~!@#$%^&*()_+|}{"'?><,./"
+=> Test string: "Some test string with various national symbols ?????????§????¤?????????????????."
+=> Returned string: "Some test string with various national symbols ?????????§????¤?????????????????."
+STDOUT> [SYNC] Received message: continue
+STDOUT> [SYNC] Closed socket
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

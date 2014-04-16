@@ -1,0 +1,6 @@
+java.net.SocketTimeoutException: The operation timed out
+	at org.apache.harmony.luni.net.PlainSocketImpl.accept(PlainSocketImpl.java:142)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:271)
+	at java.net.ServerSocket.accept(ServerSocket.java:155)
+	at org.apache.harmony.luni.tests.internal.net.www.protocol.http.HttpURLConnectionTest$MockHTTPServer.run(HttpURLConnectionTest.java:126)
+

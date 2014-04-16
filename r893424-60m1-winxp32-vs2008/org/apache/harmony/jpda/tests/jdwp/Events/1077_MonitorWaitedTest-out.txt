@@ -1,0 +1,303 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitedTest.testMonitorWaitedForClassOnly
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4893
+Start listening on: null
+Listening on: IBM-L3XANCF:4894
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4894,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4893 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4894,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4893 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4894,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4893, org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4893
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/Events/MonitorWaitMockMonitor;
+=> Returned number of classes: 1
+==> Object ReferenceType ID = 1000000889
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+==> Request has been set.
+[SYNC] Message sent: continue
+==> Receive Event.
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Tested Thread invoke wait
+==> CHECK: Event Kind: MONITOR_WAITED
+==> Get testedThreadID...
+==> CHECK: tested blocked thread id: 1164
+==> CHECK: monitor class signature: Lorg/apache/harmony/jpda/tests/jdwp/Events/MonitorWaitMockMonitor;
+==> CHECK: Wait time out: 500
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> --> Tested Thread invoked wait
+STDOUT> --> Tested Thread finished
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitedTest.testMonitorWaitedForClassMatchExact
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4897
+Start listening on: null
+Listening on: IBM-L3XANCF:4898
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4898,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4897 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4898,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4897 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4898,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4897, org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4897
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+==> tested class match pattern: org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitMockMonitor
+==> Request has been set.
+[SYNC] Message sent: continue
+==> Receive Event.
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Tested Thread invoke wait
+==> CHECK: Event Kind: MONITOR_WAITED
+==> Get testedThreadID...
+==> CHECK: tested blocked thread id: 1164
+==> CHECK: monitor class signature: Lorg/apache/harmony/jpda/tests/jdwp/Events/MonitorWaitMockMonitor;
+==> CHECK: Wait time out: 500
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> --> Tested Thread invoked wait
+STDOUT> --> Tested Thread finished
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitedTest.testMonitorWaitedForClassMatchFirst
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4901
+Start listening on: null
+Listening on: IBM-L3XANCF:4902
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4902,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4901 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4902,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4901 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4902,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4901, org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4901
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+==> tested class match pattern: org.apache.harmony.jpda.tests.jdwp.Events.*
+==> Request has been set.
+[SYNC] Message sent: continue
+==> Receive Event.
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Tested Thread invoke wait
+==> CHECK: Event Kind: MONITOR_WAITED
+==> Get testedThreadID...
+==> CHECK: tested blocked thread id: 1164
+==> CHECK: monitor class signature: Lorg/apache/harmony/jpda/tests/jdwp/Events/MonitorWaitMockMonitor;
+==> CHECK: Wait time out: 500
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> --> Tested Thread invoked wait
+STDOUT> --> Tested Thread finished
+STDOUT> [SYNC] Closed socket
+Waiting for process exit
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitedTest.testMonitorWaitedForClassMatchSecond
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4905
+Start listening on: null
+Listening on: IBM-L3XANCF:4906
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4906,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4905 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4906,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4905 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4906,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4905, org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4905
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+==> tested class match pattern: *MonitorWaitMockMonitor
+==> Request has been set.
+[SYNC] Message sent: continue
+==> Receive Event.
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Tested Thread invoke wait
+==> CHECK: Event Kind: MONITOR_WAITED
+==> Get testedThreadID...
+==> CHECK: tested blocked thread id: 1164
+==> CHECK: monitor class signature: Lorg/apache/harmony/jpda/tests/jdwp/Events/MonitorWaitMockMonitor;
+==> CHECK: Wait time out: 500
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> --> Tested Thread invoked wait
+STDOUT> --> Tested Thread finished
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitedTest.testMonitorWaitedForClassExclude
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4909
+Start listening on: null
+Listening on: IBM-L3XANCF:4910
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4910,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4909 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4910,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4909 org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4910,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4909, org.apache.harmony.jpda.tests.jdwp.Events.MonitorWaitAndWaitedDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4909
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+==> tested class exclude pattern: MockPatter*
+==> Request has been set.
+[SYNC] Message sent: continue
+==> Receive Event.
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Tested Thread invoke wait
+==> CHECK: Event Kind: MONITOR_WAITED
+==> Get testedThreadID...
+==> CHECK: tested blocked thread id: 1164
+==> CHECK: monitor class signature: Lorg/apache/harmony/jpda/tests/jdwp/Events/MonitorWaitMockMonitor;
+==> CHECK: Wait time out: 500
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> --> Tested Thread invoked wait
+STDOUT> --> Tested Thread finished
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

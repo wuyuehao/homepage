@@ -1,0 +1,285 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ClassType.InvokeMethod002Test.testInvokeMethod004
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3119
+Start listening on: null
+Listening on: IBM-L3XANCF:3120
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3120,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3119 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3120,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3119 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3120,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3119, org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3119
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+ VirtualMachine.ClassesBySignature: classes=1 refTypeTag=1 classID= 1000000889 status=7
+ ReferenceType.Methods: declared=8
+  methodID=591042608 name=<clinit> signature=()V modBits=8
+  methodID=591042764 name=<init> signature=()V modBits=1
+  methodID=591042920 name=testMethod1 signature=(Z)I modBits=1
+  methodID=591043076 name=testMethod2 signature=(Z)I modBits=9
+  methodID=591043232 name=testMethod3 signature=(I[I[[ILjava/lang/String;[Ljava/lang/String;[[Ljava/lang/String;Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/testClass;[Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/testClass;[[Lorg/apache/harmony/jpda/tests/jdwp/share/debuggee/testClass;)Ljava/lang/String; modBits=9
+  methodID=591043388 name=execMethod signature=()V modBits=0
+  methodID=591043544 name=run signature=()V modBits=1
+  methodID=591043700 name=main signature=([Ljava/lang/String;)V modBits=9
+STDOUT> [SYNC] Message sent: ready
+STDOUT> InvokeMethodDebuggee
+STDOUT> [SYNC] Waiting for any message
+ EventRequest.Set: requestID=1
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+ EVENT_THREAD event: suspendPolicy=2 events=1
+  EVENT_THREAD event 0: eventKind=40 requestID=1 threadID=1164
+Read values of fields to pass them as arguments:
+  name=checkInt, ID=584629504
+  name=checkIntArray, ID=584629568
+  name=checkIntArray2, ID=584629632
+  name=checkString, ID=584629696
+  name=checkStringArray, ID=584629760
+  name=checkStringArray2, ID=584629824
+  name=checkClass, ID=584629888
+  name=checkClassArray, ID=584629952
+  name=checkClassArray2, ID=584630016
+ Send ClassType.InvokeMethod
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDERR> 
+STDERR> Signal reported: GENERAL_PROTECTION_FAULT
+STDERR> Registers:
+STDERR>     EAX: 0x2347a388, EBX: 0x234ba0a8, ECX: 0x00000001, EDX: 0x00000004
+STDERR>     ESI: 0x23d1fd68, EDI: 0x65656767, ESP: 0x23d1fd34, EBP: 0xffffffff
+STDERR>     EIP: 0x00f7616a
+STDERR> 
+STDERR> Command line:
+STDERR> D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3120,server=n,suspend=y -Djpda.settings.verbose=true -Djpda.settings.syncPort=3119 org.apache.harmony.jpda.tests.jdwp.share.debuggee.InvokeMethodDebuggee
+STDERR> 
+STDERR> Working directory:
+STDERR> D:\workingcopy\hy6\build\test_report
+STDERR> 
+STDERR> Environment variables:
+STDERR> =::=::\
+STDERR> =D:=D:\workingcopy\hy6
+STDERR> =ExitCode=00000000
+STDERR> ALLUSERSPROFILE=C:\Documents and Settings\All Users
+STDERR> ANT_CMD_LINE_ARGS=-Djava6 true -Dexclude.module "awt,swing" test
+STDERR> ANT_HOME=D:\tools\apache-ant-1.7.1\bin\..
+STDERR> ANT_OPTS=-Xms512m -Xmx1024m
+STDERR> APPDATA=C:\Documents and Settings\Administrator\Application Data
+STDERR> APR_ICONV_PATH=C:\Program Files\Subversion\iconv
+STDERR> classpath=.;c:\;C:\Program Files\Java\jre1.5.0_13\lib\ext\QTJava.zip
+STDERR> CommonProgramFiles=C:\Program Files\Common Files
+STDERR> COMPUTERNAME=IBM-L3XANCF
+STDERR> ComSpec=C:\WINDOWS\system32\cmd.exe
+STDERR> DC_HOME=C:\Program Files\IBM\CMVCDC50
+STDERR> DevEnvDir=d:\VS9\Common7\IDE
+STDERR> FP_NO_HOST_CHECK=NO
+STDERR> Framework35Version=v3.5
+STDERR> FrameworkDir=C:\WINDOWS\Microsoft.NET\Framework
+STDERR> FrameworkVersion=v2.0.50727
+STDERR> HOMEDRIVE=C:
+STDERR> HOMEPATH=\Documents and Settings\Administrator
+STDERR> INCLUDE=d:\VS9\VC\ATLMFC\INCLUDE;d:\VS9\VC\INCLUDE;C:\Program Files\\Microsoft SDKs\Windows\v6.0A\include;
+STDERR> LC_MESSAGES=en_US
+STDERR> LIB=d:\VS9\VC\ATLMFC\LIB;d:\VS9\VC\LIB;C:\Program Files\\Microsoft SDKs\Windows\v6.0A\lib;
+STDERR> LIBPATH=C:\WINDOWS\Microsoft.NET\Framework\v3.5;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;d:\VS9\VC\ATLMFC\LIB;d:\VS9\VC\LIB;
+STDERR> LOGONSERVER=\\IBM-L3XANCF
+STDERR> NUMBER_OF_PROCESSORS=1
+STDERR> OS=Windows_NT
+STDERR> Path=D:\workingcopy\hy6\target\hdk\jdk\jre\bin\default;D:\workingcopy\hy6\target\hdk\jdk\jre\bin\;d:\VS9\Common7\IDE;d:\VS9\VC\BIN;d:\VS9\Common7\Tools;C:\WINDOWS\Microsoft.NET\Framework\v3.5;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;d:\VS9\VC\VCPackages;C:\Program Files\\Microsoft SDKs\Windows\v6.0A\bin;C:\Program Files\ThinkPad\Utilities;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\IBM\Infoprint Select;c:\notes;c:\Program Files\XLView;C:\Utilities;C:\lotus\component;C:\Program Files\IBM\Personal Communications\;C:\Program Files\IBM\Trace Facility\;C:\lotus\compnent;C:\Program Files\Intel\Wireless\Bin\;C:\Program Files\ThinkPad\ConnectUtilities;C:\WINDOWS\Downloaded Program Files;C:\Program Files\Subversion\bin;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;D:\tools\UnxUtils\usr\local\wbin\;c:\Program Files\Vim\vim72\;C:\Program Files\IBM\CMVCDC50;D:\tools\apache-ant-1.7.1\bin\
+STDERR> PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+STDERR> PCOMM_Root=C:\Program Files\IBM\Personal Communications\
+STDERR> PDBASE=C:\Program Files\IBM\Infoprint Select
+STDERR> PD_SOCKET=6874
+STDERR> PROCESSOR_ARCHITECTURE=x86
+STDERR> PROCESSOR_IDENTIFIER=x86 Family 6 Model 13 Stepping 8, GenuineIntel
+STDERR> PROCESSOR_LEVEL=6
+STDERR> PROCESSOR_REVISION=0d08
+STDERR> ProgramFiles=C:\Program Files
+STDERR> PROMPT=$P$G
+STDERR> QTJAVA=C:\Program Files\Java\jre1.5.0_13\lib\ext\QTJava.zip
+STDERR> SESSIONNAME=Console
+STDERR> SonicCentral=C:\Program Files\Common Files\Sonic Shared\Sonic Central\
+STDERR> SystemDrive=C:
+STDERR> SystemRoot=C:\WINDOWS
+STDERR> TEMP=C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp
+STDERR> TMP=C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp
+STDERR> USERDOMAIN=IBM-L3XANCF
+STDERR> USERNAME=tony
+STDERR> USERPROFILE=C:\Documents and Settings\Administrator
+STDERR> VCINSTALLDIR=d:\VS9\VC
+STDERR> VS90COMNTOOLS=d:\VS9\Common7\Tools\
+STDERR> VSINSTALLDIR=d:\VS9
+STDERR> windir=C:\WINDOWS
+STDERR> WindowsSdkDir=C:\Program Files\\Microsoft SDKs\Windows\v6.0A\
+STDERR> _JAVACMD=java.exe
+STDERR> _USE_CLASSPATH=yes
+STDERR> 
+STDERR> Loaded modules:
+STDERR> 
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\java.exe:
+STDERR> 	0x00400000:0x0040e000
+STDERR> c:\windows\system32\ntdll.dll:
+STDERR> 	0x7c920000:0x7c9b6000
+STDERR> c:\windows\system32\kernel32.dll:
+STDERR> 	0x7c800000:0x7c91e000
+Waiting for process exit
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\hyprt.dll:
+STDERR> 	0x01da0000:0x01dbc000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\hythr.dll:
+STDERR> 	0x01dd0000:0x01e29000
+STDERR> c:\windows\winsxs\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.21022.8_x-ww_d08d0375\msvcr90.dll:
+STDERR> 	0x78520000:0x785c3000
+STDERR> c:\windows\system32\ws2_32.dll:
+STDERR> 	0x71a20000:0x71a37000
+STDERR> c:\windows\system32\advapi32.dll:
+STDERR> 	0x77da0000:0x77e49000
+STDERR> c:\windows\system32\rpcrt4.dll:
+STDERR> 	0x77e50000:0x77ee2000
+STDERR> c:\windows\system32\secur32.dll:
+STDERR> 	0x77fc0000:0x77fd1000
+STDERR> c:\windows\system32\msvcrt.dll:
+STDERR> 	0x77be0000:0x77c38000
+STDERR> c:\windows\system32\ws2help.dll:
+STDERR> 	0x71a10000:0x71a18000
+STDERR> c:\program files\common files\logishrd\lvmvfm\lvprcinj.dll:
+STDERR> 	0x00800000:0x0081b000
+STDERR> c:\windows\system32\user32.dll:
+STDERR> 	0x77d10000:0x77da0000
+STDERR> c:\windows\system32\gdi32.dll:
+STDERR> 	0x77ef0000:0x77f39000
+STDERR> c:\windows\system32\imm32.dll:
+STDERR> 	0x76300000:0x7631d000
+STDERR> c:\windows\system32\lpk.dll:
+STDERR> 	0x62c20000:0x62c29000
+STDERR> c:\windows\system32\usp10.dll:
+STDERR> 	0x73fa0000:0x7400b000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\ch.dll:
+STDERR> 	0x00b60000:0x00e01000
+STDERR> c:\windows\system32\dbghelp.dll:
+STDERR> 	0x68d60000:0x68e01000
+STDERR> c:\windows\system32\version.dll:
+STDERR> 	0x77bd0000:0x77bd8000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\harmonyvm.dll:
+STDERR> 	0x00f20000:0x012ad000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\icuuc34.dll:
+STDERR> 	0x01590000:0x01658000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\icudt34.dll:
+STDERR> 	0x01e30000:0x026a0000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\msvcr71.dll:
+STDERR> 	0x00410000:0x00466000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\zlib1.dll:
+STDERR> 	0x01b10000:0x01b23000
+STDERR> c:\windows\winsxs\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.21022.8_x-ww_d08d0375\msvcp90.dll:
+STDERR> 	0x78480000:0x7850d000
+STDERR> c:\windows\system32\psapi.dll:
+STDERR> 	0x76bc0000:0x76bcb000
+STDERR> c:\windows\system32\userenv.dll:
+STDERR> 	0x759d0000:0x75a7f000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\em.dll:
+STDERR> 	0x013c0000:0x013eb000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\jitrino.dll:
+STDERR> 	0x01680000:0x01af2000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\gc_gen_uncomp.dll:
+STDERR> 	0x01400000:0x01440000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\jdwp.dll:
+STDERR> 	0x01cc0000:0x01d17000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\vmi.dll:
+STDERR> 	0x01b00000:0x01b08000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\hyzlib.dll:
+STDERR> 	0x01660000:0x01678000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\hynio.dll:
+STDERR> 	0x01d30000:0x01d36000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\hyluni.dll:
+STDERR> 	0x01d50000:0x01d7c000
+STDERR> c:\windows\system32\iphlpapi.dll:
+STDERR> 	0x76d30000:0x76d48000
+STDERR> c:\windows\system32\mswsock.dll:
+STDERR> 	0x719c0000:0x719fe000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\hyarchive.dll:
+STDERR> 	0x01dc0000:0x01dce000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\hyniochar.dll:
+STDERR> 	0x22de0000:0x22f6b000
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\dt_socket.dll:
+STDERR> 	0x231f0000:0x231f8000
+STDERR> c:\windows\system32\dnsapi.dll:
+STDERR> 	0x76ef0000:0x76f17000
+STDERR> c:\windows\system32\winrnr.dll:
+STDERR> 	0x76f80000:0x76f88000
+STDERR> c:\windows\system32\wldap32.dll:
+STDERR> 	0x76f30000:0x76f5c000
+STDERR> c:\windows\system32\wshbth.dll:
+STDERR> 	0x74cc0000:0x74cde000
+STDERR> c:\windows\system32\setupapi.dll:
+STDERR> 	0x76060000:0x761b6000
+STDERR> c:\program files\bonjour\mdnsnsp.dll:
+STDERR> 	0x23340000:0x23365000
+STDERR> c:\windows\system32\rasadhlp.dll:
+STDERR> 	0x76f90000:0x76f96000
+STDERR> c:\windows\system32\hnetcfg.dll:
+STDERR> 	0x60fd0000:0x61025000
+STDERR> c:\windows\system32\wshtcpip.dll:
+STDERR> 	0x71a00000:0x71a08000
+STDERR> c:\windows\system32\wship6.dll:
+STDERR> 	0x58a00000:0x58a07000
+STDERR> 
+STDERR> Stack trace:
+STDERR>   0: 0x00f7616a  jvmtiGetObjectHashCode (d:\workingcopy\hy6\working_vm\vm\vmcore\src\jvmti\jvmti_object.cpp:117)
+STDERR>   1: 0x01ce0017  VMI_GetVMIFromJNIEnv (:-1)
+STDERR>   2: 0x01ce6e7d  VMI_GetVMIFromJNIEnv (:-1)
+STDERR>   3: 0x01ce6f5e  VMI_GetVMIFromJNIEnv (:-1)
+STDERR>   4: 0x01ce70d5  VMI_GetVMIFromJNIEnv (:-1)
+STDERR>   5: 0x01cc5781  VMI_GetVMIFromJNIEnv (:-1)
+STDERR>   6: 0x01cd8f87  VMI_GetVMIFromJNIEnv (:-1)
+STDERR>   7: 0x01cdc766  VMI_GetVMIFromJNIEnv (:-1)
+STDERR>   8: 0x01cdc8af  VMI_GetVMIFromJNIEnv (:-1)
+STDERR>   9: 0x00fa8fc6  port_vmem_allocate (d:\workingcopy\hy6\working_vm\vm\port\src\vmem\win\port_vmem.c:252)
+STDERR>  10: 0x00f63735  SetBooleanFieldOffset (d:\workingcopy\hy6\working_vm\vm\vmcore\src\jni\jni_field.cpp:486)
+STDERR>  11: 0x00f637ae  SetBooleanField (d:\workingcopy\hy6\working_vm\vm\vmcore\src\jni\jni_field.cpp:508)
+STDERR>  12: 0x00f9f9e2  jthread_wrapper_start_proc (d:\workingcopy\hy6\working_vm\vm\vmcore\src\thread\thread_java_basic.cpp:160)
+STDERR>  13: 0x01dd5ccc  thread_start_func (d:\workingcopy\hy6\working_vm\vm\port\src\thread\win\thread_os.c:59)
+STDERR>  14: 0x78543433  endthreadex (:-1)
+STDERR>  15: 0x785434c7  endthreadex (:-1)
+STDERR>  16: 0x7c80b729  GetModuleFileNameA (:-1)
+STDERR> <end of stack trace>
+STDERR> 
+STDERR> Crashed module:
+STDERR> d:\workingcopy\hy6\target\hdk\jdk\jre\bin\default\harmonyvm.dll
+STDERR> (VM native code)
+STDERR> 
+STDERR> VM attached threads:
+STDERR> 
+STDERR> --->[00002B2C]  '_jdwp_AsyncCommandHandler_Worker'
+STDERR>     [00002BB8]  'ref handler'
+STDERR>     [00002BBC]  'finalizer'
+STDERR>     [00002F98]  'main'
+STDERR> 
+STDERR> Minidump is generated:
+STDERR> D:\workingcopy\hy6\build\test_report\minidump_5040.dmp
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: -1
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

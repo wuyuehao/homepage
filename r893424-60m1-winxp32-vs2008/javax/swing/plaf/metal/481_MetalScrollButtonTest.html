@@ -1,0 +1,544 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Unit Test Results: javax.swing.plaf.metal.MetalScrollButtonTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['javax.swing.plaf.metal.MetalScrollButtonTest'] = new Array();
+    
+        cur['ant.core.lib'] = 'D:\\tools\\apache-ant-1.7.1\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\build.xml';
+    
+        cur['ant.file.build-harmony'] = 'D:\\workingcopy\\hy6\\build.xml';
+    
+        cur['ant.file.Classlib property definitions'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\ant\\properties.xml';
+    
+        cur['ant.file.classlib-test'] = 'D:\\workingcopy\\hy6\\working_classlib\\make\\build-test.xml';
+    
+        cur['ant.file.Harmony Swing Test'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\build.xml';
+    
+        cur['ant.file.SWING Build'] = 'D:\\workingcopy\\hy6\\working_classlib\\modules\\swing\\build.xml';
+    
+        cur['ant.file.Top-Level property definitions'] = 'D:\\workingcopy\\hy6\\working_classlib\\make\\properties.xml';
+    
+        cur['ant.home'] = 'D:\\tools\\apache-ant-1.7.1\\bin\\..';
+    
+        cur['ant.java.version'] = '1.5';
+    
+        cur['ant.library.dir'] = 'D:\\tools\\apache-ant-1.7.1\\lib';
+    
+        cur['ant.project.name'] = 'Harmony Swing Test';
+    
+        cur['ant.version'] = 'Apache Ant version 1.7.1 compiled on June 27 2008';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing';
+    
+        cur['bcprov.dir'] = 'depends/jars/bcprov-jdk15-144';
+    
+        cur['bcprov.jar'] = 'depends/jars/bcprov-jdk15-144/bcprov.jar';
+    
+        cur['bcprov.md5'] = '0d6f0b31730db6fd1f8360cf1f7666d4';
+    
+        cur['bcprov.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends/jars/bcprov/bcprov-jdk15-144/bcprov.jar';
+    
+        cur['bcprov.ver'] = 'bcprov-jdk15-144';
+    
+        cur['build.compilerarg'] = '-nowarn -g';
+    
+        cur['build.module'] = '*';
+    
+        cur['common.exclude.file'] = 'exclude.common';
+    
+        cur['common.exclude.interm'] = 'exclude.interm';
+    
+        cur['converted.tc'] = '${test\\case}.java';
+    
+        cur['converted.tc.class'] = '${test\\case}.class';
+    
+        cur['D:\workingcopy\hy6\working_classlib\deploy/build/ant/patternsets/swing.txt.content'] = 'javax/swing/AbstractAction.* javax/swing/AbstractAction$*.* javax/swing/AbstractButton$*.* javax/swing/AbstractButton.* javax/swing/AbstractCellEditor$*.* javax/swing/AbstractCellEditor.* javax/swing/AbstractListModel$*.* javax/swing/AbstractListModel.* javax/swing/AbstractSpinnerModel.* javax/swing/AbstractSpinnerModel$*.* javax/swing/Action.* javax/swing/Action$*.* javax/swing/ActionMap.* javax/swing/ActionMap$*.* javax/swing/ActionProxy.* javax/swing/ActionProxy$*.* javax/swing/BequestedFocusTraversalPolicy$*.* javax/swing/BequestedFocusTraversalPolicy.* javax/swing/BorderFactory$*.* javax/swing/BorderFactory.* javax/swing/BoundedRangeModel$*.* javax/swing/BoundedRangeModel.* javax/swing/Box$*.* javax/swing/Box.* javax/swing/BoxLayout$*.* javax/swing/BoxLayout.* javax/swing/ButtonGroup$*.* javax/swing/ButtonGroup.* javax/swing/ButtonModel$*.* javax/swing/ButtonModel.* javax/swing/CellEditor$*.* javax/swing/CellEditor.* javax/swing/CellRendererPane.* javax/swing/CellRendererPane$*.* javax/swing/ComboBoxEditor.* javax/swing/ComboBoxEditor$*.* javax/swing/ComboBoxModel$*.* javax/swing/ComboBoxModel.* javax/swing/ComponentInputMap.* javax/swing/ComponentInputMap$*.* javax/swing/DebugGraphics.* javax/swing/DebugGraphics$*.* javax/swing/DefaultBoundedRangeModel$*.* javax/swing/DefaultBoundedRangeModel.* javax/swing/DefaultButtonModel.* javax/swing/DefaultButtonModel$*.* javax/swing/DefaultCellEditor$*.* javax/swing/DefaultCellEditor.* javax/swing/DefaultComboBoxModel$*.* javax/swing/DefaultComboBoxModel.* javax/swing/DefaultDesktopManager$*.* javax/swing/DefaultDesktopManager.* javax/swing/DefaultFocusManager.* javax/swing/DefaultFocusManager$*.* javax/swing/DefaultListCellRenderer.* javax/swing/DefaultListCellRenderer$*.* javax/swing/DefaultListModel.* javax/swing/DefaultListModel$*.* javax/swing/DefaultListSelectionModel.* javax/swing/DefaultListSelectionModel$*.* javax/swing/DefaultSingleSelectionModel$*.* javax/swing/DefaultSingleSelectionModel.* javax/swing/DesktopManager.* javax/swing/DesktopManager$*.* javax/swing/FocusManager$*.* javax/swing/FocusManager.* javax/swing/GrayFilter$*.* javax/swing/GrayFilter.* javax/swing/Icon$*.* javax/swing/Icon.* javax/swing/ImageIcon.* javax/swing/ImageIcon$*.* javax/swing/InputMap.* javax/swing/InputMap$*.* javax/swing/InputVerifier$*.* javax/swing/InputVerifier.* javax/swing/InternalFrameFocusTraversalPolicy.* javax/swing/InternalFrameFocusTraversalPolicy$*.* javax/swing/JApplet.* javax/swing/JApplet$*.* javax/swing/JButton$*.* javax/swing/JButton.* javax/swing/JCheckBox$*.* javax/swing/JCheckBox.* javax/swing/JCheckBoxMenuItem.* javax/swing/JCheckBoxMenuItem$*.* javax/swing/JColorChooser$*.* javax/swing/JColorChooser.* javax/swing/JComboBox.* javax/swing/JComboBox$*.* javax/swing/JComponent.* javax/swing/JComponent$*.* javax/swing/JDesktopPane.* javax/swing/JDesktopPane$*.* javax/swing/JDialog.* javax/swing/JDialog$*.* javax/swing/JEditorPane$*.* javax/swing/JEditorPane.* javax/swing/JFileChooser.* javax/swing/JFileChooser$*.* javax/swing/JFormattedTextField.* javax/swing/JFormattedTextField$*.* javax/swing/JFrame.* javax/swing/JFrame$*.* javax/swing/JInternalFrame.* javax/swing/JInternalFrame$*.* javax/swing/JLabel$*.* javax/swing/JLabel.* javax/swing/JLayeredPane$*.* javax/swing/JLayeredPane.* javax/swing/JList.* javax/swing/JList$*.* javax/swing/JMenu$*.* javax/swing/JMenu.* javax/swing/JMenuBar$*.* javax/swing/JMenuBar.* javax/swing/JMenuItem$*.* javax/swing/JMenuItem.* javax/swing/JOptionPane$*.* javax/swing/JOptionPane.* javax/swing/JPanel.* javax/swing/JPanel$*.* javax/swing/JPasswordField$*.* javax/swing/JPasswordField.* javax/swing/JPopupMenu.* javax/swing/JPopupMenu$*.* javax/swing/JProgressBar.* javax/swing/JProgressBar$*.* javax/swing/JRadioButton$*.* javax/swing/JRadioButton.* javax/swing/JRadioButtonMenuItem.* javax/swing/JRadioButtonMenuItem$*.* javax/swing/JRootPane$*.* javax/swing/JRootPane.* javax/swing/JScrollBar.* javax/swing/JScrollBar$*.* javax/swing/JScrollPane$*.* javax/swing/JScrollPane.* javax/swing/JSeparator$*.* javax/swing/JSeparator.* javax/swing/JSlider$*.* javax/swing/JSlider.* javax/swing/JSpinner$*.* javax/swing/JSpinner.* javax/swing/JSplitPane.* javax/swing/JSplitPane$*.* javax/swing/JTabbedPane.* javax/swing/JTabbedPane$*.* javax/swing/JTable.* javax/swing/JTable$*.* javax/swing/JTextArea.* javax/swing/JTextArea$*.* javax/swing/JTextField$*.* javax/swing/JTextField.* javax/swing/JTextPane.* javax/swing/JTextPane$*.* javax/swing/JToggleButton.* javax/swing/JToggleButton$*.* javax/swing/JToolBar$*.* javax/swing/JToolBar.* javax/swing/JToolTip$*.* javax/swing/JToolTip.* javax/swing/JTree.* javax/swing/JTree$*.* javax/swing/JViewport$*.* javax/swing/JViewport.* javax/swing/JWindow$*.* javax/swing/JWindow.* javax/swing/KeyStroke$*.* javax/swing/KeyStroke.* javax/swing/LayoutFocusTraversalPolicy$*.* javax/swing/LayoutFocusTraversalPolicy.* javax/swing/LayoutParameters.* javax/swing/LayoutParameters$*.* javax/swing/ListCellRenderer.* javax/swing/ListCellRenderer$*.* javax/swing/ListModel.* javax/swing/ListModel$*.* javax/swing/ListSelectionModel.* javax/swing/ListSelectionModel$*.* javax/swing/LookAndFeel$*.* javax/swing/LookAndFeel.* javax/swing/MenuElement.* javax/swing/MenuElement$*.* javax/swing/MenuSelectionManager$*.* javax/swing/MenuSelectionManager.* javax/swing/MutableComboBoxModel$*.* javax/swing/MutableComboBoxModel.* javax/swing/OffscreenGraphics.* javax/swing/OffscreenGraphics$*.* javax/swing/OverlayLayout.* javax/swing/OverlayLayout$*.* javax/swing/Popup$*.* javax/swing/Popup.* javax/swing/PopupFactory.* javax/swing/PopupFactory$*.* javax/swing/ProgressMonitor.* javax/swing/ProgressMonitor$*.* javax/swing/ProgressMonitorInputStream.* javax/swing/ProgressMonitorInputStream$*.* javax/swing/Renderer.* javax/swing/Renderer$*.* javax/swing/RepaintManager.* javax/swing/RepaintManager$*.* javax/swing/RootPaneContainer.* javax/swing/RootPaneContainer$*.* javax/swing/RowSorter$*.* javax/swing/RowSorter.* javax/swing/ScrollPaneConstants$*.* javax/swing/ScrollPaneConstants.* javax/swing/ScrollPaneLayout$*.* javax/swing/ScrollPaneLayout.* javax/swing/Scrollable.* javax/swing/Scrollable$*.* javax/swing/SingleSelectionModel.* javax/swing/SingleSelectionModel$*.* javax/swing/SizeRequirements.* javax/swing/SizeRequirements$*.* javax/swing/SizeSequence.* javax/swing/SizeSequence$*.* javax/swing/SortOrder$*.* javax/swing/SortOrder.* javax/swing/SortingFocusTraversalPolicy.* javax/swing/SortingFocusTraversalPolicy$*.* javax/swing/SpinnerDateModel$*.* javax/swing/SpinnerDateModel.* javax/swing/SpinnerListModel$*.* javax/swing/SpinnerListModel.* javax/swing/SpinnerModel$*.* javax/swing/SpinnerModel.* javax/swing/SpinnerNumberModel$*.* javax/swing/SpinnerNumberModel.* javax/swing/Spring.* javax/swing/Spring$*.* javax/swing/SpringLayout.* javax/swing/SpringLayout$*.* javax/swing/SwingConstants$*.* javax/swing/SwingConstants.* javax/swing/SwingUtilities.* javax/swing/SwingUtilities$*.* javax/swing/Timer$*.* javax/swing/Timer.* javax/swing/ToolTipManager.* javax/swing/ToolTipManager$*.* javax/swing/TransferHandler.* javax/swing/TransferHandler$*.* javax/swing/UIDefaults$*.* javax/swing/UIDefaults.* javax/swing/UIManager$*.* javax/swing/UIManager.* javax/swing/UnsupportedLookAndFeelException.* javax/swing/UnsupportedLookAndFeelException$*.* javax/swing/ViewportLayout$*.* javax/swing/ViewportLayout.* javax/swing/WindowConstants.* javax/swing/WindowConstants$*.* javax/swing/border/AbstractBorder.* javax/swing/border/AbstractBorder$*.* javax/swing/border/BevelBorder$*.* javax/swing/border/BevelBorder.* javax/swing/border/Border.* javax/swing/border/Border$*.* javax/swing/border/CompoundBorder$*.* javax/swing/border/CompoundBorder.* javax/swing/border/EmptyBorder.* javax/swing/border/EmptyBorder$*.* javax/swing/border/EtchedBorder$*.* javax/swing/border/EtchedBorder.* javax/swing/border/LineBorder$*.* javax/swing/border/LineBorder.* javax/swing/border/MatteBorder.* javax/swing/border/MatteBorder$*.* javax/swing/border/SoftBevelBorder$*.* javax/swing/border/SoftBevelBorder.* javax/swing/border/TitledBorder.* javax/swing/border/TitledBorder$*.* javax/swing/colorchooser/AbstractColorChooserPanel.* javax/swing/colorchooser/AbstractColorChooserPanel$*.* javax/swing/colorchooser/ColorChooserComponentFactory$*.* javax/swing/colorchooser/ColorChooserComponentFactory.* javax/swing/colorchooser/ColorSelectionModel.* javax/swing/colorchooser/ColorSelectionModel$*.* javax/swing/colorchooser/DefaultColorSelectionModel.* javax/swing/colorchooser/DefaultColorSelectionModel$*.* javax/swing/colorchooser/HSBPanel$*.* javax/swing/colorchooser/HSBPanel.* javax/swing/colorchooser/PreviewPanel$*.* javax/swing/colorchooser/PreviewPanel.* javax/swing/colorchooser/RGBPanel.* javax/swing/colorchooser/RGBPanel$*.* javax/swing/colorchooser/SwatchesPanel.* javax/swing/colorchooser/SwatchesPanel$*.* javax/swing/event/AncestorEvent.* javax/swing/event/AncestorEvent$*.* javax/swing/event/AncestorListener$*.* javax/swing/event/AncestorListener.* javax/swing/event/CaretEvent$*.* javax/swing/event/CaretEvent.* javax/swing/event/CaretListener.* javax/swing/event/CaretListener$*.* javax/swing/event/CellEditorListener$*.* javax/swing/event/CellEditorListener.* javax/swing/event/ChangeEvent.* javax/swing/event/ChangeEvent$*.* javax/swing/event/ChangeListener$*.* javax/swing/event/ChangeListener.* javax/swing/event/DocumentEvent.* javax/swing/event/DocumentEvent$*.* javax/swing/event/DocumentListener.* javax/swing/event/DocumentListener$*.* javax/swing/event/EventListenerList$*.* javax/swing/event/EventListenerList.* javax/swing/event/HyperlinkEvent.* javax/swing/event/HyperlinkEvent$*.* javax/swing/event/HyperlinkListener$*.* javax/swing/event/HyperlinkListener.* javax/swing/event/InternalFrameAdapter.* javax/swing/event/InternalFrameAdapter$*.* javax/swing/event/InternalFrameEvent.* javax/swing/event/InternalFrameEvent$*.* javax/swing/event/InternalFrameListener$*.* javax/swing/event/InternalFrameListener.* javax/swing/event/ListDataEvent.* javax/swing/event/ListDataEvent$*.* javax/swing/event/ListDataListener$*.* javax/swing/event/ListDataListener.* javax/swing/event/ListSelectionEvent.* javax/swing/event/ListSelectionEvent$*.* javax/swing/event/ListSelectionListener.* javax/swing/event/ListSelectionListener$*.* javax/swing/event/MenuDragMouseEvent$*.* javax/swing/event/MenuDragMouseEvent.* javax/swing/event/MenuDragMouseListener.* javax/swing/event/MenuDragMouseListener$*.* javax/swing/event/MenuEvent$*.* javax/swing/event/MenuEvent.* javax/swing/event/MenuKeyEvent$*.* javax/swing/event/MenuKeyEvent.* javax/swing/event/MenuKeyListener$*.* javax/swing/event/MenuKeyListener.* javax/swing/event/MenuListener$*.* javax/swing/event/MenuListener.* javax/swing/event/MouseInputAdapter.* javax/swing/event/MouseInputAdapter$*.* javax/swing/event/MouseInputListener$*.* javax/swing/event/MouseInputListener.* javax/swing/event/PopupMenuEvent$*.* javax/swing/event/PopupMenuEvent.* javax/swing/event/PopupMenuListener$*.* javax/swing/event/PopupMenuListener.* javax/swing/event/RowSorterEvent$*.* javax/swing/event/RowSorterEvent.* javax/swing/event/RowSorterListener.* javax/swing/event/RowSorterListener$*.* javax/swing/event/SwingPropertyChangeSupport$*.* javax/swing/event/SwingPropertyChangeSupport.* javax/swing/event/TableColumnModelEvent$*.* javax/swing/event/TableColumnModelEvent.* javax/swing/event/TableColumnModelListener$*.* javax/swing/event/TableColumnModelListener.* javax/swing/event/TableModelEvent$*.* javax/swing/event/TableModelEvent.* javax/swing/event/TableModelListener.* javax/swing/event/TableModelListener$*.* javax/swing/event/TreeExpansionEvent.* javax/swing/event/TreeExpansionEvent$*.* javax/swing/event/TreeExpansionListener$*.* javax/swing/event/TreeExpansionListener.* javax/swing/event/TreeModelEvent$*.* javax/swing/event/TreeModelEvent.* javax/swing/event/TreeModelListener$*.* javax/swing/event/TreeModelListener.* javax/swing/event/TreeSelectionEvent$*.* javax/swing/event/TreeSelectionEvent.* javax/swing/event/TreeSelectionListener$*.* javax/swing/event/TreeSelectionListener.* javax/swing/event/TreeWillExpandListener$*.* javax/swing/event/TreeWillExpandListener.* javax/swing/event/UndoableEditEvent$*.* javax/swing/event/UndoableEditEvent.* javax/swing/event/UndoableEditListener$*.* javax/swing/event/UndoableEditListener.* javax/swing/filechooser/FileFilter$*.* javax/swing/filechooser/FileFilter.* javax/swing/filechooser/FileNameExtensionFilter$*.* javax/swing/filechooser/FileNameExtensionFilter.* javax/swing/filechooser/FileSystemView$*.* javax/swing/filechooser/FileSystemView.* javax/swing/filechooser/FileView.* javax/swing/filechooser/FileView$*.* javax/swing/plaf/ActionMapUIResource.* javax/swing/plaf/ActionMapUIResource$*.* javax/swing/plaf/BorderUIResource.* javax/swing/plaf/BorderUIResource$*.* javax/swing/plaf/ButtonUI.* javax/swing/plaf/ButtonUI$*.* javax/swing/plaf/ColorChooserUI.* javax/swing/plaf/ColorChooserUI$*.* javax/swing/plaf/ColorUIResource.* javax/swing/plaf/ColorUIResource$*.* javax/swing/plaf/ComboBoxUI$*.* javax/swing/plaf/ComboBoxUI.* javax/swing/plaf/ComponentInputMapUIResource$*.* javax/swing/plaf/ComponentInputMapUIResource.* javax/swing/plaf/ComponentUI.* javax/swing/plaf/ComponentUI$*.* javax/swing/plaf/DesktopIconUI.* javax/swing/plaf/DesktopIconUI$*.* javax/swing/plaf/DesktopPaneUI.* javax/swing/plaf/DesktopPaneUI$*.* javax/swing/plaf/DimensionUIResource.* javax/swing/plaf/DimensionUIResource$*.* javax/swing/plaf/FileChooserUI$*.* javax/swing/plaf/FileChooserUI.* javax/swing/plaf/FontUIResource$*.* javax/swing/plaf/FontUIResource.* javax/swing/plaf/IconUIResource$*.* javax/swing/plaf/IconUIResource.* javax/swing/plaf/InputMapUIResource$*.* javax/swing/plaf/InputMapUIResource.* javax/swing/plaf/InsetsUIResource$*.* javax/swing/plaf/InsetsUIResource.* javax/swing/plaf/InternalFrameUI.* javax/swing/plaf/InternalFrameUI$*.* javax/swing/plaf/LabelUI$*.* javax/swing/plaf/LabelUI.* javax/swing/plaf/ListUI$*.* javax/swing/plaf/ListUI.* javax/swing/plaf/MenuBarUI$*.* javax/swing/plaf/MenuBarUI.* javax/swing/plaf/MenuItemUI$*.* javax/swing/plaf/MenuItemUI.* javax/swing/plaf/OptionPaneUI$*.* javax/swing/plaf/OptionPaneUI.* javax/swing/plaf/PanelUI$*.* javax/swing/plaf/PanelUI.* javax/swing/plaf/PopupMenuUI.* javax/swing/plaf/PopupMenuUI$*.* javax/swing/plaf/ProgressBarUI$*.* javax/swing/plaf/ProgressBarUI.* javax/swing/plaf/RootPaneUI.* javax/swing/plaf/RootPaneUI$*.* javax/swing/plaf/ScrollBarUI.* javax/swing/plaf/ScrollBarUI$*.* javax/swing/plaf/ScrollPaneUI.* javax/swing/plaf/ScrollPaneUI$*.* javax/swing/plaf/SeparatorUI$*.* javax/swing/plaf/SeparatorUI.* javax/swing/plaf/SliderUI.* javax/swing/plaf/SliderUI$*.* javax/swing/plaf/SpinnerUI$*.* javax/swing/plaf/SpinnerUI.* javax/swing/plaf/SplitPaneUI.* javax/swing/plaf/SplitPaneUI$*.* javax/swing/plaf/TabbedPaneUI$*.* javax/swing/plaf/TabbedPaneUI.* javax/swing/plaf/TableHeaderUI$*.* javax/swing/plaf/TableHeaderUI.* javax/swing/plaf/TableUI$*.* javax/swing/plaf/TableUI.* javax/swing/plaf/TextUI$*.* javax/swing/plaf/TextUI.* javax/swing/plaf/ToolBarUI$*.* javax/swing/plaf/ToolBarUI.* javax/swing/plaf/ToolTipUI.* javax/swing/plaf/ToolTipUI$*.* javax/swing/plaf/TreeUI$*.* javax/swing/plaf/TreeUI.* javax/swing/plaf/UIResource.* javax/swing/plaf/UIResource$*.* javax/swing/plaf/ViewportUI.* javax/swing/plaf/ViewportUI$*.* javax/swing/plaf/basic/AcceleratorsProcessor.* javax/swing/plaf/basic/AcceleratorsProcessor$*.* javax/swing/plaf/basic/BasicArrowButton$*.* javax/swing/plaf/basic/BasicArrowButton.* javax/swing/plaf/basic/BasicBorders.* javax/swing/plaf/basic/BasicBorders$*.* javax/swing/plaf/basic/BasicButtonListener.* javax/swing/plaf/basic/BasicButtonListener$*.* javax/swing/plaf/basic/BasicButtonUI$*.* javax/swing/plaf/basic/BasicButtonUI.* javax/swing/plaf/basic/BasicCheckBoxMenuItemUI$*.* javax/swing/plaf/basic/BasicCheckBoxMenuItemUI.* javax/swing/plaf/basic/BasicCheckBoxUI.* javax/swing/plaf/basic/BasicCheckBoxUI$*.* javax/swing/plaf/basic/BasicColorChooserUI.* javax/swing/plaf/basic/BasicColorChooserUI$*.* javax/swing/plaf/basic/BasicComboBoxEditor.* javax/swing/plaf/basic/BasicComboBoxEditor$*.* javax/swing/plaf/basic/BasicComboBoxKeyboardActions.* javax/swing/plaf/basic/BasicComboBoxKeyboardActions$*.* javax/swing/plaf/basic/BasicComboBoxRenderer$*.* javax/swing/plaf/basic/BasicComboBoxRenderer.* javax/swing/plaf/basic/BasicComboBoxUI.* javax/swing/plaf/basic/BasicComboBoxUI$*.* javax/swing/plaf/basic/BasicComboPopup$*.* javax/swing/plaf/basic/BasicComboPopup.* javax/swing/plaf/basic/BasicDesktopIconUI$*.* javax/swing/plaf/basic/BasicDesktopIconUI.* javax/swing/plaf/basic/BasicDesktopPaneUI$*.* javax/swing/plaf/basic/BasicDesktopPaneUI.* javax/swing/plaf/basic/BasicDirectoryModel$*.* javax/swing/plaf/basic/BasicDirectoryModel.* javax/swing/plaf/basic/BasicEditorPaneUI.* javax/swing/plaf/basic/BasicEditorPaneUI$*.* javax/swing/plaf/basic/BasicFileChooserUI.* javax/swing/plaf/basic/BasicFileChooserUI$*.* javax/swing/plaf/basic/BasicFormattedTextFieldUI.* javax/swing/plaf/basic/BasicFormattedTextFieldUI$*.* javax/swing/plaf/basic/BasicGraphicsUtils$*.* javax/swing/plaf/basic/BasicGraphicsUtils.* javax/swing/plaf/basic/BasicHTML.* javax/swing/plaf/basic/BasicHTML$*.* javax/swing/plaf/basic/BasicIconFactory$*.* javax/swing/plaf/basic/BasicIconFactory.* javax/swing/plaf/basic/BasicInternalFrameTitlePane.* javax/swing/plaf/basic/BasicInternalFrameTitlePane$*.* javax/swing/plaf/basic/BasicInternalFrameUI$*.* javax/swing/plaf/basic/BasicInternalFrameUI.* javax/swing/plaf/basic/BasicLabelUI.* javax/swing/plaf/basic/BasicLabelUI$*.* javax/swing/plaf/basic/BasicListKeyboardActions$*.* javax/swing/plaf/basic/BasicListKeyboardActions.* javax/swing/plaf/basic/BasicListUI.* javax/swing/plaf/basic/BasicListUI$*.* javax/swing/plaf/basic/BasicLookAndFeel$*.* javax/swing/plaf/basic/BasicLookAndFeel.* javax/swing/plaf/basic/BasicMenuBarUI.* javax/swing/plaf/basic/BasicMenuBarUI$*.* javax/swing/plaf/basic/BasicMenuItemUI.* javax/swing/plaf/basic/BasicMenuItemUI$*.* javax/swing/plaf/basic/BasicMenuUI$*.* javax/swing/plaf/basic/BasicMenuUI.* javax/swing/plaf/basic/BasicOptionPaneUI$*.* javax/swing/plaf/basic/BasicOptionPaneUI.* javax/swing/plaf/basic/BasicPanelUI.* javax/swing/plaf/basic/BasicPanelUI$*.* javax/swing/plaf/basic/BasicPasswordFieldUI$*.* javax/swing/plaf/basic/BasicPasswordFieldUI.* javax/swing/plaf/basic/BasicPopupMenuSeparatorUI$*.* javax/swing/plaf/basic/BasicPopupMenuSeparatorUI.* javax/swing/plaf/basic/BasicPopupMenuUI.* javax/swing/plaf/basic/BasicPopupMenuUI$*.* javax/swing/plaf/basic/BasicProgressBarUI.* javax/swing/plaf/basic/BasicProgressBarUI$*.* javax/swing/plaf/basic/BasicRadioButtonMenuItemUI.* javax/swing/plaf/basic/BasicRadioButtonMenuItemUI$*.* javax/swing/plaf/basic/BasicRadioButtonUI.* javax/swing/plaf/basic/BasicRadioButtonUI$*.* javax/swing/plaf/basic/BasicRootPaneUI.* javax/swing/plaf/basic/BasicRootPaneUI$*.* javax/swing/plaf/basic/BasicScrollBarUI.* javax/swing/plaf/basic/BasicScrollBarUI$*.* javax/swing/plaf/basic/BasicScrollPaneKeyboardActions.* javax/swing/plaf/basic/BasicScrollPaneKeyboardActions$*.* javax/swing/plaf/basic/BasicScrollPaneUI.* javax/swing/plaf/basic/BasicScrollPaneUI$*.* javax/swing/plaf/basic/BasicSeparatorUI.* javax/swing/plaf/basic/BasicSeparatorUI$*.* javax/swing/plaf/basic/BasicSliderUI$*.* javax/swing/plaf/basic/BasicSliderUI.* javax/swing/plaf/basic/BasicSpinnerKeyboardActions$*.* javax/swing/plaf/basic/BasicSpinnerKeyboardActions.* javax/swing/plaf/basic/BasicSpinnerUI.* javax/swing/plaf/basic/BasicSpinnerUI$*.* javax/swing/plaf/basic/BasicSplitPaneDivider.* javax/swing/plaf/basic/BasicSplitPaneDivider$*.* javax/swing/plaf/basic/BasicSplitPaneKeyboardActions$*.* javax/swing/plaf/basic/BasicSplitPaneKeyboardActions.* javax/swing/plaf/basic/BasicSplitPaneUI$*.* javax/swing/plaf/basic/BasicSplitPaneUI.* javax/swing/plaf/basic/BasicTabbedPaneUI.* javax/swing/plaf/basic/BasicTabbedPaneUI$*.* javax/swing/plaf/basic/BasicTableHeaderUI.* javax/swing/plaf/basic/BasicTableHeaderUI$*.* javax/swing/plaf/basic/BasicTableKeyboardActions.* javax/swing/plaf/basic/BasicTableKeyboardActions$*.* javax/swing/plaf/basic/BasicTableUI$*.* javax/swing/plaf/basic/BasicTableUI.* javax/swing/plaf/basic/BasicTextAreaUI$*.* javax/swing/plaf/basic/BasicTextAreaUI.* javax/swing/plaf/basic/BasicTextFieldUI$*.* javax/swing/plaf/basic/BasicTextFieldUI.* javax/swing/plaf/basic/BasicTextPaneUI.* javax/swing/plaf/basic/BasicTextPaneUI$*.* javax/swing/plaf/basic/BasicTextUI$*.* javax/swing/plaf/basic/BasicTextUI.* javax/swing/plaf/basic/BasicToggleButtonUI$*.* javax/swing/plaf/basic/BasicToggleButtonUI.* javax/swing/plaf/basic/BasicToolBarSeparatorUI$*.* javax/swing/plaf/basic/BasicToolBarSeparatorUI.* javax/swing/plaf/basic/BasicToolBarUI$*.* javax/swing/plaf/basic/BasicToolBarUI.* javax/swing/plaf/basic/BasicToolTipUI.* javax/swing/plaf/basic/BasicToolTipUI$*.* javax/swing/plaf/basic/BasicTreeKeyboardActions.* javax/swing/plaf/basic/BasicTreeKeyboardActions$*.* javax/swing/plaf/basic/BasicTreeUI.* javax/swing/plaf/basic/BasicTreeUI$*.* javax/swing/plaf/basic/BasicViewportUI.* javax/swing/plaf/basic/BasicViewportUI$*.* javax/swing/plaf/basic/ComboPopup.* javax/swing/plaf/basic/ComboPopup$*.* javax/swing/plaf/basic/DefaultMenuLayout$*.* javax/swing/plaf/basic/DefaultMenuLayout.* javax/swing/plaf/basic/DnDMouseHelper.* javax/swing/plaf/basic/DnDMouseHelper$*.* javax/swing/plaf/basic/MenuKeyBindingProcessor$*.* javax/swing/plaf/basic/MenuKeyBindingProcessor.* javax/swing/plaf/basic/RootPaneFocusHandler$*.* javax/swing/plaf/basic/RootPaneFocusHandler.* javax/swing/plaf/metal/DefaultMetalTheme.* javax/swing/plaf/metal/DefaultMetalTheme$*.* javax/swing/plaf/metal/MetalBorders.* javax/swing/plaf/metal/MetalBorders$*.* javax/swing/plaf/metal/MetalBumps$*.* javax/swing/plaf/metal/MetalBumps.* javax/swing/plaf/metal/MetalButtonUI.* javax/swing/plaf/metal/MetalButtonUI$*.* javax/swing/plaf/metal/MetalCheckBoxIcon$*.* javax/swing/plaf/metal/MetalCheckBoxIcon.* javax/swing/plaf/metal/MetalCheckBoxUI.* javax/swing/plaf/metal/MetalCheckBoxUI$*.* javax/swing/plaf/metal/MetalComboBoxButton$*.* javax/swing/plaf/metal/MetalComboBoxButton.* javax/swing/plaf/metal/MetalComboBoxEditor$*.* javax/swing/plaf/metal/MetalComboBoxEditor.* javax/swing/plaf/metal/MetalComboBoxIcon.* javax/swing/plaf/metal/MetalComboBoxIcon$*.* javax/swing/plaf/metal/MetalComboBoxUI.* javax/swing/plaf/metal/MetalComboBoxUI$*.* javax/swing/plaf/metal/MetalDesktopIconUI.* javax/swing/plaf/metal/MetalDesktopIconUI$*.* javax/swing/plaf/metal/MetalFileChooserUI.* javax/swing/plaf/metal/MetalFileChooserUI$*.* javax/swing/plaf/metal/MetalIconFactory.* javax/swing/plaf/metal/MetalIconFactory$*.* javax/swing/plaf/metal/MetalInternalFrameTitlePane$*.* javax/swing/plaf/metal/MetalInternalFrameTitlePane.* javax/swing/plaf/metal/MetalInternalFrameUI.* javax/swing/plaf/metal/MetalInternalFrameUI$*.* javax/swing/plaf/metal/MetalLabelUI$*.* javax/swing/plaf/metal/MetalLabelUI.* javax/swing/plaf/metal/MetalLookAndFeel$*.* javax/swing/plaf/metal/MetalLookAndFeel.* javax/swing/plaf/metal/MetalMenuBarUI$*.* javax/swing/plaf/metal/MetalMenuBarUI.* javax/swing/plaf/metal/MetalPopupMenuSeparatorUI$*.* javax/swing/plaf/metal/MetalPopupMenuSeparatorUI.* javax/swing/plaf/metal/MetalProgressBarUI.* javax/swing/plaf/metal/MetalProgressBarUI$*.* javax/swing/plaf/metal/MetalRadioButtonUI.* javax/swing/plaf/metal/MetalRadioButtonUI$*.* javax/swing/plaf/metal/MetalRootPaneTitlePane$*.* javax/swing/plaf/metal/MetalRootPaneTitlePane.* javax/swing/plaf/metal/MetalRootPaneUI.* javax/swing/plaf/metal/MetalRootPaneUI$*.* javax/swing/plaf/metal/MetalScrollBarUI.* javax/swing/plaf/metal/MetalScrollBarUI$*.* javax/swing/plaf/metal/MetalScrollButton$*.* javax/swing/plaf/metal/MetalScrollButton.* javax/swing/plaf/metal/MetalScrollPaneUI.* javax/swing/plaf/metal/MetalScrollPaneUI$*.* javax/swing/plaf/metal/MetalSeparatorUI$*.* javax/swing/plaf/metal/MetalSeparatorUI.* javax/swing/plaf/metal/MetalSliderUI.* javax/swing/plaf/metal/MetalSliderUI$*.* javax/swing/plaf/metal/MetalSplitPaneUI.* javax/swing/plaf/metal/MetalSplitPaneUI$*.* javax/swing/plaf/metal/MetalTabbedPaneUI$*.* javax/swing/plaf/metal/MetalTabbedPaneUI.* javax/swing/plaf/metal/MetalTextFieldUI.* javax/swing/plaf/metal/MetalTextFieldUI$*.* javax/swing/plaf/metal/MetalTheme.* javax/swing/plaf/metal/MetalTheme$*.* javax/swing/plaf/metal/MetalToggleButtonUI.* javax/swing/plaf/metal/MetalToggleButtonUI$*.* javax/swing/plaf/metal/MetalToolBarUI.* javax/swing/plaf/metal/MetalToolBarUI$*.* javax/swing/plaf/metal/MetalToolTipUI.* javax/swing/plaf/metal/MetalToolTipUI$*.* javax/swing/plaf/metal/MetalTreeUI$*.* javax/swing/plaf/metal/MetalTreeUI.* javax/swing/plaf/metal/OceanTheme.* javax/swing/plaf/metal/OceanTheme$*.* javax/swing/plaf/multi/MultiButtonUI$*.* javax/swing/plaf/multi/MultiButtonUI.* javax/swing/plaf/multi/MultiColorChooserUI.* javax/swing/plaf/multi/MultiColorChooserUI$*.* javax/swing/plaf/multi/MultiComboBoxUI$*.* javax/swing/plaf/multi/MultiComboBoxUI.* javax/swing/plaf/multi/MultiDesktopIconUI$*.* javax/swing/plaf/multi/MultiDesktopIconUI.* javax/swing/plaf/multi/MultiDesktopPaneUI.* javax/swing/plaf/multi/MultiDesktopPaneUI$*.* javax/swing/plaf/multi/MultiFileChooserUI.* javax/swing/plaf/multi/MultiFileChooserUI$*.* javax/swing/plaf/multi/MultiInternalFrameUI.* javax/swing/plaf/multi/MultiInternalFrameUI$*.* javax/swing/plaf/multi/MultiLabelUI$*.* javax/swing/plaf/multi/MultiLabelUI.* javax/swing/plaf/multi/MultiListUI$*.* javax/swing/plaf/multi/MultiListUI.* javax/swing/plaf/multi/MultiLookAndFeel.* javax/swing/plaf/multi/MultiLookAndFeel$*.* javax/swing/plaf/multi/MultiMenuBarUI$*.* javax/swing/plaf/multi/MultiMenuBarUI.* javax/swing/plaf/multi/MultiMenuItemUI.* javax/swing/plaf/multi/MultiMenuItemUI$*.* javax/swing/plaf/multi/MultiOptionPaneUI$*.* javax/swing/plaf/multi/MultiOptionPaneUI.* javax/swing/plaf/multi/MultiPanelUI$*.* javax/swing/plaf/multi/MultiPanelUI.* javax/swing/plaf/multi/MultiPopupMenuUI$*.* javax/swing/plaf/multi/MultiPopupMenuUI.* javax/swing/plaf/multi/MultiProgressBarUI.* javax/swing/plaf/multi/MultiProgressBarUI$*.* javax/swing/plaf/multi/MultiRootPaneUI.* javax/swing/plaf/multi/MultiRootPaneUI$*.* javax/swing/plaf/multi/MultiScrollBarUI.* javax/swing/plaf/multi/MultiScrollBarUI$*.* javax/swing/plaf/multi/MultiScrollPaneUI.* javax/swing/plaf/multi/MultiScrollPaneUI$*.* javax/swing/plaf/multi/MultiSeparatorUI$*.* javax/swing/plaf/multi/MultiSeparatorUI.* javax/swing/plaf/multi/MultiSliderUI.* javax/swing/plaf/multi/MultiSliderUI$*.* javax/swing/plaf/multi/MultiSpinnerUI.* javax/swing/plaf/multi/MultiSpinnerUI$*.* javax/swing/plaf/multi/MultiSplitPaneUI$*.* javax/swing/plaf/multi/MultiSplitPaneUI.* javax/swing/plaf/multi/MultiTabbedPaneUI$*.* javax/swing/plaf/multi/MultiTabbedPaneUI.* javax/swing/plaf/multi/MultiTableHeaderUI$*.* javax/swing/plaf/multi/MultiTableHeaderUI.* javax/swing/plaf/multi/MultiTableUI.* javax/swing/plaf/multi/MultiTableUI$*.* javax/swing/plaf/multi/MultiTextUI.* javax/swing/plaf/multi/MultiTextUI$*.* javax/swing/plaf/multi/MultiToolBarUI$*.* javax/swing/plaf/multi/MultiToolBarUI.* javax/swing/plaf/multi/MultiToolTipUI$*.* javax/swing/plaf/multi/MultiToolTipUI.* javax/swing/plaf/multi/MultiTreeUI$*.* javax/swing/plaf/multi/MultiTreeUI.* javax/swing/plaf/multi/MultiViewportUI.* javax/swing/plaf/multi/MultiViewportUI$*.* javax/swing/plaf/synth/ColorPainter$*.* javax/swing/plaf/synth/ColorPainter.* javax/swing/plaf/synth/ColorType.* javax/swing/plaf/synth/ColorType$*.* javax/swing/plaf/synth/DefaultStyleFactory$*.* javax/swing/plaf/synth/DefaultStyleFactory.* javax/swing/plaf/synth/ImagePainter.* javax/swing/plaf/synth/ImagePainter$*.* javax/swing/plaf/synth/PaintersManager.* javax/swing/plaf/synth/PaintersManager$*.* javax/swing/plaf/synth/Region.* javax/swing/plaf/synth/Region$*.* javax/swing/plaf/synth/SynthConstants$*.* javax/swing/plaf/synth/SynthConstants.* javax/swing/plaf/synth/SynthContext$*.* javax/swing/plaf/synth/SynthContext.* javax/swing/plaf/synth/SynthGraphicsUtils$*.* javax/swing/plaf/synth/SynthGraphicsUtils.* javax/swing/plaf/synth/SynthLookAndFeel.* javax/swing/plaf/synth/SynthLookAndFeel$*.* javax/swing/plaf/synth/SynthPainter$*.* javax/swing/plaf/synth/SynthPainter.* javax/swing/plaf/synth/SynthStyle$*.* javax/swing/plaf/synth/SynthStyle.* javax/swing/plaf/synth/SynthStyleFactory$*.* javax/swing/plaf/synth/SynthStyleFactory.* javax/swing/plaf/synth/XMLSynthParser$*.* javax/swing/plaf/synth/XMLSynthParser.* javax/swing/plaf/synth/XMLSynthStyle$*.* javax/swing/plaf/synth/XMLSynthStyle.* javax/swing/table/AbstractTableModel$*.* javax/swing/table/AbstractTableModel.* javax/swing/table/DefaultTableCellRenderer.* javax/swing/table/DefaultTableCellRenderer$*.* javax/swing/table/DefaultTableColumnModel.* javax/swing/table/DefaultTableColumnModel$*.* javax/swing/table/DefaultTableModel.* javax/swing/table/DefaultTableModel$*.* javax/swing/table/JTableHeader$*.* javax/swing/table/JTableHeader.* javax/swing/table/TableCellEditor.* javax/swing/table/TableCellEditor$*.* javax/swing/table/TableCellRenderer$*.* javax/swing/table/TableCellRenderer.* javax/swing/table/TableColumn.* javax/swing/table/TableColumn$*.* javax/swing/table/TableColumnModel.* javax/swing/table/TableColumnModel$*.* javax/swing/table/TableModel.* javax/swing/table/TableModel$*.* javax/swing/text/AWTCaret.* javax/swing/text/AWTCaret$*.* javax/swing/text/AbstractContentUndoableEdit.* javax/swing/text/AbstractContentUndoableEdit$*.* javax/swing/text/AbstractDocument$*.* javax/swing/text/AbstractDocument.* javax/swing/text/AbstractWriter.* javax/swing/text/AbstractWriter$*.* javax/swing/text/AttributeSet.* javax/swing/text/AttributeSet$*.* javax/swing/text/BadLocationException$*.* javax/swing/text/BadLocationException.* javax/swing/text/BoxView$*.* javax/swing/text/BoxView.* javax/swing/text/Caret$*.* javax/swing/text/Caret.* javax/swing/text/ChangedCharSetException$*.* javax/swing/text/ChangedCharSetException.* javax/swing/text/ComponentView.* javax/swing/text/ComponentView$*.* javax/swing/text/ComposedTextInterval.* javax/swing/text/ComposedTextInterval$*.* javax/swing/text/CompositeView.* javax/swing/text/CompositeView$*.* javax/swing/text/ContentPositions.* javax/swing/text/ContentPositions$*.* javax/swing/text/DateFormatter.* javax/swing/text/DateFormatter$*.* javax/swing/text/DefaultCaret$*.* javax/swing/text/DefaultCaret.* javax/swing/text/DefaultEditorKit$*.* javax/swing/text/DefaultEditorKit.* javax/swing/text/DefaultFormatter$*.* javax/swing/text/DefaultFormatter.* javax/swing/text/DefaultFormatterFactory$*.* javax/swing/text/DefaultFormatterFactory.* javax/swing/text/DefaultGlyphPainter.* javax/swing/text/DefaultGlyphPainter$*.* javax/swing/text/DefaultHighlighter$*.* javax/swing/text/DefaultHighlighter.* javax/swing/text/DefaultStyledDocument$*.* javax/swing/text/DefaultStyledDocument.* javax/swing/text/Document.* javax/swing/text/Document$*.* javax/swing/text/DocumentFilter$*.* javax/swing/text/DocumentFilter.* javax/swing/text/EditorKit$*.* javax/swing/text/EditorKit.* javax/swing/text/Element$*.* javax/swing/text/Element.* javax/swing/text/ElementIterator.* javax/swing/text/ElementIterator$*.* javax/swing/text/EmptyAttributeSet$*.* javax/swing/text/EmptyAttributeSet.* javax/swing/text/FieldView$*.* javax/swing/text/FieldView.* javax/swing/text/FieldViewI18N.* javax/swing/text/FieldViewI18N$*.* javax/swing/text/FlowView.* javax/swing/text/FlowView$*.* javax/swing/text/GapContent.* javax/swing/text/GapContent$*.* javax/swing/text/GlyphView$*.* javax/swing/text/GlyphView.* javax/swing/text/Highlighter.* javax/swing/text/Highlighter$*.* javax/swing/text/IconView$*.* javax/swing/text/IconView.* javax/swing/text/InternationalFormatter.* javax/swing/text/InternationalFormatter$*.* javax/swing/text/JTextComponent.* javax/swing/text/JTextComponent$*.* javax/swing/text/Keymap.* javax/swing/text/Keymap$*.* javax/swing/text/LabelView$*.* javax/swing/text/LabelView.* javax/swing/text/LayeredHighlighter$*.* javax/swing/text/LayeredHighlighter.* javax/swing/text/MaskFormatter.* javax/swing/text/MaskFormatter$*.* javax/swing/text/MutableAttributeSet$*.* javax/swing/text/MutableAttributeSet.* javax/swing/text/NavigationFilter.* javax/swing/text/NavigationFilter$*.* javax/swing/text/NumberFormatter$*.* javax/swing/text/NumberFormatter.* javax/swing/text/ParagraphView.* javax/swing/text/ParagraphView$*.* javax/swing/text/PasswordView.* javax/swing/text/PasswordView$*.* javax/swing/text/PlainDocument$*.* javax/swing/text/PlainDocument.* javax/swing/text/PlainView$*.* javax/swing/text/PlainView.* javax/swing/text/PlainViewI18N.* javax/swing/text/PlainViewI18N$*.* javax/swing/text/Position.* javax/swing/text/Position$*.* javax/swing/text/RootView$*.* javax/swing/text/RootView.* javax/swing/text/Segment.* javax/swing/text/Segment$*.* javax/swing/text/SelectedTextInterval$*.* javax/swing/text/SelectedTextInterval.* javax/swing/text/SimpleAttributeSet$*.* javax/swing/text/SimpleAttributeSet.* javax/swing/text/StringContent$*.* javax/swing/text/StringContent.* javax/swing/text/Style.* javax/swing/text/Style$*.* javax/swing/text/StyleConstants$*.* javax/swing/text/StyleConstants.* javax/swing/text/StyleContext$*.* javax/swing/text/StyleContext.* javax/swing/text/StyledDocument.* javax/swing/text/StyledDocument$*.* javax/swing/text/StyledEditorKit.* javax/swing/text/StyledEditorKit$*.* javax/swing/text/TabExpander$*.* javax/swing/text/TabExpander.* javax/swing/text/TabSet.* javax/swing/text/TabSet$*.* javax/swing/text/TabStop.* javax/swing/text/TabStop$*.* javax/swing/text/TabableView.* javax/swing/text/TabableView$*.* javax/swing/text/TextAction$*.* javax/swing/text/TextAction.* javax/swing/text/TextFactoryImpl.* javax/swing/text/TextFactoryImpl$*.* javax/swing/text/TextInterval.* javax/swing/text/TextInterval$*.* javax/swing/text/TextPaintParams$*.* javax/swing/text/TextPaintParams.* javax/swing/text/UnselectedTextInterval.* javax/swing/text/UnselectedTextInterval$*.* javax/swing/text/Utilities.* javax/swing/text/Utilities$*.* javax/swing/text/View.* javax/swing/text/View$*.* javax/swing/text/ViewFactory.* javax/swing/text/ViewFactory$*.* javax/swing/text/WrappedPlainView$*.* javax/swing/text/WrappedPlainView.* javax/swing/text/html/BRView.* javax/swing/text/html/BRView$*.* javax/swing/text/html/BackgroundImageLoader$*.* javax/swing/text/html/BackgroundImageLoader.* javax/swing/text/html/BlockView$*.* javax/swing/text/html/BlockView.* javax/swing/text/html/CSS.* javax/swing/text/html/CSS$*.* javax/swing/text/html/CascadedStyle.* javax/swing/text/html/CascadedStyle$*.* javax/swing/text/html/CompositeAttributeSet$*.* javax/swing/text/html/CompositeAttributeSet.* javax/swing/text/html/FormSubmitEvent$*.* javax/swing/text/html/FormSubmitEvent.* javax/swing/text/html/FormView.* javax/swing/text/html/FormView$*.* javax/swing/text/html/FormViewComponentFactory$*.* javax/swing/text/html/FormViewComponentFactory.* javax/swing/text/html/FormViewUtils.* javax/swing/text/html/FormViewUtils$*.* javax/swing/text/html/FrameSetTagView.* javax/swing/text/html/FrameSetTagView$*.* javax/swing/text/html/FrameTagView.* javax/swing/text/html/FrameTagView$*.* javax/swing/text/html/HRuleTagView$*.* javax/swing/text/html/HRuleTagView.* javax/swing/text/html/HTML$*.* javax/swing/text/html/HTML.* javax/swing/text/html/HTMLDocument.* javax/swing/text/html/HTMLDocument$*.* javax/swing/text/html/HTMLEditorKit$*.* javax/swing/text/html/HTMLEditorKit.* javax/swing/text/html/HTMLFrameHyperlinkEvent$*.* javax/swing/text/html/HTMLFrameHyperlinkEvent.* javax/swing/text/html/HTMLWriter.* javax/swing/text/html/HTMLWriter$*.* javax/swing/text/html/ImageView$*.* javax/swing/text/html/ImageView.* javax/swing/text/html/InlineView.* javax/swing/text/html/InlineView$*.* javax/swing/text/html/InvisibleTagView$*.* javax/swing/text/html/InvisibleTagView.* javax/swing/text/html/ListView$*.* javax/swing/text/html/ListView.* javax/swing/text/html/MinimalHTMLWriter.* javax/swing/text/html/MinimalHTMLWriter$*.* javax/swing/text/html/NoFramesTagView$*.* javax/swing/text/html/NoFramesTagView.* javax/swing/text/html/ObjectView$*.* javax/swing/text/html/ObjectView.* javax/swing/text/html/Option.* javax/swing/text/html/Option$*.* javax/swing/text/html/ParagraphView.* javax/swing/text/html/ParagraphView$*.* javax/swing/text/html/Selector$*.* javax/swing/text/html/Selector.* javax/swing/text/html/SelectorMatcher.* javax/swing/text/html/SelectorMatcher$*.* javax/swing/text/html/SimpleSelector.* javax/swing/text/html/SimpleSelector$*.* javax/swing/text/html/Specificity.* javax/swing/text/html/Specificity$*.* javax/swing/text/html/SpecificityComparator.* javax/swing/text/html/SpecificityComparator$*.* javax/swing/text/html/StyleSheet.* javax/swing/text/html/StyleSheet$*.* javax/swing/text/html/TableTagView$*.* javax/swing/text/html/TableTagView.* javax/swing/text/html/TagIterator.* javax/swing/text/html/TagIterator$*.* javax/swing/text/html/ViewAttributeSet$*.* javax/swing/text/html/ViewAttributeSet.* javax/swing/text/html/parser/Asn1Attributes$*.* javax/swing/text/html/parser/Asn1Attributes.* javax/swing/text/html/parser/Asn1ContentModel.* javax/swing/text/html/parser/Asn1ContentModel$*.* javax/swing/text/html/parser/Asn1Dtd$*.* javax/swing/text/html/parser/Asn1Dtd.* javax/swing/text/html/parser/Asn1Element$*.* javax/swing/text/html/parser/Asn1Element.* javax/swing/text/html/parser/Asn1Entity$*.* javax/swing/text/html/parser/Asn1Entity.* javax/swing/text/html/parser/AttributeList$*.* javax/swing/text/html/parser/AttributeList.* javax/swing/text/html/parser/ContentModel$*.* javax/swing/text/html/parser/ContentModel.* javax/swing/text/html/parser/DTD.* javax/swing/text/html/parser/DTD$*.* javax/swing/text/html/parser/DTDConstants$*.* javax/swing/text/html/parser/DTDConstants.* javax/swing/text/html/parser/DTDUtilities.* javax/swing/text/html/parser/DTDUtilities$*.* javax/swing/text/html/parser/DocumentParser$*.* javax/swing/text/html/parser/DocumentParser.* javax/swing/text/html/parser/Element.* javax/swing/text/html/parser/Element$*.* javax/swing/text/html/parser/ElementsHandler$*.* javax/swing/text/html/parser/ElementsHandler.* javax/swing/text/html/parser/EntitiesHandler.* javax/swing/text/html/parser/EntitiesHandler$*.* javax/swing/text/html/parser/Entity.* javax/swing/text/html/parser/Entity$*.* javax/swing/text/html/parser/HTMLAttributeList.* javax/swing/text/html/parser/HTMLAttributeList$*.* javax/swing/text/html/parser/HTMLComment.* javax/swing/text/html/parser/HTMLComment$*.* javax/swing/text/html/parser/HTMLConstants$*.* javax/swing/text/html/parser/HTMLConstants.* javax/swing/text/html/parser/HTMLErrorType$*.* javax/swing/text/html/parser/HTMLErrorType.* javax/swing/text/html/parser/HTMLMarkup.* javax/swing/text/html/parser/HTMLMarkup$*.* javax/swing/text/html/parser/HTMLObject.* javax/swing/text/html/parser/HTMLObject$*.* javax/swing/text/html/parser/HTMLTag$*.* javax/swing/text/html/parser/HTMLTag.* javax/swing/text/html/parser/HTMLTagType$*.* javax/swing/text/html/parser/HTMLTagType.* javax/swing/text/html/parser/HTMLText.* javax/swing/text/html/parser/HTMLText$*.* javax/swing/text/html/parser/Lexer.* javax/swing/text/html/parser/Lexer$*.* javax/swing/text/html/parser/LexerTextStateType$*.* javax/swing/text/html/parser/LexerTextStateType.* javax/swing/text/html/parser/LexerTextType.* javax/swing/text/html/parser/LexerTextType$*.* javax/swing/text/html/parser/Pair.* javax/swing/text/html/parser/Pair$*.* javax/swing/text/html/parser/Parser.* javax/swing/text/html/parser/Parser$*.* javax/swing/text/html/parser/ParserCup$*.* javax/swing/text/html/parser/ParserCup.* javax/swing/text/html/parser/ParserDelegator$*.* javax/swing/text/html/parser/ParserDelegator.* javax/swing/text/html/parser/ParserHandler.* javax/swing/text/html/parser/ParserHandler$*.* javax/swing/text/html/parser/ParserSym.* javax/swing/text/html/parser/ParserSym$*.* javax/swing/text/html/parser/TagElement.* javax/swing/text/html/parser/TagElement$*.* javax/swing/text/rtf/RTFEditorKit.* javax/swing/text/rtf/RTFEditorKit$*.* javax/swing/tree/AbstractLayoutCache$*.* javax/swing/tree/AbstractLayoutCache.* javax/swing/tree/DefaultMutableTreeNode.* javax/swing/tree/DefaultMutableTreeNode$*.* javax/swing/tree/DefaultTreeCellEditor.* javax/swing/tree/DefaultTreeCellEditor$*.* javax/swing/tree/DefaultTreeCellRenderer$*.* javax/swing/tree/DefaultTreeCellRenderer.* javax/swing/tree/DefaultTreeModel.* javax/swing/tree/DefaultTreeModel$*.* javax/swing/tree/DefaultTreeSelectionModel.* javax/swing/tree/DefaultTreeSelectionModel$*.* javax/swing/tree/ExpandVetoException$*.* javax/swing/tree/ExpandVetoException.* javax/swing/tree/FixedHeightLayoutCache$*.* javax/swing/tree/FixedHeightLayoutCache.* javax/swing/tree/MutableTreeNode.* javax/swing/tree/MutableTreeNode$*.* javax/swing/tree/PathPlaceHolder.* javax/swing/tree/PathPlaceHolder$*.* javax/swing/tree/RowMapper.* javax/swing/tree/RowMapper$*.* javax/swing/tree/TreeCellEditor.* javax/swing/tree/TreeCellEditor$*.* javax/swing/tree/TreeCellRenderer.* javax/swing/tree/TreeCellRenderer$*.* javax/swing/tree/TreeModel.* javax/swing/tree/TreeModel$*.* javax/swing/tree/TreeNode.* javax/swing/tree/TreeNode$*.* javax/swing/tree/TreePath$*.* javax/swing/tree/TreePath.* javax/swing/tree/TreeSelectionModel$*.* javax/swing/tree/TreeSelectionModel.* javax/swing/tree/VariableHeightLayoutCache$*.* javax/swing/tree/VariableHeightLayoutCache.* javax/swing/undo/AbstractUndoableEdit.* javax/swing/undo/AbstractUndoableEdit$*.* javax/swing/undo/CannotRedoException.* javax/swing/undo/CannotRedoException$*.* javax/swing/undo/CannotUndoException$*.* javax/swing/undo/CannotUndoException.* javax/swing/undo/CompoundEdit.* javax/swing/undo/CompoundEdit$*.* javax/swing/undo/StateEdit.* javax/swing/undo/StateEdit$*.* javax/swing/undo/StateEditable.* javax/swing/undo/StateEditable$*.* javax/swing/undo/UndoManager$*.* javax/swing/undo/UndoManager.* javax/swing/undo/UndoableEdit.* javax/swing/undo/UndoableEdit$*.* javax/swing/undo/UndoableEditSupport.* javax/swing/undo/UndoableEditSupport$*.* org/apache/harmony/x/swing/AbstractExtendedListElement.* org/apache/harmony/x/swing/AbstractExtendedListElement$*.* org/apache/harmony/x/swing/BlitSupport$*.* org/apache/harmony/x/swing/BlitSupport.* org/apache/harmony/x/swing/ButtonCommons.* org/apache/harmony/x/swing/ButtonCommons$*.* org/apache/harmony/x/swing/ComponentDragImplHelper.* org/apache/harmony/x/swing/ComponentDragImplHelper$*.* org/apache/harmony/x/swing/ExtendedListCellRenderer$*.* org/apache/harmony/x/swing/ExtendedListCellRenderer.* org/apache/harmony/x/swing/ExtendedListElement.* org/apache/harmony/x/swing/ExtendedListElement$*.* org/apache/harmony/x/swing/ExtendedListFactory$*.* org/apache/harmony/x/swing/ExtendedListFactory.* org/apache/harmony/x/swing/SizeRequirementsHelper$*.* org/apache/harmony/x/swing/SizeRequirementsHelper.* org/apache/harmony/x/swing/StringConstants$*.* org/apache/harmony/x/swing/StringConstants.* org/apache/harmony/x/swing/TitlePaneInternals$*.* org/apache/harmony/x/swing/TitlePaneInternals.* org/apache/harmony/x/swing/TreeCommons.* org/apache/harmony/x/swing/TreeCommons$*.* org/apache/harmony/x/swing/Utilities$*.* org/apache/harmony/x/swing/Utilities.* org/apache/harmony/x/swing/filechooser/PlatformFile$*.* org/apache/harmony/x/swing/filechooser/PlatformFile.* org/apache/harmony/x/swing/filechooser/PlatformFileManager$*.* org/apache/harmony/x/swing/filechooser/PlatformFileManager.* org/apache/harmony/x/swing/internal/nls/Messages.* org/apache/harmony/x/swing/internal/nls/Messages$*.* org/apache/harmony/x/swing/plaf/resources/basic/BasicResourceBundle$*.* org/apache/harmony/x/swing/plaf/resources/basic/BasicResourceBundle.* org/apache/harmony/x/swing/plaf/resources/metal/MetalResourceBundle$*.* org/apache/harmony/x/swing/plaf/resources/metal/MetalResourceBundle.* org/apache/harmony/x/swing/text/html/HTMLIconFactory$*.* org/apache/harmony/x/swing/text/html/HTMLIconFactory.* org/apache/harmony/x/swing/text/html/cssparser/CSSLogger$*.* org/apache/harmony/x/swing/text/html/cssparser/CSSLogger.* org/apache/harmony/x/swing/text/html/cssparser/CSSParser$*.* org/apache/harmony/x/swing/text/html/cssparser/CSSParser.* org/apache/harmony/x/swing/text/html/cssparser/CSSParserConstants$*.* org/apache/harmony/x/swing/text/html/cssparser/CSSParserConstants.* org/apache/harmony/x/swing/text/html/cssparser/CSSParserTokenManager.* org/apache/harmony/x/swing/text/html/cssparser/CSSParserTokenManager$*.* org/apache/harmony/x/swing/text/html/cssparser/ParseException.* org/apache/harmony/x/swing/text/html/cssparser/ParseException$*.* org/apache/harmony/x/swing/text/html/cssparser/SimpleCharStream.* org/apache/harmony/x/swing/text/html/cssparser/SimpleCharStream$*.* org/apache/harmony/x/swing/text/html/cssparser/Token.* org/apache/harmony/x/swing/text/html/cssparser/Token$*.* org/apache/harmony/x/swing/text/html/cssparser/TokenMgrError$*.* org/apache/harmony/x/swing/text/html/cssparser/TokenMgrError.* org/apache/harmony/x/swing/text/html/cssparser/TokenResolver$*.* org/apache/harmony/x/swing/text/html/cssparser/TokenResolver.* org/apache/harmony/x/swing/text/html/cssparser/metamodel/Property$*.* org/apache/harmony/x/swing/text/html/cssparser/metamodel/Property.* org/apache/harmony/x/swing/text/html/cssparser/metamodel/RuleSet$*.* org/apache/harmony/x/swing/text/html/cssparser/metamodel/RuleSet.* org/apache/harmony/x/swing/text/html/cssparser/metamodel/Sheet$*.* org/apache/harmony/x/swing/text/html/cssparser/metamodel/Sheet.* org/apache/harmony/x/swing/text/html/form/Form.* org/apache/harmony/x/swing/text/html/form/Form$*.* org/apache/harmony/x/swing/text/html/form/FormAttributes.* org/apache/harmony/x/swing/text/html/form/FormAttributes$*.* org/apache/harmony/x/swing/text/html/form/FormButtonModel$*.* org/apache/harmony/x/swing/text/html/form/FormButtonModel.* org/apache/harmony/x/swing/text/html/form/FormElement.* org/apache/harmony/x/swing/text/html/form/FormElement$*.* org/apache/harmony/x/swing/text/html/form/FormFieldsetModel.* org/apache/harmony/x/swing/text/html/form/FormFieldsetModel$*.* org/apache/harmony/x/swing/text/html/form/FormOption$*.* org/apache/harmony/x/swing/text/html/form/FormOption.* org/apache/harmony/x/swing/text/html/form/FormOptionGroup.* org/apache/harmony/x/swing/text/html/form/FormOptionGroup$*.* org/apache/harmony/x/swing/text/html/form/FormRootOptionGroup$*.* org/apache/harmony/x/swing/text/html/form/FormRootOptionGroup.* org/apache/harmony/x/swing/text/html/form/FormSelectComboBoxModel$*.* org/apache/harmony/x/swing/text/html/form/FormSelectComboBoxModel.* org/apache/harmony/x/swing/text/html/form/FormSelectListModel$*.* org/apache/harmony/x/swing/text/html/form/FormSelectListModel.* org/apache/harmony/x/swing/text/html/form/FormSelectModel.* org/apache/harmony/x/swing/text/html/form/FormSelectModel$*.* org/apache/harmony/x/swing/text/html/form/FormTextModel$*.* org/apache/harmony/x/swing/text/html/form/FormTextModel.* org/apache/harmony/x/swing/text/html/form/FormToggleButtonModel.* org/apache/harmony/x/swing/text/html/form/FormToggleButtonModel$*.* org/apache/harmony/x/swing/text/rtf/DocumentRTFHandler.* org/apache/harmony/x/swing/text/rtf/DocumentRTFHandler$*.* org/apache/harmony/x/swing/text/rtf/ParseException.* org/apache/harmony/x/swing/text/rtf/ParseException$*.* org/apache/harmony/x/swing/text/rtf/RTFEncodings$*.* org/apache/harmony/x/swing/text/rtf/RTFEncodings.* org/apache/harmony/x/swing/text/rtf/RTFHandler.* org/apache/harmony/x/swing/text/rtf/RTFHandler$*.* org/apache/harmony/x/swing/text/rtf/RTFParser.* org/apache/harmony/x/swing/text/rtf/RTFParser$*.* org/apache/harmony/x/swing/text/rtf/RTFParserConstants.* org/apache/harmony/x/swing/text/rtf/RTFParserConstants$*.* org/apache/harmony/x/swing/text/rtf/RTFParserTokenManager$*.* org/apache/harmony/x/swing/text/rtf/RTFParserTokenManager.* org/apache/harmony/x/swing/text/rtf/SimpleCharStream.* org/apache/harmony/x/swing/text/rtf/SimpleCharStream$*.* org/apache/harmony/x/swing/text/rtf/Token$*.* org/apache/harmony/x/swing/text/rtf/Token.* org/apache/harmony/x/swing/text/rtf/TokenMgrError.* org/apache/harmony/x/swing/text/rtf/TokenMgrError$*.* org/apache/harmony/x/swing/filechooser/windows/WinFile$*.* org/apache/harmony/x/swing/filechooser/windows/WinFile.* org/apache/harmony/x/swing/filechooser/windows/WinFileManager.* org/apache/harmony/x/swing/filechooser/windows/WinFileManager$*.*';
+    
+        cur['D:\workingcopy\hy6\working_classlib\deploy/build/ant/patternsets/swing.txt.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\ant\\patternsets';
+    
+        cur['D:\workingcopy\hy6\working_classlib\deploy\build\test\swing/test.exclude.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing';
+    
+        cur['depends.dir'] = 'depends';
+    
+        cur['depends.jars'] = 'depends/jars';
+    
+        cur['depends.oss'] = '${depends.oss}';
+    
+        cur['depends.url'] = 'http://svn.apache.org/repos/asf/harmony/standard/depends';
+    
+        cur['DSTAMP'] = '20091225';
+    
+        cur['exclude.module'] = 'nothing';
+    
+        cur['exe.suffix'] = '.exe';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['findbugs.dir'] = 'depends/oss/findbugs-1.3.9';
+    
+        cur['findbugs.md5'] = '73702d533a505bd98d0c2c585a29a08b';
+    
+        cur['findBugs.report'] = 'D:\\workingcopy\\hy6\\working_classlib\\build\\findbugs_report';
+    
+        cur['findbugs.url'] = 'http://downloads.sourceforge.net/project/findbugs/findbugs/1.3.9/findbugs-1.3.9.zip';
+    
+        cur['findbugs.zip'] = 'depends/oss/findbugs-1.3.9/findbugs-1.3.9.zip';
+    
+        cur['ftp.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['ftp.proxyPort'] = '80';
+    
+        cur['hamcrest-library.dir'] = 'depends/jars/hamcrest-library_1.1';
+    
+        cur['hamcrest-library.jar'] = 'depends/jars/hamcrest-library_1.1/hamcrest-library-1.1.jar';
+    
+        cur['hamcrest-library.md5'] = '271f78edc4333f0f44df617676e0a874';
+    
+        cur['hamcrest-library.url'] = 'http://repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar';
+    
+        cur['http.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['http.proxyPort'] = '80';
+    
+        cur['https.proxyHost'] = 'hkce01.hk.ibm.com';
+    
+        cur['https.proxyPort'] = '80';
+    
+        cur['hy.arch'] = 'x86';
+    
+        cur['hy.bits'] = '32';
+    
+        cur['hy.cfg'] = 'debug';
+    
+        cur['hy.hdk'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy';
+    
+        cur['hy.javac.compiler'] = 'org.eclipse.jdt.core.JDTCompilerAdapter';
+    
+        cur['hy.javac.debug'] = 'on';
+    
+        cur['hy.javac.maxmem'] = '384M';
+    
+        cur['hy.javac.source'] = '1.5';
+    
+        cur['hy.javac.target'] = '1.5';
+    
+        cur['hy.jdk'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\jdk';
+    
+        cur['hy.jre'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\jdk\\jre';
+    
+        cur['hy.libstdc++.suffix'] = '';
+    
+        cur['hy.local.zlib'] = 'false';
+    
+        cur['hy.module'] = 'swing';
+    
+        cur['hy.no.thr'] = 'false';
+    
+        cur['hy.os'] = 'windows';
+    
+        cur['hy.os.family'] = 'windows';
+    
+        cur['hy.platform'] = 'windows.x86';
+    
+        cur['hy.platform.path'] = 'windows/x86';
+    
+        cur['hy.platform.variant'] = 'windows.x86';
+    
+        cur['hy.portlib.stubs'] = 'false';
+    
+        cur['hy.skip.zip.api'] = 'true';
+    
+        cur['hy.test.forkmode'] = 'once';
+    
+        cur['hy.test.timeout'] = '900000';
+    
+        cur['hy.test.vm.name'] = 'drl';
+    
+        cur['hy.test.vmargs'] = '';
+    
+        cur['hy.zip.api'] = 'false';
+    
+        cur['icu4j.dir'] = 'depends/jars/icu4j_4.2.1';
+    
+        cur['icu4j.jar'] = 'depends/jars/icu4j_4.2.1/icu4j-4_2_1.jar';
+    
+        cur['icu4j.md5'] = '2bef290de1db6970a6699bf78f0dca77';
+    
+        cur['icu4j.url'] = 'http://download.icu-project.org/files/icu4j/4.2.1/icu4j-4_2_1.jar';
+    
+        cur['icu4j.ver'] = 'icu4j_4.2.1';
+    
+        cur['icu4j-charsets.dir'] = 'depends/jars/icu4j_4.2.1';
+    
+        cur['icu4j-charsets.jar'] = 'depends/jars/icu4j_4.2.1/icu4j-charsets-4_2_1.jar';
+    
+        cur['icu4j-charsets.md5'] = 'bccab3c39d735171fb54ce5e4f49207b';
+    
+        cur['icu4j-charsets.url'] = 'http://download.icu-project.org/files/icu4j/4.2.1/icu4j-charsets-4_2_1.jar';
+    
+        cur['icu4j-charsets.ver'] = 'icu4j_4.2.1';
+    
+        cur['is.32bit'] = 'true';
+    
+        cur['is.windows'] = 'true';
+    
+        cur['is.x86'] = 'true';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\jetty-6.0.0.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\jetty-util-6.0.0.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\junit-4.6.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\junit.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\servlet-api-2.5-6.0.0.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\support.jar;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\resources;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing;D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\swing_tests.jar;D:\\tools\\apache-ant-1.7.1\\lib\\junit-4.1.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant-launcher.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant.jar;D:\\tools\\apache-ant-1.7.1\\lib\\ant-junit.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.compiler'] = 'client';
+    
+        cur['java.endorsed.dirs'] = 'C:\\Program Files\\Java\\jre1.5.0_13\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\ext';
+    
+        cur['java.fullversion'] = 'pre-alpha : not complete or compatible svn = r893424, (Dec 24 2009), Windows/ia32/msvc 1500, release build http://harmony.apache.org';
+    
+        cur['java.home'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre';
+    
+        cur['java.io.tmpdir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\temp\\tmpdir';
+    
+        cur['java.library.path'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\;.;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\;d:\\VS9\\Common7\\IDE;d:\\VS9\\VC\\BIN;d:\\VS9\\Common7\\Tools;C:\\WINDOWS\\Microsoft.NET\\Framework\\v3.5;C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727;d:\\VS9\\VC\\VCPackages;C:\\Program Files\\\\Microsoft SDKs\\Windows\\v6.0A\\bin;C:\\Program Files\\ThinkPad\\Utilities;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\Program Files\\IBM\\Infoprint Select;c:\\notes;c:\\Program Files\\XLView;C:\\Utilities;C:\\lotus\\component;C:\\Program Files\\IBM\\Personal Communications\\;C:\\Program Files\\IBM\\Trace Facility\\;C:\\lotus\\compnent;C:\\Program Files\\Intel\\Wireless\\Bin\\;C:\\Program Files\\ThinkPad\\ConnectUtilities;C:\\WINDOWS\\Downloaded Program Files;C:\\Program Files\\Subversion\\bin;C:\\Program Files\\QuickTime\\QTSystem\\;C:\\Program Files\\Microsoft SQL Server\\90\\Tools\\binn\\;D:\\tools\\UnxUtils\\usr\\local\\wbin\\;c:\\Program Files\\Vim\\vim72\\;C:\\Program Files\\IBM\\CMVCDC50;D:\\tools\\apache-ant-1.7.1\\bin\\';
+    
+        cur['java.runtime.name'] = 'Apache Harmony';
+    
+        cur['java.runtime.version'] = '1.6.0';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.tmpdir'] = 'C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp';
+    
+        cur['java.vendor'] = 'Apache Software Foundation';
+    
+        cur['java.vendor.url'] = 'http://harmony.apache.org';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.version'] = '1.5.0';
+    
+        cur['java.vm.info'] = 'no info';
+    
+        cur['java.vm.name'] = 'DRLVM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Apache Software Foundation';
+    
+        cur['java.vm.version'] = '11.2.0';
+    
+        cur['javax.xml.transform.TransformerFactory'] = 'org.apache.xalan.xsltc.trax.TransformerFactoryImpl';
+    
+        cur['jetty.dir'] = 'depends/jars/jetty';
+    
+        cur['jetty.jar'] = 'depends/jars/jetty/jetty-6.0.0.jar';
+    
+        cur['jetty.md5'] = '930507973c9ad19a874af06f10be7223';
+    
+        cur['jetty.url'] = 'http://repo1.maven.org/maven2/jetty/jetty/6.0.0/jetty-6.0.0.jar';
+    
+        cur['jetty-util.jar'] = 'depends/jars/jetty/jetty-util-6.0.0.jar';
+    
+        cur['jetty-util.md5'] = '7cf65d83814718afdd1d3bd74f8799fc';
+    
+        cur['jetty-util.url'] = 'http://repo1.maven.org/maven2/jetty/jetty-util/6.0.0/jetty-util-6.0.0.jar';
+    
+        cur['jpeg.home'] = '/usr';
+    
+        cur['junit.dir'] = 'depends/jars/junit_4.6';
+    
+        cur['junit.jar'] = 'depends/jars/junit_4.6/junit-4.6.jar';
+    
+        cur['junit.java.io.tmpdir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\temp\\tmpdir';
+    
+        cur['junit.md5'] = '37dc57962c1275ebc572726a6f5cdd13';
+    
+        cur['junit.tempdir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\temp\\ant';
+    
+        cur['junit.url'] = 'http://repo1.maven.org/maven2/junit/junit/4.6/junit-4.6.jar';
+    
+        cur['junit.user.home'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\temp\\user';
+    
+        cur['keep.working'] = 'true';
+    
+        cur['lcms.home'] = '/usr';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['linklib.suffix'] = '.lib';
+    
+        cur['make.arg'] = '/nologo';
+    
+        cur['make.command'] = 'nmake.exe';
+    
+        cur['manifest.suffix'] = '.manifest';
+    
+        cur['maven2.base'] = 'http://repo1.maven.org/maven2';
+    
+        cur['module.temp.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\temp';
+    
+        cur['module.work.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing';
+    
+        cur['msvcp.dir'] = 'depends/libs/windows.x86';
+    
+        cur['msvcp.dll@x86_64@'] = 'depends/libs/windows.x86/msvcp80.dll';
+    
+        cur['msvcp.dll@x86@'] = 'depends/libs/windows.x86/msvcp71.dll';
+    
+        cur['msvcp.md5.deprecated@x86_64@'] = '5ae0f01f02a03558da0cbd249e4df263';
+    
+        cur['msvcp.md5.deprecated@x86@'] = '561fa2abb31dfa8fab762145f81667c2';
+    
+        cur['msvcp.md5@x86_64@'] = 'c332db81197e6e5d4a67d3789dbeb02a';
+    
+        cur['msvcp.md5@x86@'] = 'a94dc60a90efd7a35c36d971e3ee7470';
+    
+        cur['msvcp.url@x86_64@'] = 'file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%208/VC/redist/amd64/Microsoft.VC80.CRT/msvcp80.dll';
+    
+        cur['msvcp.url@x86@'] = 'file:///${hyenv.SystemRoot}/system32/msvcp71.dll';
+    
+        cur['msvcr.dir'] = 'depends/libs/windows.x86';
+    
+        cur['msvcr.dll@x86_64@'] = 'depends/libs/windows.x86/msvcr80.dll';
+    
+        cur['msvcr.dll@x86@'] = 'depends/libs/windows.x86/msvcr71.dll';
+    
+        cur['msvcr.md5.deprecated@x86_64@'] = '465cebd7da2ceaba5e552fc9118a1415';
+    
+        cur['msvcr.md5.deprecated@x86@'] = '86f1895ae8c5e8b17d99ece768a70732';
+    
+        cur['msvcr.md5@x86_64@'] = '4d89f6191db56cfa659388378f3dd688';
+    
+        cur['msvcr.md5@x86@'] = 'ca2f560921b7b8be1cf555a5a18d54c3';
+    
+        cur['msvcr.url@x86_64@'] = 'file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%208/VC/redist/amd64/Microsoft.VC80.CRT/msvcr80.dll';
+    
+        cur['msvcr.url@x86@'] = 'file:///${hyenv.SystemRoot}/system32/msvcr71.dll';
+    
+        cur['object.suffix'] = '.obj';
+    
+        cur['org.apache.harmony.boot.class.path'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x_mgt.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xml.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1/icu4j-4_2_1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1/icu4j-charsets-4_2_1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0/xalan.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/resolver.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/xercesImpl.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1/xml-apis.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2/mx4j.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2/mx4j-remote.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-core.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-rmi-spec.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0/yoko-rmi-impl.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2/bcel-5.2.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xmlsec-1.4.0/commons-logging.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xmlsec-1.4.0/xmlsec-1.4.0.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1/asm-3.1.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3/bsf-api.jar;D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3/axis2-saaj-api-1.3.jar';
+    
+        cur['org.apache.harmony.vm.vmdir'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default';
+    
+        cur['os.arch'] = 'x86';
+    
+        cur['os.name'] = 'Windows XP';
+    
+        cur['os.version'] = '5.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['platform.exclude.file'] = 'exclude.windows.x86.drl';
+    
+        cur['platform.exclude.interm'] = 'exclude.windows.x86.drl.interm';
+    
+        cur['png.home'] = '/usr';
+    
+        cur['progdb.suffix'] = '.pdb';
+    
+        cur['servlet-api.jar'] = 'depends/jars/jetty/servlet-api-2.5-6.0.0.jar';
+    
+        cur['servlet-api.md5'] = 'c27c02fb0a00cc3a7d05ea993a9bf56e';
+    
+        cur['servlet-api.url'] = 'http://repo1.maven.org/maven2/jetty/servlet-api/2.5-6.0.0/servlet-api-2.5-6.0.0.jar';
+    
+        cur['shlib.prefix'] = '';
+    
+        cur['shlib.suffix'] = '.dll';
+    
+        cur['src/main.loc'] = 'D:\\workingcopy\\hy6\\working_classlib\\modules\\swing\\src\\main';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\gc_gen.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\kernel.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\vmmagic-20070207.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\antlr-2.7.5.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-charsets-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0\\xalan.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\resolver.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xercesimpl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xml-apis.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j-remote.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-core.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-spec.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-impl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2\\bcel-5.2.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1\\asm-3.1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3\\bsf-api.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3\\axis2-saaj-api-1.3.jar;d:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\swing_tests.jar;d:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\junit.jar';
+    
+        cur['sun.boot.library.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 3';
+    
+        cur['svn.info'] = '${harmony.long.version}';
+    
+        cur['svn.info.tmp'] = '';
+    
+        cur['svn.rc'] = '0';
+    
+        cur['svn.revision'] = '${harmony.version}';
+    
+        cur['target.dir'] = '..';
+    
+        cur['test.exclude.file'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing/test.exclude';
+    
+        cur['test.excludes.dir'] = '../swing/excludes';
+    
+        cur['test.jre.home'] = 'D:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre';
+    
+        cur['test.module.dir'] = '../swing';
+    
+        cur['test.resources.dir'] = '../swing/resources';
+    
+        cur['test.vm.info.tmp'] = 'Apache Harmony Launcher : (c) Copyright 1991, 2009 The Apache Software Foundation or its licensors, as applicable. java version "1.5.0" Apache Harmony (1.6.0) DRLVM (11.2.0) pre-alpha : not complete or compatible svn = r893424, (Dec 24 2009), Windows/ia32/msvc 1500, release build http://harmony.apache.org';
+    
+        cur['tests.excludes.hdk.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy/build/test/swing/excludes';
+    
+        cur['tests.hdk.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy/build/test/swing';
+    
+        cur['tests.output'] = 'D:\\workingcopy\\hy6\\build\\test_report';
+    
+        cur['tests.resources.hdk.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy/build/test/swing/resources';
+    
+        cur['TODAY'] = 'December 25 2009';
+    
+        cur['TSTAMP'] = '1131';
+    
+        cur['user.country'] = 'US';
+    
+        cur['user.dir'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing';
+    
+        cur['user.home'] = 'D:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\temp\\user';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.name'] = 'tony';
+    
+        cur['user.timezone'] = 'GMT+8:00';
+    
+        cur['user.variant'] = '';
+    
+        cur['vm.boot.class.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\gc_gen.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\kernel.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\vmmagic-20070207.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default\\antlr-2.7.5.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\accessibility.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\annotation.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\applet.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\archive.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\auth.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\awt.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\beans.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\concurrent.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\crypto.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\imageio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\instrument.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\jndi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\lang-management.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\logging.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\luni.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\math.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\nio_char.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\prefs.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\print.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\regex.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\rmi.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\security.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sound.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\sql.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\swing.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\text.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\x-net.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\icu4j_4.2.1\\icu4j-charsets-4_2_1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xalan-j_2.7.0\\xalan.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\resolver.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xercesimpl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\xerces_2.9.1\\xml-apis.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\mx4j_3.0.2\\mx4j-remote.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\misc.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-core.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-spec.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\yoko-1.0\\yoko-rmi-impl.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bcel-5.2\\bcel-5.2.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\pack200.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\asm-3.1\\asm-3.1.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\bsf-3.0-beta3\\bsf-api.jar;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\lib\\boot\\axis2-1.3\\axis2-saaj-api-1.3.jar;d:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\swing\\swing_tests.jar;d:\\workingcopy\\hy6\\working_classlib\\deploy\\build\\test\\junit.jar';
+    
+        cur['vm.boot.library.path'] = 'd:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin\\default;d:\\workingcopy\\hy6\\target\\hdk\\jdk\\jre\\bin';
+    
+        cur['work.dir'] = '..';
+    
+        cur['xalan.dir'] = 'depends/jars/xalan-j_2.7.0';
+    
+        cur['xalan.jar'] = 'depends/jars/xalan-j_2.7.0/xalan.jar';
+    
+        cur['xalan.md5'] = 'a018d032c21a873225e702b36b171a10';
+    
+        cur['xalan.orig.jar'] = 'depends/jars/xalan-j_2.7.0/xalan.orig.jar';
+    
+        cur['xalan.url'] = 'http://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.jar';
+    
+        cur['xerces.dir'] = 'depends/jars/xerces_2.9.1';
+    
+        cur['xerces.md5'] = 'a0e07ede1c3bd5231fe15eae24032b2e';
+    
+        cur['xerces.url'] = 'http://www.apache.org/dist/xml/xerces-j/Xerces-J-bin.2.9.1.zip';
+    
+        cur['xerces.zip'] = 'depends/jars/xerces_2.9.1/xerces.zip';
+    
+        cur['xmlsec.dir'] = 'depends/jars/xmlsec_1.4.0';
+    
+        cur['xmlsec.md5'] = '79ffece964a40d33fb25f3f7a8e83f6b';
+    
+        cur['xmlsec.url'] = 'http://xml.apache.org/security/dist/java-library/xml-security-bin-1_4_0.zip';
+    
+        cur['xmlsec.zip'] = 'depends/jars/xmlsec_1.4.0/xmlsec.zip';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class javax.swing.plaf.metal.MetalScrollButtonTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap="nowrap">Time(s)</th><th nowrap="nowrap">Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="481_MetalScrollButtonTest.html">MetalScrollButtonTest</a></td><td><a title="Display all tests" href="481_MetalScrollButtonTest.html">2</a></td><td>0</td><td>0</td><td>0.015</td><td>2009-12-25T03:35:52</td><td>IBM-L3XANCF</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap="nowrap">Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetButtonWidth"></a>testGetButtonWidth</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testFreeStanding"></a>testFreeStanding</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('javax.swing.plaf.metal.MetalScrollButtonTest');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

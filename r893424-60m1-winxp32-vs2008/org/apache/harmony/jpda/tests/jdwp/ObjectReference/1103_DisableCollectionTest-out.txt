@@ -1,0 +1,113 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ObjectReference.DisableCollectionTest.testDisableCollection001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4971
+Start listening on: null
+Listening on: IBM-L3XANCF:4972
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4972,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4971 org.apache.harmony.jpda.tests.jdwp.ObjectReference.DisableCollectionDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4972,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4971 org.apache.harmony.jpda.tests.jdwp.ObjectReference.DisableCollectionDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4972,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4971, org.apache.harmony.jpda.tests.jdwp.ObjectReference.DisableCollectionDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4971
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testDisableCollection001 for ObjectReference::DisableCollection command: START...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> --> Debuggee: DisableCollectionDebuggee: START
+[SYNC] Received message: ready
+=> Getting reference type ID for class: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/DisableCollectionDebuggee;
+=> Returned number of classes: 1
+=> Debuggee class = org.apache.harmony.jpda.tests.jdwp.ObjectReference.DisableCollectionDebuggee
+=> referenceTypeID for Debuggee class = 1000000784
+=> Send ReferenceType::Fields command and get field ID(s)
+STDOUT> [SYNC] Message sent: ready
+STDOUT> [SYNC] Waiting for any message
+=> Returned fields number = 4
+
+=> Field ID: 591001336
+=> Field name: checkedObject
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/DisableCollectionObject001_01;
+=> Field modifiers: 0x8
+
+=> Field ID: 591001400
+=> Field name: checkedObject_Finalized
+=> Field signature: Z
+=> Field modifiers: 0x8
+
+=> Field ID: 591001464
+=> Field name: patternObject
+=> Field signature: Lorg/apache/harmony/jpda/tests/jdwp/ObjectReference/DisableCollectionObject001_02;
+=> Field modifiers: 0x8
+
+=> Field ID: 591001528
+=> Field name: patternObject_Finalized
+=> Field signature: Z
+=> Field modifiers: 0x8
+
+=> Expected field was found and field ID was got
+=> Send ReferenceType::GetValues command for received fieldID and get ObjectID to check...
+=> Returned values number = 1
+=> Returned field value tag for checked object= 76(OBJECT_TAG)
+=> Returned checked ObjectID = 1401
+
+=> CHECK: send ObjectReference::DisableCollection command for checked ObjectID...
+=> CHECK: Reply is received without any error
+=> Send to Debuggee signal to continue and try to unload checked ObjectID...
+[SYNC] Message sent: continue
+[SYNC] Waiting for any message
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> messageFromTest = |continue|
+STDOUT> --> Debuggee: BEFORE System.gc():
+STDOUT> --> Debuggee: checkedObject = org.apache.harmony.jpda.tests.jdwp.ObjectReference.DisableCollectionObject001_01@4ac1579
+STDOUT> --> Debuggee: checkedObject_UNLOADed = false
+STDOUT> --> Debuggee: patternObject = org.apache.harmony.jpda.tests.jdwp.ObjectReference.DisableCollectionObject001_02@4ac257a
+STDOUT> --> Debuggee: patternObject_UNLOADed = false
+STDOUT> --> Debuggee: memory depletion - creating 'long[1000000]' arrays (7)...
+STDOUT> --> Debuggee: AFTER System.gc():
+STDOUT> --> Debuggee: checkedObject = null
+STDOUT> --> Debuggee: checkedObject_UNLOADed = false
+STDOUT> --> Debuggee: patternObject = null
+STDOUT> --> Debuggee: patternObject_UNLOADed = true
+STDOUT> --> Debuggee: Send to test message: "Checked Object is NOT UNLOADed!"
+[SYNC] Received message: Checked Object is NOT UNLOADed!
+==> debuggeeMsg = |Checked Object is NOT UNLOADed!|
+
+=> PASSED: Checked Object is NOT UNLOADed after ObjectReference::DisableCollection command
+=> Send to Debuggee signal to funish ...
+[SYNC] Message sent: continue
+==> testDisableCollection001 for ObjectReference::DisableCollection command: FINISH
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> [SYNC] Message sent: Checked Object is NOT UNLOADed!
+STDOUT> [SYNC] Waiting for any message
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> Debuggee: DisableCollectionDebuggee: FINISH
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDOUT
+Redirector completed: STDERR
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

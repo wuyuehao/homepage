@@ -1,0 +1,144 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.ExceptionTest.testExceptionEvent
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4762
+Start listening on: null
+Listening on: IBM-L3XANCF:4763
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4763,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4762 org.apache.harmony.jpda.tests.jdwp.Events.ExceptionDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4763,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4762 org.apache.harmony.jpda.tests.jdwp.Events.ExceptionDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4763,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4762, org.apache.harmony.jpda.tests.jdwp.Events.ExceptionDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4762
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+>> testExceptionEvent: STARTED...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -- ExceptionDebuggee: STARTED
+[SYNC] Received message: ready
+
+>> testExceptionEvent: => setException(...)...
+>> testExceptionEvent: setException(...) DONE
+
+>> testExceptionEvent: send to Debuggee SGNL_CONTINUE...
+[SYNC] Message sent: continue
+
+>> testExceptionEvent: => receiveEvent()...
+STDOUT> [SYNC] Message sent: ready
+STDOUT> -- ExceptionDebuggee: Wait for SGNL_CONTINUE...
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> -- ExceptionDebuggee: SGNL_CONTINUE has been received!
+>> testExceptionEvent: Event is received! Check it ...
+>> testExceptionEvent: parsedEvents.length = 1
+>> testExceptionEvent: parsedEvents[0].getEventKind() = 4
+>> testExceptionEvent: returnedException.objectID = 1890
+>> testExceptionEvent: returnedException.tag = 1890
+>> testExceptionEvent: returnedExceptionSignature = |Lorg/apache/harmony/jpda/tests/jdwp/Events/DebuggeeException;|
+
+>> testExceptionEvent: resume debuggee...
+STDOUT> -- ExceptionDebuggee: Exception: "Caught debuggee exception" was thrown
+STDOUT> DUMP{org.apache.harmony.jpda.tests.jdwp.Events.DebuggeeException: dummy exception}
+STDOUT> -- ExceptionDebuggee: FINISHing...
+STDOUT> [SYNC] Closed socket
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Ignoring exception in disposing debuggee VM: org.apache.harmony.jpda.tests.framework.TestErrorException: org.apache.harmony.jpda.tests.framework.jdwp.exceptions.TimeoutException: Connection was closed
+Waiting for process exit
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.ExceptionTest.testExceptionEventLocation
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4766
+Start listening on: null
+Listening on: IBM-L3XANCF:4767
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4767,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4766 org.apache.harmony.jpda.tests.jdwp.Events.ExceptionDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4767,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4766 org.apache.harmony.jpda.tests.jdwp.Events.ExceptionDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4767,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4766, org.apache.harmony.jpda.tests.jdwp.Events.ExceptionDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Redirector started: STDOUT
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4766
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+>> testExceptionEventLocation: STARTED...
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+STDOUT> -- ExceptionDebuggee: STARTED
+[SYNC] Received message: ready
+
+>> testExceptionEventLocation: => setException(...)...
+>> testExceptionEventLocation: setException(...) DONE
+
+>> testExceptionEventLocation: send to Debuggee SGNL_CONTINUE...
+[SYNC] Message sent: continue
+
+>> testExceptionEventLocation: => receiveEvent()...
+STDOUT> [SYNC] Message sent: ready
+STDOUT> -- ExceptionDebuggee: Wait for SGNL_CONTINUE...
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+STDOUT> -- ExceptionDebuggee: SGNL_CONTINUE has been received!
+>> testExceptionEventLocation: Event is received! Check it ...
+>> testExceptionEventLocation: parsedEvents.length = 1
+>> testExceptionEventLocation: parsedEvents[0].getEventKind() = 4
+>> testExceptionEventLocation: returnedThread = 1164
+>> testExceptionEventLocation: returnedExceptionLoc = Location: tag=1, classID=1000000290, methodID=590996008, index=65
+>> testExceptionEventLocation: topFrameLoc = Location: tag=1, classID=1000000290, methodID=590996008, index=65
+
+>> testExceptionEventLocation: resume debuggee...
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+STDOUT> -- ExceptionDebuggee: Exception: "Caught debuggee exception" was thrown
+STDOUT> DUMP{org.apache.harmony.jpda.tests.jdwp.Events.DebuggeeException: dummy exception}
+STDOUT> -- ExceptionDebuggee: FINISHing...
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

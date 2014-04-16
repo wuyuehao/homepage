@@ -1,0 +1,116 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.ThreadReference.SuspendTest.testSuspend001
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 3896
+Start listening on: null
+Listening on: IBM-L3XANCF:3897
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3897,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3896 org.apache.harmony.jpda.tests.jdwp.ThreadReference.SuspendDebuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3897,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=3896 org.apache.harmony.jpda.tests.jdwp.ThreadReference.SuspendDebuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:3897,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=3896, org.apache.harmony.jpda.tests.jdwp.ThreadReference.SuspendDebuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:3896
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+==> testSuspend001: START...
+[SYNC] Waiting for any messsage
+STDOUT> [SYNC] Attached socket
+STDOUT> --> SuspendDebuggee: START...
+STDOUT> --> SuspendDebuggee: Create and start tested threads...
+STDOUT> --> SuspendDebuggee: Created threads number = 9
+[SYNC] Received message: 9
+==>  Number of started threads in debuggee to test = 9
+STDOUT> --> SuspendDebuggee: All created threads are started!
+STDOUT> [SYNC] Message sent: 9
+STDOUT> [SYNC] Waiting for any messsage
+==>  Number of all threads in debuggee = 12
+
+==> Check for Thread: threadID = 1133; threadName = SuspendDebuggee_Thread_8
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+
+==> Check for Thread: threadID = 2017; threadName = SuspendDebuggee_Thread_7
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+
+==> Check for Thread: threadID = 1841; threadName = SuspendDebuggee_Thread_6
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+
+==> Check for Thread: threadID = 1701; threadName = SuspendDebuggee_Thread_5
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+
+==> Check for Thread: threadID = 1561; threadName = SuspendDebuggee_Thread_4
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 1(SUSPENDED)
+
+==> Check for Thread: threadID = 1421; threadName = SuspendDebuggee_Thread_3
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+
+==> Check for Thread: threadID = 1281; threadName = SuspendDebuggee_Thread_2
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 1(RUNNING)
+==> suspendStatus = 1(SUSPENDED)
+
+==> Check for Thread: threadID = 2021; threadName = SuspendDebuggee_Thread_1
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 2(SLEEPING)
+==> suspendStatus = 1(SUSPENDED)
+
+==> Check for Thread: threadID = 1884; threadName = SuspendDebuggee_Thread_0
+==> Send ThreadReference.Suspend command...
+==> Send ThreadReference.Status command...
+==> threadStatus = 4(WAIT)
+==> suspendStatus = 1(SUSPENDED)
+[SYNC] Message sent: continue
+
+==> testSuspend001 - OK!
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+STDOUT> [SYNC] Received message: continue
+STDOUT> --> SuspendDebuggee: Send signal to all threads to finish and wait...
+Waiting for process exit
+STDOUT> --> SuspendDebuggee: All threads finished!
+STDOUT> --> SuspendDebuggee: FINISH...
+STDOUT> [SYNC] Closed socket
+Redirector completed: STDERR
+Redirector completed: STDOUT
+Finished debuggee with exit code: 0
+Finished process
+Waiting for redirectors finish
+Finished redirectors
+Closed JDWP connection with debuggee VM
+<<<=====================================
+
+

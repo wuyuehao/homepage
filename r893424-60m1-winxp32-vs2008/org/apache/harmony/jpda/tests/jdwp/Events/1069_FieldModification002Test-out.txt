@@ -1,0 +1,135 @@
+
+=====================================>>>
+Run: org.apache.harmony.jpda.tests.jdwp.Events.FieldModification002Test.testFieldModifyEvent
+----------------------------------------
+[SYNC] Binding socket on port: 0
+[SYNC] Bound socket on port: 4775
+Start listening on: null
+Listening on: IBM-L3XANCF:4776
+Launch: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4776,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4775 org.apache.harmony.jpda.tests.jdwp.Events.FieldModification002Debuggee
+Launch process: D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java -cp "D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar" -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4776,server=n,suspend=y  -Djpda.settings.verbose=true -Djpda.settings.syncPort=4775 org.apache.harmony.jpda.tests.jdwp.Events.FieldModification002Debuggee
+Splitted command line: [D:\workingcopy\hy6\target\hdk\jdk\jre/bin/java, -cp, D:\workingcopy\hy6\working_jdktools\build\tests\classes;D:\tools\apache-ant-1.7.1\lib\junit-4.1.jar;D:\tools\apache-ant-1.7.1\lib\ant-launcher.jar;D:\tools\apache-ant-1.7.1\lib\ant.jar;D:\tools\apache-ant-1.7.1\lib\ant-junit.jar, -agentlib:jdwp=transport=dt_socket,address=IBM-L3XANCF:4776,server=n,suspend=y, -Djpda.settings.verbose=true, -Djpda.settings.syncPort=4775, org.apache.harmony.jpda.tests.jdwp.Events.FieldModification002Debuggee]
+Launched process
+Start redirectors
+Redirector started: STDERR
+Redirector started: STDOUT
+Started redirectors
+Launched debuggee process
+Accepting JDWP connection
+Established transport connection
+Established JDWP connection with debuggee VM
+Received inital VM_INIT event
+Adjusted VM-dependent type lengths
+Resumed debuggee VM
+[SYNC] Accepting socket connection
+STDOUT> [SYNC] Attaching socket to: localhost:4775
+[SYNC] Accepted socket connection
+Established sync connection
+----------------------------------------
+FieldModification002Test started
+=> Check capability: canWatchFieldModification
+[SYNC] Waiting for message: ready
+STDOUT> [SYNC] Attached socket
+[SYNC] Received message: ready
+Set hook for: testBoolField
+STDOUT> [SYNC] Message sent: ready
+STDOUT> FieldDebuggee started
+STDOUT> [SYNC] Waiting for message: continue
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testBoolField, tag of new value: boolean: true, tag: Z - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testByteField
+STDOUT> [SYNC] Received message: continue
+[SYNC] Message sent: continue
+Field: testByteField, tag of new value: byte: 107, tag: B - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testCharField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testCharField, tag of new value: char: Q, tag: C - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testShortField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testShortField, tag of new value: short: 127, tag: S - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testIntField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testIntField, tag of new value: int: -1001, tag: I - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testLongField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testLongField, tag of new value: long: 4000000000000000, tag: J - OK
+Sending VirtualMachine::Resume command...
+Set hook for: testFloatField
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+[SYNC] Message sent: continue
+Field: testFloatField, tag of new value: float: 1000000.0, tag: F - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testDoubleField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testDoubleField, tag of new value: double: -1.0999890001209987E-5, tag: D - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testObjectField
+STDOUT> [SYNC] Received message: continue
+[SYNC] Message sent: continue
+Field: testObjectField, tag of new value: ObjectID: 1101, tag: L - OK
+Sending VirtualMachine::Resume command...
+Set hook for: testThreadField
+STDOUT> [SYNC] Waiting for message: continue
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testThreadField, tag of new value: ThreadID: 1810, tag: t - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testThreadGroupField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testThreadGroupField, tag of new value: ThreadGroupID: 1789, tag: g - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testClassField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testClassField, tag of new value: ClassObjectID: 1908, tag: c - OK
+Sending VirtualMachine::Resume command...
+Set hook for: testClassLoaderField
+STDOUT> [SYNC] Waiting for message: continue
+STDOUT> [SYNC] Received message: continue
+[SYNC] Message sent: continue
+Field: testClassLoaderField, tag of new value: ClassLoaderID: 1458, tag: l - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testStringField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testStringField, tag of new value: StringID: 1063, tag: s - OK
+Sending VirtualMachine::Resume command...
+STDOUT> [SYNC] Waiting for message: continue
+Set hook for: testIntArrayField
+[SYNC] Message sent: continue
+STDOUT> [SYNC] Received message: continue
+Field: testIntArrayField, tag of new value: ObjectID: 1742, tag: [ - OK
+Sending VirtualMachine::Resume command...
+Set hook for: testStringArrayField
+[SYNC] Message sent: continue
+----------------------------------------
+[SYNC] Closed socket
+Completed sync connection
+Waiting for process exit
+# ERROR: Terminate debuggee process
+Ignoring exception in ProcessWaiter thread interrupted: java.lang.InterruptedException
+Redirector completed: STDERR
+
